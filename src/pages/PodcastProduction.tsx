@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Check, MicrophoneStage, Music, Ear, Radio, Settings, Clock } from 'lucide-react';
+import { Check, Mic, Music, Ear, Radio, Settings, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/UI/SectionHeading';
 import Header from '@/components/Layout/Header';
@@ -101,7 +101,7 @@ const PodcastProduction = () => {
               
               <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
                 <div className="h-12 w-12 rounded-lg bg-podleaf-100 flex items-center justify-center text-podleaf-600 mb-4">
-                  <MicrophoneStage className="h-6 w-6" />
+                  <Mic className="h-6 w-6" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Sound Mixing</h3>
                 <p className="text-gray-600">

@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { MicrophoneStage, Video, Headphones, Target, Rocket, Users } from 'lucide-react';
+import { Mic, Video, Headphones, Target, Rocket, Users } from 'lucide-react';
 import SectionHeading from '@/components/UI/SectionHeading';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
@@ -197,7 +197,7 @@ const AboutUs = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
               <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
                 <div className="h-12 w-12 rounded-lg bg-podleaf-100 flex items-center justify-center text-podleaf-600 mb-4">
-                  <MicrophoneStage className="h-6 w-6" />
+                  <Mic className="h-6 w-6" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Specialized Expertise</h3>
                 <p className="text-gray-600">

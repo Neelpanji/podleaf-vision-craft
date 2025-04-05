@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Headphones, Video, MicrophoneStage, ArrowRightCircle, Radio, Megaphone, PlayCircle, FileVideo, Film, BookOpen } from 'lucide-react';
+import { Headphones, Video, Mic, ArrowRightCircle, Radio, Megaphone, PlayCircle, FileVideo, Film, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import HeroSection from '@/components/UI/HeroSection';
 import SectionHeading from '@/components/UI/SectionHeading';
@@ -44,7 +44,7 @@ const Index = () => {
               <ServiceCard
                 title="Podcast Production"
                 description="Create high-quality audio that captivates your listeners with our professional production services."
-                icon={<MicrophoneStage className="h-6 w-6" />}
+                icon={<Mic className="h-6 w-6" />}
                 link="/podcast-production"
               />
               <ServiceCard
