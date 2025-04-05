@@ -1,9 +1,18 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import PodcastMarketing from "./pages/PodcastMarketing";
+import PodcastProduction from "./pages/PodcastProduction";
+import PodcastLaunch from "./pages/PodcastLaunch";
+import VideoServices from "./pages/VideoServices";
+import Portfolio from "./pages/Portfolio";
+import Testimonials from "./pages/Testimonials";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -16,7 +25,14 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/podcast-marketing" element={<PodcastMarketing />} />
+          <Route path="/podcast-production" element={<PodcastProduction />} />
+          <Route path="/podcast-launch" element={<PodcastLaunch />} />
+          <Route path="/video-services" element={<VideoServices />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

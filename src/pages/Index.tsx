@@ -1,12 +1,187 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Headphones, Video, MicrophoneStage, ArrowRightCircle, Radio, Megaphone, PlayCircle, FileVideo, Film, BookOpen } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import HeroSection from '@/components/UI/HeroSection';
+import SectionHeading from '@/components/UI/SectionHeading';
+import ServiceCard from '@/components/UI/ServiceCard';
+import TestimonialCard from '@/components/UI/TestimonialCard';
+import Header from '@/components/Layout/Header';
+import Footer from '@/components/Layout/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-grow">
+        {/* Hero Section */}
+        <HeroSection
+          title="Launch, Grow, and Monetize Your Podcast with Expert Services"
+          subtitle="Your Partner for Comprehensive Podcast Marketing, Production, Launch, and Engaging Video Content"
+          description="In today's digital landscape, podcasts are a powerful way to connect with your audience, build authority, and drive results. At PodLeaF Productions, we specialize in providing end-to-end podcast solutions, from crafting compelling content and professional production to strategic marketing and successful launches."
+          buttonText="Get a Free Podcast Strategy Consultation"
+          buttonLink="/contact-us"
+          imageUrl="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+        />
+
+        {/* Podcast Services Section */}
+        <section className="section-padding bg-white">
+          <div className="container container-padding">
+            <SectionHeading
+              title="Podcast Powerhouse"
+              subtitle="Whether you're just starting out or looking to take your existing podcast to the next level, we have the expertise to help. Our comprehensive podcast services cover every stage of the journey."
+              centered={true}
+            />
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <ServiceCard
+                title="Podcast Marketing"
+                description="Reach a wider audience and grow your listener base with our proven marketing strategies tailored for podcasters."
+                icon={<Megaphone className="h-6 w-6" />}
+                link="/podcast-marketing"
+              />
+              <ServiceCard
+                title="Podcast Production"
+                description="Create high-quality audio that captivates your listeners with our professional production services."
+                icon={<MicrophoneStage className="h-6 w-6" />}
+                link="/podcast-production"
+              />
+              <ServiceCard
+                title="Podcast Launch"
+                description="Start strong with a strategic and impactful launch plan designed to make a splash in your niche."
+                icon={<Radio className="h-6 w-6" />}
+                link="/podcast-launch"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Video Services Section */}
+        <section className="section-padding bg-gray-50">
+          <div className="container container-padding">
+            <SectionHeading
+              title="Beyond Audio: Engaging Video Content"
+              subtitle="In addition to our podcast expertise, we offer professional video production services to enhance your brand's reach and engagement."
+              centered={true}
+            />
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <ServiceCard
+                title="Vlog Videos"
+                description="Connect authentically with your audience through engaging vlogs that showcase your personality and expertise."
+                icon={<PlayCircle className="h-6 w-6" />}
+                link="/video-services"
+              />
+              <ServiceCard
+                title="Educational Videos"
+                description="Share your knowledge and establish yourself as an industry leader with professionally produced educational content."
+                icon={<BookOpen className="h-6 w-6" />}
+                link="/video-services"
+              />
+              <ServiceCard
+                title="Commercial Website Videos"
+                description="Drive conversions and showcase your products/services effectively with compelling commercial videos."
+                icon={<Film className="h-6 w-6" />}
+                link="/video-services"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="section-padding bg-white">
+          <div className="container container-padding">
+            <SectionHeading
+              title="What Our Clients Say"
+              centered={true}
+            />
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <TestimonialCard
+                quote="Working with PodLeaF Productions transformed our podcast strategy. Their marketing expertise helped us grow our audience by 300% in just three months!"
+                name="Sarah Johnson"
+                company="Startup Insider Podcast"
+              />
+              <TestimonialCard
+                quote="The production quality they delivered exceeded our expectations. Our podcast now sounds as professional as the top shows in our industry."
+                name="Michael Chen"
+                company="Tech Forward"
+              />
+              <TestimonialCard
+                quote="Their launch strategy was brilliant. We hit the New & Noteworthy section and gained thousands of subscribers in our first week."
+                name="Priya Patel"
+                company="Business Growth Show"
+              />
+            </div>
+
+            <div className="text-center mt-10">
+              <Link to="/testimonials">
+                <Button variant="outline" className="group">
+                  View All Testimonials
+                  <ArrowRightCircle className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Us Section */}
+        <section className="section-padding bg-podleaf-50">
+          <div className="container container-padding">
+            <SectionHeading
+              title="Your Trusted Partner for Podcast and Video Success"
+              centered={true}
+            />
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-podleaf-700">Expertise</h3>
+                <p>Benefit from our deep understanding of the podcasting and video landscape gained through years of experience.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-podleaf-700">Comprehensive Services</h3>
+                <p>From concept to distribution, we handle every aspect of your podcast and video production needs.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-podleaf-700">Results-Driven Approach</h3>
+                <p>We focus on strategies that deliver measurable growth and engagement for your content.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-podleaf-700">Personalized Solutions</h3>
+                <p>Tailored plans to meet your unique business goals and audience needs.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-podleaf-700">High-Quality Production</h3>
+                <p>Professional audio and video that leaves a lasting impression on your audience.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-podleaf-700">Ongoing Support</h3>
+                <p>We're with you every step of the way, providing guidance and assistance as you grow.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 bg-gradient-to-r from-podleaf-600 to-leaf-600 text-white">
+          <div className="container container-padding text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Elevate Your Content?</h2>
+            <p className="text-xl mb-8 max-w-3xl mx-auto">Take the first step towards creating professional podcasts and videos that engage your audience and drive results.</p>
+            <Link to="/contact-us">
+              <Button variant="secondary" size="lg" className="text-lg px-8">
+                Contact Us Today
+              </Button>
+            </Link>
+          </div>
+        </section>
+      </main>
+      <Footer />
     </div>
   );
 };

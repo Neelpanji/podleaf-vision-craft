@@ -1,0 +1,56 @@
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+
+interface HeroSectionProps {
+  title: string;
+  subtitle: string;
+  description: string;
+  buttonText: string;
+  buttonLink: string;
+  imageUrl: string;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({
+  title,
+  subtitle,
+  description,
+  buttonText,
+  buttonLink,
+  imageUrl,
+}) => {
+  return (
+    <div className="hero-pattern">
+      <div className="container px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <div className="text-left animate-fade-in">
+            <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl leading-tight gradient-heading mb-4">
+              {title}
+            </h1>
+            <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-700 font-medium mb-6">
+              {subtitle}
+            </h2>
+            <p className="text-gray-600 text-lg mb-8 max-w-xl">
+              {description}
+            </p>
+            <Link to={buttonLink}>
+              <Button className="text-base px-8 py-6" size="lg">
+                {buttonText}
+              </Button>
+            </Link>
+          </div>
+          <div className="hidden md:block">
+            <img
+              src={imageUrl}
+              alt="PodLeaF Productions"
+              className="rounded-lg shadow-2xl animate-fade-in w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default HeroSection;
