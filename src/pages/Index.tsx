@@ -12,7 +12,7 @@ import Footer from '@/components/Layout/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background">
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
@@ -26,7 +26,7 @@ const Index = () => {
         />
 
         {/* Podcast Services Section */}
-        <section className="section-padding bg-white">
+        <section className="section-padding bg-background">
           <div className="container container-padding">
             <SectionHeading
               title="Podcast Powerhouse"
@@ -58,7 +58,7 @@ const Index = () => {
         </section>
 
         {/* Video Services Section */}
-        <section className="section-padding bg-gray-50">
+        <section className="section-padding bg-muted">
           <div className="container container-padding">
             <SectionHeading
               title="Beyond Audio: Engaging Video Content"
@@ -90,7 +90,7 @@ const Index = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="section-padding bg-white">
+        <section className="section-padding bg-background">
           <div className="container container-padding">
             <SectionHeading
               title="What Our Clients Say"
@@ -127,7 +127,7 @@ const Index = () => {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="section-padding bg-podleaf-50">
+        <section className="section-padding bg-muted">
           <div className="container container-padding">
             <SectionHeading
               title="Your Trusted Partner for Podcast and Video Success"
@@ -135,33 +135,33 @@ const Index = () => {
             />
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold mb-3 text-podleaf-700">Expertise</h3>
+              <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                <h3 className="text-xl font-semibold mb-3 text-teal">Expertise</h3>
                 <p>Benefit from our deep understanding of the podcasting and video landscape gained through years of experience.</p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold mb-3 text-podleaf-700">Comprehensive Services</h3>
+              <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                <h3 className="text-xl font-semibold mb-3 text-teal">Comprehensive Services</h3>
                 <p>From concept to distribution, we handle every aspect of your podcast and video production needs.</p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold mb-3 text-podleaf-700">Results-Driven Approach</h3>
+              <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                <h3 className="text-xl font-semibold mb-3 text-teal">Results-Driven Approach</h3>
                 <p>We focus on strategies that deliver measurable growth and engagement for your content.</p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold mb-3 text-podleaf-700">Personalized Solutions</h3>
+              <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                <h3 className="text-xl font-semibold mb-3 text-teal">Personalized Solutions</h3>
                 <p>Tailored plans to meet your unique business goals and audience needs.</p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold mb-3 text-podleaf-700">High-Quality Production</h3>
+              <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                <h3 className="text-xl font-semibold mb-3 text-teal">High-Quality Production</h3>
                 <p>Professional audio and video that leaves a lasting impression on your audience.</p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold mb-3 text-podleaf-700">Ongoing Support</h3>
+              <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                <h3 className="text-xl font-semibold mb-3 text-teal">Ongoing Support</h3>
                 <p>We're with you every step of the way, providing guidance and assistance as you grow.</p>
               </div>
             </div>
@@ -169,12 +169,12 @@ const Index = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-gradient-to-r from-podleaf-600 to-leaf-600 text-white">
+        <section className="py-16 bg-gradient-to-r from-teal to-purple text-black">
           <div className="container container-padding text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Elevate Your Content?</h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto">Take the first step towards creating professional podcasts and videos that engage your audience and drive results.</p>
             <Link to="/contact-us">
-              <Button variant="secondary" size="lg" className="text-lg px-8">
+              <Button variant="secondary" size="lg" className="text-lg px-8 bg-black text-white hover:bg-black/80">
                 Contact Us Today
               </Button>
             </Link>
