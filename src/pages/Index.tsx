@@ -32,7 +32,7 @@ const Index = () => {
         <section className="section-padding bg-background">
           <div className="container container-padding">
             <SectionHeading
-              title="Podcast Powerhouse"
+              title={<span style={{ color: '#ae88d0' }}>Podcast Powerhouse</span>}
               subtitle="Whether you're just starting out or looking to take your existing podcast to the next level, we have the expertise to help. Our comprehensive podcast services cover every stage of the journey."
               centered={true}
             />
