@@ -17,7 +17,10 @@ const Index = () => {
       <main className="flex-grow">
         {/* Hero Section */}
         <HeroSection
-          title="Podcast Dreams? We Make 'Em Happen!"
+          titlePart1="Podcast Dreams? "
+          titlePart1Color="#70dab8"
+          titlePart2="We Make 'Em Happen!"
+          titlePart2Color="#ae88d0"
           subtitle="Launch, grow, and cash in on your podcast with PodLeaF Productions. From killer content to getting heard, we've got you covered (and videos too!)."
           description="In today's digital landscape, podcasts are a powerful way to connect with your audience, build authority, and drive results. At PodLeaF Productions, we specialize in providing end-to-end podcast solutions, from crafting compelling content and professional production to strategic marketing and successful launches."
           buttonText="Get a Free Podcast Strategy Consultation"
