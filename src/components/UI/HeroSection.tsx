@@ -34,7 +34,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="text-left animate-fade-in">
             {title ? (
-              <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl leading-tight gradient-heading mb-4">
+              <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl leading-tight mb-4" style={{ color: '#ae88d0' }}>
                 {title}
               </h1>
             ) : (
@@ -51,7 +51,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 )}
               </h1>
             )}
-            <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-700 font-medium mb-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-700 font-medium mb-6" style={{ color: '#ae88d0' }}>
               {subtitle}
             </h2>
             <p className="text-gray-600 text-lg mb-8 max-w-xl">
