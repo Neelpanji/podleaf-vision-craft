@@ -124,6 +124,14 @@ const Index = () => {
                 podcastUrl="https://podcasts.apple.com/us/podcast/intuition-your-success-compass/id1458617878"
                 videoEmbedLink="https://www.youtube-nocookie.com/embed/Ifod2of5bmI"
               />
+              <TestimonialCard
+                quote="I've been hosting the PR Maven podcast for six years. Just recently, I connected with Neel, who has been a significant help in editing, disseminating, and producing videos for my podcast. I especially appreciate Neel's skill in finding those key soundbites that really capture the essential messages of each episode."
+                name="Nancy Marshall"
+                company="Host of The PR Maven Podcast"
+                imageUrl="/lovable-uploads/09382286-cd84-4142-b000-8cc9e469d35a.png"
+                podcastUrl="https://podcasts.apple.com/us/podcast/the-pr-maven-podcast/id1436184833"
+                videoEmbedLink="https://www.youtube-nocookie.com/embed/sZcXCezzmRA"
+              />
             </div>
 
             <div className="text-center mt-10">
