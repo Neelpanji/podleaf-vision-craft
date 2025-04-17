@@ -10,6 +10,7 @@ import PodcastProduction from "./pages/PodcastProduction";
 import PodcastLaunch from "./pages/PodcastLaunch";
 import VideoServices from "./pages/VideoServices";
 import Portfolio from "./pages/Portfolio";
+import CaseStudy from "./pages/Case-study";
 import Testimonials from "./pages/Testimonials";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/podcast-launch" element={<PodcastLaunch />} />
           <Route path="/video-services" element={<VideoServices />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/case-study" element={<CaseStudy />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />

@@ -46,7 +46,7 @@ const Portfolio = () => {
                     title="Business Leaders Podcast"
                     clientName="Global Finance Corp"
                     description="A weekly interview podcast featuring conversations with leading CEOs and entrepreneurs."
-                    imageUrl="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+                    imageUrl="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
                     tags={["Podcast Production", "Podcast Marketing"]}
                   />
                   <PortfolioCard
@@ -76,14 +76,14 @@ const Portfolio = () => {
                     title="Company Culture Vlog"
                     clientName="NextGen Startup"
                     description="A monthly vlog series highlighting company culture, team activities, and behind-the-scenes insights."
-                    imageUrl="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+                    imageUrl="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
                     tags={["Vlog Video"]}
                   />
                   <PortfolioCard
                     title="Digital Marketing Tutorials"
                     clientName="Marketing Wizards Academy"
                     description="A comprehensive series of educational videos explaining digital marketing strategies and techniques."
-                    imageUrl="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+                    imageUrl="https://images.unsplash.com/photo-1483058712412-4245e9b90334"
                     tags={["Educational Video"]}
                   />
                 </div>
@@ -95,7 +95,7 @@ const Portfolio = () => {
                     title="Business Leaders Podcast"
                     clientName="Global Finance Corp"
                     description="A weekly interview podcast featuring conversations with leading CEOs and entrepreneurs."
-                    imageUrl="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+                    imageUrl="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
                     tags={["Podcast Production", "Podcast Marketing"]}
                   />
                   <PortfolioCard
@@ -128,14 +128,14 @@ const Portfolio = () => {
                     title="Company Culture Vlog"
                     clientName="NextGen Startup"
                     description="A monthly vlog series highlighting company culture, team activities, and behind-the-scenes insights."
-                    imageUrl="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+                    imageUrl="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
                     tags={["Vlog Video"]}
                   />
                   <PortfolioCard
                     title="Digital Marketing Tutorials"
                     clientName="Marketing Wizards Academy"
                     description="A comprehensive series of educational videos explaining digital marketing strategies and techniques."
-                    imageUrl="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+                    imageUrl="https://images.unsplash.com/photo-1483058712412-4245e9b90334"
                     tags={["Educational Video"]}
                   />
                 </div>
@@ -144,7 +144,7 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* Case Studies Section */}
+        {/* Case Studies Section with Link */}
         <section className="py-16 bg-gray-50">
           <div className="container px-4 sm:px-6 lg:px-8">
             <SectionHeading
@@ -195,6 +195,14 @@ const Portfolio = () => {
                     <li>75% listener retention rate after 10 episodes</li>
                     <li>Generated 15 qualified leads for the client's services</li>
                   </ul>
+
+                  <div className="mt-6">
+                    <Link to="/case-study">
+                      <Button variant="outline">
+                        View Full Case Study
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
