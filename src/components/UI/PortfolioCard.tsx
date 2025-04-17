@@ -1,13 +1,14 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { HoverCard, HoverCardTrigger, HoverCardContent } from '@/components/ui/hover-card';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 interface PortfolioCardProps {
   title: string;
   clientName: string;
   description: string;
-  imageUrl: string;
+  imageUrl?: string;
+  videoId?: string;
   tags?: string[];
   href?: string;
 }
@@ -17,17 +18,30 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
   clientName,
   description,
   imageUrl,
+  videoId,
   tags = [],
   href,
 }) => {
   const CardComponent = () => (
     <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-lg">
       <div className="aspect-video w-full overflow-hidden">
-        <img 
-          src={imageUrl} 
-          alt={title} 
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-        />
+        {videoId ? (
+          <AspectRatio ratio={16 / 9}>
+            <iframe
+              src={`https://www.youtube.com/embed/${videoId}`}
+              title={title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full border-0"
+            ></iframe>
+          </AspectRatio>
+        ) : (
+          <img 
+            src={imageUrl} 
+            alt={title} 
+            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          />
+        )}
       </div>
       <CardHeader className="pb-2">
         <CardTitle className="text-xl">{title}</CardTitle>
@@ -51,7 +65,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
     </Card>
   );
 
-  if (href) {
+  if (href && !videoId) {
     return (
       <a href={href} target="_blank" rel="noopener noreferrer" className="block h-full">
         <CardComponent />

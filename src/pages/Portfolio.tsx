@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Layout/Header';
@@ -171,19 +170,16 @@ const Portfolio = () => {
                       className="w-full h-64 object-cover"
                     />
                   </a>
-                  {/* Adding the video project */}
-                  <a href="https://youtu.be/53vT7E0JhPA?feature=shared" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
-                    <div className="w-full h-64 bg-gray-200 flex items-center justify-center relative">
-                      <img 
-                        src="https://img.youtube.com/vi/53vT7E0JhPA/maxresdefault.jpg" 
-                        alt="Talking Head Video" 
-                        className="w-full h-64 object-cover"
-                      />
-                      <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                        <div className="text-white font-semibold text-xl">Talking Head Video</div>
-                      </div>
-                    </div>
-                  </a>
+                  {/* Adding the video project with embedded player */}
+                  <div className="block h-full">
+                    <PortfolioCard
+                      title="Talking Head Video"
+                      clientName="Video Production"
+                      description="Professional talking head video production showcasing our video services."
+                      videoId="53vT7E0JhPA"
+                      tags={["Video", "Production", "Corporate"]}
+                    />
+                  </div>
                 </div>
               </TabsContent>
 
@@ -329,16 +325,15 @@ const Portfolio = () => {
 
               <TabsContent value="video">
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                  <a href="https://youtu.be/53vT7E0JhPA?feature=shared" target="_blank" rel="noopener noreferrer" className="block h-full">
+                  <div className="block h-full">
                     <PortfolioCard
                       title="Talking Head Video"
                       clientName="Video Production"
                       description="Professional talking head video production showcasing our video services."
-                      imageUrl="https://img.youtube.com/vi/53vT7E0JhPA/maxresdefault.jpg"
+                      videoId="53vT7E0JhPA"
                       tags={["Video", "Production", "Corporate"]}
-                      href="https://youtu.be/53vT7E0JhPA?feature=shared"
                     />
-                  </a>
+                  </div>
                 </div>
               </TabsContent>
             </Tabs>
