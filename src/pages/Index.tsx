@@ -102,19 +102,19 @@ const Index = () => {
 
             <div className="grid md:grid-cols-3 gap-6">
               <TestimonialCard
-                quote="As the Director of Marketing at a fast-growing tech startup, I needed a way to establish thought leadership in our space. PodLeaF Productions helped us create a professional podcast that's now become a key part of our brand identity."
-                name="Alex Morgan"
-                company="VisionTech Solutions"
+                quote="Working with Bryan was a great experience. He clearly communicated his professional expertise in a way that made me feel comfortable and confident. The interview was a lot better than I had initially anticipated!"
+                name="Ashlie Swanson"
+                company="Former Global Marketing Officer, Shiseido"
               />
               <TestimonialCard
-                quote="I've always wanted to start a podcast but had no idea where to begin. The team at PodLeaF made the entire process simple and stress-free. Now my podcast is reaching thousands of listeners each month!"
-                name="Sarah Johnson"
-                company="Mindful Entrepreneur Podcast"
+                quote="I was ready to produce my own podcast by myself, but I needed a serious team of professionals who could make my message sound as good as it deserved to be heard. The team at PodLeaF Productions helped."
+                name="Ian Chaffee"
+                company="Founder, Communications Strategist, Impact-First.org"
               />
               <TestimonialCard
-                quote="The production quality of our podcast is absolutely top-notch! PodLeaF's sound engineering team took our amateur recording and transformed it into something that sounds like it belongs on NPR."
-                name="Marcus Chen"
-                company="Future Finance Podcast"
+                quote="PodLeaF understands the importance of branding and content. They have the ability to adapt to your needs and provide industry standard solutions."
+                name="Darien Waite"
+                company="Artist, Waite "THE" Brand"
               />
             </div>
 

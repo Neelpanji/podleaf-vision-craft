@@ -37,57 +37,57 @@ const Testimonials = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
               <TestimonialCard
-                quote="As the Director of Marketing at a fast-growing tech startup, I needed a way to establish thought leadership in our space. PodLeaF Productions helped us create a professional podcast that's now become a key part of our brand identity."
-                name="Alex Morgan"
-                company="VisionTech Solutions"
+                quote="Working with Bryan was a great experience. He clearly communicated his professional expertise in a way that made me feel comfortable and confident. The interview was a lot better than I had initially anticipated!"
+                name="Ashlie Swanson"
+                company="Former Global Marketing Officer, Shiseido"
               />
               
               <TestimonialCard
-                quote="I've always wanted to start a podcast but had no idea where to begin. The team at PodLeaF made the entire process simple and stress-free. Now my podcast is reaching thousands of listeners each month!"
-                name="Sarah Johnson"
-                company="Mindful Entrepreneur Podcast"
+                quote="I was ready to produce my own podcast by myself, but I needed a serious team of professionals who could make my message sound as good as it deserved to be heard. The team at PodLeaF Productions helped."
+                name="Ian Chaffee"
+                company="Founder, Communications Strategist, Impact-First.org"
               />
               
               <TestimonialCard
-                quote="The production quality of our podcast is absolutely top-notch! PodLeaF's sound engineering team took our amateur recording and transformed it into something that sounds like it belongs on NPR."
-                name="Marcus Chen"
-                company="Future Finance Podcast"
+                quote="PodLeaF understands the importance of branding and content. They have the ability to adapt to your needs and provide industry standard solutions."
+                name="Darien Waite"
+                company="Artist, Waite "THE" Brand"
               />
               
               <TestimonialCard
-                quote="Our corporate training videos needed a major upgrade. PodLeaF Productions delivered professional, engaging content that has significantly improved our onboarding process and employee feedback scores."
-                name="Priya Patel"
-                company="Global HR Solutions"
+                quote="Bryan's been a fantastic representative for our product. The connection he has with his audience is undeniable. He knows how to connect brands with the market in a meaningful way."
+                name="Kenneth Lee"
+                company="Promo Manager, Epidemic Sound"
               />
               
               <TestimonialCard
-                quote="I was nervous about being on camera, but the PodLeaF team made me feel completely comfortable. Their coaching helped me deliver my message confidently, and the final videos exceeded my expectations."
-                name="David Rodriguez"
-                company="Leadership Academy"
+                quote="I worked with Bryan on an interview for my podcast. The experience was seamless. His expertise was exactly what I needed to take my podcast to the next level."
+                name="Benjamin Cohen"
+                company="Founder, Nexus"
               />
               
               <TestimonialCard
-                quote="As a small business owner, I was skeptical about the ROI of starting a podcast. Six months later, I can say it's been one of our best marketing investments. PodLeaF's strategy helped us connect with our ideal customers."
-                name="Jennifer Wu"
-                company="Artisan Collective"
+                quote="It was so nice working with Bryan. He creates magic with sound! He also has a vast knowledge of podcasting and audio engineering. I learned a lot working with him."
+                name="Tara Furiani"
+                company="CEO, Not the HR Lady"
               />
               
               <TestimonialCard
-                quote="The podcast marketing campaign PodLeaF designed for us resulted in a 200% increase in downloads within just two months. Their understanding of the podcast landscape is unmatched."
-                name="Thomas Edwards"
-                company="Health Innovations Podcast"
+                quote="Working with Bryan and his team to market my podcast has yielded tangible results. The methods PodLeaF teaches are detailed and specific, and totally work, but they deliver it in a way that's simple and easy to understand."
+                name="Brian Ondrako"
+                company="Host, Just Get Started Podcast"
               />
               
               <TestimonialCard
-                quote="Our educational video series needed to simplify complex topics without talking down to our audience. PodLeaF Productions struck the perfect balance, and engagement with our content has never been higher."
-                name="Maya Sanchez"
-                company="Financial Education Institute"
+                quote="I love collaborating with Bryan and PodLeaF Productions! Coming from the corporate side it's always great to work with creators who are professional, yet personable."
+                name="Samantha Avneri"
+                company="Marketing Director"
               />
               
               <TestimonialCard
-                quote="PodLeaF helped us launch our podcast with a bang! Their comprehensive launch strategy got us featured in Apple's New & Noteworthy section, which gave us incredible exposure right from the start."
-                name="Chris Taylor"
-                company="Industry Insiders"
+                quote="If you want a no-nonsense, technically capable producer who is deeply invested in the success of your content, then Bryan and the team are your best bet."
+                name="Corey Haines"
+                company="Founder, SwipeWell"
               />
             </div>
           </div>
@@ -107,13 +107,13 @@ const Testimonials = () => {
                   <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                 </svg>
                 <blockquote className="text-xl md:text-2xl font-medium italic text-foreground mb-6">
-                  "When we decided to add video podcasting to our content strategy, we knew we needed professional help. PodLeaF Productions guided us through every step of the process, from concept development to distribution. Their team's expertise in both audio and video production created a seamless, high-quality experience for our audience. The results have been remarkable - our viewership has grown consistently month over month, and we've secured partnerships with major brands in our industry. I cannot recommend PodLeaF Productions highly enough for anyone looking to elevate their content strategy."
+                  "Bryan is a great podcast producer. He has tremendous attention to detail and a fantastic ear. I worked on a highly successful podcast that had close to 200 million downloads and Bryan's production was a key part of that. He's got a unique combo of creativity and perfectionist technical expertise that makes him a producer that podcasters can rely on."
                 </blockquote>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-center">
-                  <h4 className="font-bold text-lg">Emily Richardson</h4>
-                  <p className="text-muted-foreground">Chief Content Officer, Innovate Media</p>
+                  <h4 className="font-bold text-lg">Leital Molad</h4>
+                  <p className="text-muted-foreground">Senior Podcast Producer</p>
                 </div>
               </div>
             </div>
