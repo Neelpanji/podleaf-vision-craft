@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import PortfolioCard from '@/components/UI/PortfolioCard';
 
 const Portfolio = () => {
   return (
@@ -170,6 +171,19 @@ const Portfolio = () => {
                       className="w-full h-64 object-cover"
                     />
                   </a>
+                  {/* Adding the video project */}
+                  <a href="https://youtu.be/53vT7E0JhPA?feature=shared" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <div className="w-full h-64 bg-gray-200 flex items-center justify-center relative">
+                      <img 
+                        src="https://img.youtube.com/vi/53vT7E0JhPA/maxresdefault.jpg" 
+                        alt="Talking Head Video" 
+                        className="w-full h-64 object-cover"
+                      />
+                      <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <div className="text-white font-semibold text-xl">Talking Head Video</div>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </TabsContent>
 
@@ -315,34 +329,16 @@ const Portfolio = () => {
 
               <TabsContent value="video">
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                  <Link to="/case-study" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
-                    <img 
-                      src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
-                      alt="Product Demo Series" 
-                      className="w-full h-64 object-cover"
+                  <a href="https://youtu.be/53vT7E0JhPA?feature=shared" target="_blank" rel="noopener noreferrer" className="block h-full">
+                    <PortfolioCard
+                      title="Talking Head Video"
+                      clientName="Video Production"
+                      description="Professional talking head video production showcasing our video services."
+                      imageUrl="https://img.youtube.com/vi/53vT7E0JhPA/maxresdefault.jpg"
+                      tags={["Video", "Production", "Corporate"]}
+                      href="https://youtu.be/53vT7E0JhPA?feature=shared"
                     />
-                  </Link>
-                  <Link to="/case-study" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
-                    <img 
-                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" 
-                      alt="Company Culture Vlog" 
-                      className="w-full h-64 object-cover"
-                    />
-                  </Link>
-                  <Link to="/case-study" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
-                    <img 
-                      src="https://images.unsplash.com/photo-1483058712412-4245e9b90334" 
-                      alt="Digital Marketing Tutorials" 
-                      className="w-full h-64 object-cover"
-                    />
-                  </Link>
-                  <Link to="/case-study" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
-                    <img 
-                      src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
-                      alt="Coding Tutorials" 
-                      className="w-full h-64 object-cover"
-                    />
-                  </Link>
+                  </a>
                 </div>
               </TabsContent>
             </Tabs>
