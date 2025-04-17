@@ -102,19 +102,19 @@ const Index = () => {
 
             <div className="grid md:grid-cols-3 gap-6">
               <TestimonialCard
-                quote="Working with PodLeaF Productions transformed our podcast strategy. Their marketing expertise helped us grow our audience by 300% in just three months!"
+                quote="As the Director of Marketing at a fast-growing tech startup, I needed a way to establish thought leadership in our space. PodLeaF Productions helped us create a professional podcast that's now become a key part of our brand identity."
+                name="Alex Morgan"
+                company="VisionTech Solutions"
+              />
+              <TestimonialCard
+                quote="I've always wanted to start a podcast but had no idea where to begin. The team at PodLeaF made the entire process simple and stress-free. Now my podcast is reaching thousands of listeners each month!"
                 name="Sarah Johnson"
-                company="Startup Insider Podcast"
+                company="Mindful Entrepreneur Podcast"
               />
               <TestimonialCard
-                quote="The production quality they delivered exceeded our expectations. Our podcast now sounds as professional as the top shows in our industry."
-                name="Michael Chen"
-                company="Tech Forward"
-              />
-              <TestimonialCard
-                quote="Their launch strategy was brilliant. We hit the New & Noteworthy section and gained thousands of subscribers in our first week."
-                name="Priya Patel"
-                company="Business Growth Show"
+                quote="The production quality of our podcast is absolutely top-notch! PodLeaF's sound engineering team took our amateur recording and transformed it into something that sounds like it belongs on NPR."
+                name="Marcus Chen"
+                company="Future Finance Podcast"
               />
             </div>
 
