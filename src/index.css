@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -74,7 +75,7 @@
 
 @layer components {
   .gradient-heading {
-    @apply bg-gradient-to-r from-teal to-purple bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-teal to-secondary bg-clip-text text-transparent;
   }
   
   .hero-pattern {
