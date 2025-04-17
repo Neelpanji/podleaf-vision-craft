@@ -116,6 +116,14 @@ const Index = () => {
                 podcastUrl="https://podcasts.apple.com/us/podcast/leadership-school/id1554510934"
                 videoEmbedLink="https://www.youtube-nocookie.com/embed/QDgztwaZyi8"
               />
+              <TestimonialCard
+                quote="I would highly recommend working with Neel because as a life coach and business consultant, I understand the value of having someone who already has the skills that are needed in your business because you cannot be, everything to everyone. Working with Neel has helped me to grow as a business owner and as a podcast host. So I would highly recommend hiring him to work with you, to build your own following and to have that product that is edited to your highest liking."
+                name="Vicki Baird"
+                company="Host of Intuition: Your First Sense"
+                imageUrl="/lovable-uploads/211142d2-28d8-4899-8ff7-2275f362f973.png"
+                podcastUrl="https://podcasts.apple.com/us/podcast/intuition-your-success-compass/id1458617878"
+                videoEmbedLink="https://www.youtube-nocookie.com/embed/Ifod2of5bmI"
+              />
             </div>
 
             <div className="text-center mt-10">
