@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Layout/Header';
@@ -154,6 +155,21 @@ const Portfolio = () => {
                       className="w-full h-64 object-cover"
                     />
                   </a>
+                  {/* Adding the new podcast images */}
+                  <a href="https://podcasts.apple.com/us/podcast/resilient-kings/id1778587679" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/2261c32d-4060-4bf4-a497-eef6f5378cf0.png" 
+                      alt="Resilient Kings Podcast" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCanyCac0htEKCpjsZLg80eQ/" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/bb0e1efa-679e-42bb-9227-71c57c9e3768.png" 
+                      alt="First 5 Million Podcast" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
                 </div>
               </TabsContent>
 
@@ -276,6 +292,21 @@ const Portfolio = () => {
                     <img 
                       src="/lovable-uploads/88cc8549-a77c-4ee0-8561-2110d7742b3f.png" 
                       alt="follow.us/startups" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  {/* Adding the new podcast images */}
+                  <a href="https://podcasts.apple.com/us/podcast/resilient-kings/id1778587679" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/2261c32d-4060-4bf4-a497-eef6f5378cf0.png" 
+                      alt="Resilient Kings Podcast" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCanyCac0htEKCpjsZLg80eQ/" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/bb0e1efa-679e-42bb-9227-71c57c9e3768.png" 
+                      alt="First 5 Million Podcast" 
                       className="w-full h-64 object-cover"
                     />
                   </a>

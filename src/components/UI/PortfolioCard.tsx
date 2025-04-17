@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { HoverCard, HoverCardTrigger, HoverCardContent } from '@/components/ui/hover-card';
 
 interface PortfolioCardProps {
   title: string;
@@ -8,6 +9,7 @@ interface PortfolioCardProps {
   description: string;
   imageUrl: string;
   tags?: string[];
+  href?: string;
 }
 
 const PortfolioCard: React.FC<PortfolioCardProps> = ({
@@ -16,8 +18,9 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
   description,
   imageUrl,
   tags = [],
+  href,
 }) => {
-  return (
+  const CardComponent = () => (
     <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-lg">
       <div className="aspect-video w-full overflow-hidden">
         <img 
@@ -47,6 +50,16 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
       </CardContent>
     </Card>
   );
+
+  if (href) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className="block h-full">
+        <CardComponent />
+      </a>
+    );
+  }
+
+  return <CardComponent />;
 };
 
 export default PortfolioCard;
