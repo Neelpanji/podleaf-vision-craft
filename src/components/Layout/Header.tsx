@@ -54,6 +54,9 @@ const Header = () => {
           <Link to="/portfolio" className="text-foreground hover:text-primary transition-colors">
             Portfolio
           </Link>
+          <Link to="/case-study" className="text-foreground hover:text-primary transition-colors">
+            Case Studies
+          </Link>
           <Link to="/testimonials" className="text-foreground hover:text-primary transition-colors">
             Testimonials
           </Link>
@@ -132,6 +135,13 @@ const Header = () => {
               onClick={toggleMenu}
             >
               Portfolio
+            </Link>
+            <Link
+              to="/case-study"
+              className="text-foreground hover:text-primary transition-colors py-2"
+              onClick={toggleMenu}
+            >
+              Case Studies
             </Link>
             <Link
               to="/testimonials"
