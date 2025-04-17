@@ -132,6 +132,14 @@ const Index = () => {
                 podcastUrl="https://podcasts.apple.com/us/podcast/the-pr-maven-podcast/id1436184833"
                 videoEmbedLink="https://www.youtube-nocookie.com/embed/sZcXCezzmRA"
               />
+              <TestimonialCard
+                quote="As Amit, founder and CEO of Weekday, a recruitment platform, I initially hired Neel Services for a podcast experiment to engage B2B recruiters and build customer relationships. Neel's team was incredibly helpful, handling everything from content ideation and setup to social media promotion and short video creation. Their support was instrumental, even assisting us in establishing an in-person studio after our initial podcast success with them. I highly recommend Neel's services; we're very satisfied."
+                name="Amit Singh"
+                company="Host of The Weekday Show"
+                imageUrl="/lovable-uploads/ff72ddf0-4a22-48d2-a69d-8e5d361750f1.png"
+                podcastUrl="https://www.youtube.com/@weekdayworks"
+                videoEmbedLink="https://youtube.com/shorts/688ugVnl47k?feature=share"
+              />
             </div>
 
             <div className="text-center mt-10">
