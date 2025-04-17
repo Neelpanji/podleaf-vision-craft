@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Layout/Header';
@@ -77,20 +76,84 @@ const Portfolio = () => {
                       className="w-full h-64 object-cover"
                     />
                   </a>
-                  <Link to="/case-study" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                  
+                  <a href="https://www.youtube.com/watch?v=j2Yz1SaOFnQ" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
                     <img 
-                      src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
-                      alt="Coding Tutorials" 
+                      src="/lovable-uploads/0585e87e-7926-4ec5-98b7-793e08c04fee.png" 
+                      alt="The Abstract Podcast" 
                       className="w-full h-64 object-cover"
                     />
-                  </Link>
-                  <Link to="/case-study" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                  </a>
+                  <a href="https://podcasts.apple.com/us/podcast/notes-on-resilience/id1662964244" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
                     <img 
-                      src="https://images.unsplash.com/photo-1498936178812-4b2e558d2937" 
-                      alt="Nature Documentary" 
+                      src="/lovable-uploads/489e243f-ef66-4b74-80c7-a9d7d316a46f.png" 
+                      alt="Notes on Resilience" 
                       className="w-full h-64 object-cover"
                     />
-                  </Link>
+                  </a>
+                  <a href="https://podcasts.apple.com/us/podcast/the-pr-maven-podcast/id1436184833" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/b69a2a66-fd91-46eb-85d6-1a5a6a9ceba2.png" 
+                      alt="The PR Maven Podcast" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://podcasts.apple.com/us/podcast/strong-leaders-serve-with-teri-schmidt/id1517088288" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/acfaf98b-d815-4db5-9b3d-15a608de4b97.png" 
+                      alt="Strong Leaders Serve" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://www.youtube.com/@jasonyitzie" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/b9312c83-dd29-4c45-b31f-09b9e3f3b694.png" 
+                      alt="The Jason Ingber Podcast" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://podcasts.apple.com/us/podcast/starting-over-stronger-podcast/id1526868526" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/6cfa92ca-a7b7-4a53-83a4-3cd46bcf243c.png" 
+                      alt="Starting Over Stronger Podcast" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://podcasts.apple.com/us/podcast/leadership-school/id1554510934" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/5ecfcee9-b785-4802-aa91-265e200fc567.png" 
+                      alt="Leadership School" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://open.spotify.com/show/1DTL9IJG4rzElBxHfxJZRR" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/2e5a3073-f328-407b-854e-c9a7acce07c6.png" 
+                      alt="Your Business Journey with Clarita" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://www.youtube.com/@msmetalk" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/4e3bc620-1d92-4847-963e-6b7e354541c1.png" 
+                      alt="MSME Talk" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://goodbusinesslab.org/media/podcast/gbl-podcast-what-about-work/" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/ac8e27a8-0539-4f07-9f8f-77ad893b1448.png" 
+                      alt="What About Work?" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://www.follow.us/messages/follow.us-startups-9" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/88cc8549-a77c-4ee0-8561-2110d7742b3f.png" 
+                      alt="follow.us/startups" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
                 </div>
               </TabsContent>
 
@@ -135,6 +198,84 @@ const Portfolio = () => {
                     <img 
                       src="/lovable-uploads/139aa0d1-f77a-44ad-be2f-edffa4913527.png" 
                       alt="Bravo Unscripted" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  
+                  <a href="https://www.youtube.com/watch?v=j2Yz1SaOFnQ" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/0585e87e-7926-4ec5-98b7-793e08c04fee.png" 
+                      alt="The Abstract Podcast" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://podcasts.apple.com/us/podcast/notes-on-resilience/id1662964244" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/489e243f-ef66-4b74-80c7-a9d7d316a46f.png" 
+                      alt="Notes on Resilience" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://podcasts.apple.com/us/podcast/the-pr-maven-podcast/id1436184833" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/b69a2a66-fd91-46eb-85d6-1a5a6a9ceba2.png" 
+                      alt="The PR Maven Podcast" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://podcasts.apple.com/us/podcast/strong-leaders-serve-with-teri-schmidt/id1517088288" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/acfaf98b-d815-4db5-9b3d-15a608de4b97.png" 
+                      alt="Strong Leaders Serve" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://www.youtube.com/@jasonyitzie" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/b9312c83-dd29-4c45-b31f-09b9e3f3b694.png" 
+                      alt="The Jason Ingber Podcast" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://podcasts.apple.com/us/podcast/starting-over-stronger-podcast/id1526868526" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/6cfa92ca-a7b7-4a53-83a4-3cd46bcf243c.png" 
+                      alt="Starting Over Stronger Podcast" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://podcasts.apple.com/us/podcast/leadership-school/id1554510934" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/5ecfcee9-b785-4802-aa91-265e200fc567.png" 
+                      alt="Leadership School" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://open.spotify.com/show/1DTL9IJG4rzElBxHfxJZRR" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/2e5a3073-f328-407b-854e-c9a7acce07c6.png" 
+                      alt="Your Business Journey with Clarita" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://www.youtube.com/@msmetalk" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/4e3bc620-1d92-4847-963e-6b7e354541c1.png" 
+                      alt="MSME Talk" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://goodbusinesslab.org/media/podcast/gbl-podcast-what-about-work/" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/ac8e27a8-0539-4f07-9f8f-77ad893b1448.png" 
+                      alt="What About Work?" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
+                  <a href="https://www.follow.us/messages/follow.us-startups-9" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="/lovable-uploads/88cc8549-a77c-4ee0-8561-2110d7742b3f.png" 
+                      alt="follow.us/startups" 
                       className="w-full h-64 object-cover"
                     />
                   </a>
