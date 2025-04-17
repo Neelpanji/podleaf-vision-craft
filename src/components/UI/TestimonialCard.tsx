@@ -7,6 +7,7 @@ interface TestimonialCardProps {
   name: string;
   company?: string;
   imageUrl?: string;
+  podcastUrl?: string;
   videoEmbedLink?: string;
 }
 
@@ -15,6 +16,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   name, 
   company, 
   imageUrl, 
+  podcastUrl,
   videoEmbedLink 
 }) => {
   return (
@@ -33,13 +35,23 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         </div>
       )}
       
-      {imageUrl && !videoEmbedLink && (
+      {imageUrl && (
         <div className="p-6 pb-0 flex justify-center">
-          <img
-            src={imageUrl}
-            alt={`${name}'s podcast`}
-            className="max-h-48 object-contain rounded"
-          />
+          {podcastUrl ? (
+            <a href={podcastUrl} target="_blank" rel="noopener noreferrer" className="block text-center">
+              <img
+                src={imageUrl}
+                alt={`${name}'s podcast`}
+                className="max-h-48 object-contain rounded hover:opacity-90 transition-opacity"
+              />
+            </a>
+          ) : (
+            <img
+              src={imageUrl}
+              alt={`${name}'s podcast`}
+              className="max-h-48 object-contain rounded"
+            />
+          )}
         </div>
       )}
       
@@ -58,15 +70,6 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
       </CardContent>
       
       <CardFooter className="pt-0 pb-6 flex items-center space-x-3 mt-auto">
-        {imageUrl && !videoEmbedLink && !imageUrl.includes("podcast") && (
-          <div className="flex-shrink-0">
-            <img
-              src={imageUrl}
-              alt={name}
-              className="h-10 w-10 rounded-full object-cover"
-            />
-          </div>
-        )}
         <div>
           <h4 className="font-medium text-lg">{name}</h4>
           {company && <p className="text-sm text-gray-500">{company}</p>}
