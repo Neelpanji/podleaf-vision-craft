@@ -170,8 +170,8 @@ const Portfolio = () => {
                       className="w-full h-64 object-cover"
                     />
                   </a>
-                  {/* Adding the video project with embedded player */}
-                  <div className="block h-full">
+                  {/* Video project with embedded player - taking up 2 grid columns */}
+                  <div className="sm:col-span-2 md:col-span-2 lg:col-span-2 block h-full">
                     <PortfolioCard
                       title="Talking Head Video"
                       clientName="Video Production"
@@ -325,7 +325,7 @@ const Portfolio = () => {
 
               <TabsContent value="video">
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                  <div className="block h-full">
+                  <div className="sm:col-span-2 md:col-span-2 lg:col-span-2 block h-full">
                     <PortfolioCard
                       title="Talking Head Video"
                       clientName="Video Production"
