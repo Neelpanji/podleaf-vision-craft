@@ -35,92 +35,34 @@ const Testimonials = () => {
               centered={true}
             />
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            <div className="grid md:grid-cols-2 gap-8 mt-12">
               <TestimonialCard
-                quote="Working with Bryan was a great experience. He clearly communicated his professional expertise in a way that made me feel comfortable and confident. The interview was a lot better than I had initially anticipated!"
-                name="Ashlie Swanson"
-                company="Former Global Marketing Officer, Shiseido"
+                quote="I love working with Neel on my podcast. When we first met before I had ever published an episode, it was clear to me that he was going to be a strategic partner. He asked me such detailed questions about why was I starting a podcast? And what did I want it to do? He really is a strategic partner who helps me think about analytics and social and marketing and making sure that my podcast does what I want it to do. I couldn't do it without him."
+                name="Manya Chylinski"
+                company="Host of Notes on Resilience Podcast"
+                videoEmbedLink="https://www.youtube-nocookie.com/embed/Rs433fbAvbw"
               />
               
               <TestimonialCard
-                quote="I was ready to produce my own podcast by myself, but I needed a serious team of professionals who could make my message sound as good as it deserved to be heard. The team at PodLeaF Productions helped."
-                name="Ian Chaffee"
-                company="Founder, Communications Strategist, Impact-First.org"
+                quote="I am a huge raving fan of Neel, and this is no exaggeration. I rave about him to anybody who listens to me because he has been an integral part of my podcast team. I would not be anywhere I am without Neel. He helps me produce a top-quality audio recording for my podcast. Neel, thank you so much for all the work that you've done for my podcast and for being an incredible, irreplaceable part of my team we're really proud to know you and proud to work with you."
+                name="Kyla Cofer"
+                company="Host of Leadership School"
+                videoEmbedLink="https://www.youtube-nocookie.com/embed/QDgztwaZyi8"
               />
               
               <TestimonialCard
-                quote="PodLeaF understands the importance of branding and content. They have the ability to adapt to your needs and provide industry standard solutions."
-                name="Darien Waite"
-                company="Artist, Waite THE Brand"
-              />
-              
-              <div className="h-full">
-                <a href="https://podcasts.apple.com/us/podcast/notes-on-resilience/id1662964244" target="_blank" rel="noopener noreferrer" className="block">
-                  <TestimonialCard
-                    quote="Bryan's been a fantastic representative for our product. The connection he has with his audience is undeniable. He knows how to connect brands with the market in a meaningful way."
-                    name="Kenneth Lee"
-                    company="Promo Manager, Epidemic Sound"
-                    imageUrl="/lovable-uploads/957f6adc-26d4-4e39-b2ee-6cc815fd1da3.png"
-                  />
-                </a>
-              </div>
-              
-              <TestimonialCard
-                quote="I worked with Bryan on an interview for my podcast. The experience was seamless. His expertise was exactly what I needed to take my podcast to the next level."
-                name="Benjamin Cohen"
-                company="Founder, Nexus"
+                quote="Neel Panji has been everything I have needed and wanted in a podcast editor for well over a year. He's intuitive, easy to work with, and affordable, and willing to go above and beyond in his services. He always produces quality content, so much so that I don't even have to check his work anymore. I couldn't ask for anything more in a podcast editor."
+                name="Annie Allen"
+                company="Host of Starting Over Stronger Podcast"
+                videoEmbedLink="https://www.youtube-nocookie.com/embed/yo91m_r6LAM"
               />
               
               <TestimonialCard
-                quote="It was so nice working with Bryan. He creates magic with sound! He also has a vast knowledge of podcasting and audio engineering. I learned a lot working with him."
-                name="Tara Furiani"
-                company="CEO, Not the HR Lady"
+                quote="I would highly recommend working with Neel because as a life coach and business consultant, I understand the value of having someone who already has the skills that are needed in your business because you cannot be, everything to everyone. Working with Neel has helped me to grow as a business owner and as a podcast host. So I would highly recommend hiring him to work with you, to build your own following and to have that product that is edited to your highest liking."
+                name="Vicki Baird"
+                company="Host of Intuition: Your First Sense"
+                videoEmbedLink="https://www.youtube-nocookie.com/embed/Ifod2of5bmI"
               />
-              
-              <TestimonialCard
-                quote="Working with Bryan and his team to market my podcast has yielded tangible results. The methods PodLeaF teaches are detailed and specific, and totally work, but they deliver it in a way that's simple and easy to understand."
-                name="Brian Ondrako"
-                company="Host, Just Get Started Podcast"
-              />
-              
-              <TestimonialCard
-                quote="I love collaborating with Bryan and PodLeaF Productions! Coming from the corporate side it's always great to work with creators who are professional, yet personable."
-                name="Samantha Avneri"
-                company="Marketing Director"
-              />
-              
-              <TestimonialCard
-                quote="If you want a no-nonsense, technically capable producer who is deeply invested in the success of your content, then Bryan and the team are your best bet."
-                name="Corey Haines"
-                company="Founder, SwipeWell"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Featured Testimonial Section */}
-        <section className="py-16 bg-muted">
-          <div className="container px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto bg-card p-8 md:p-12 rounded-lg shadow-md border border-border">
-              <div className="mb-8 text-center">
-                <svg
-                  className="h-12 w-12 text-teal mx-auto mb-4"
-                  fill="currentColor"
-                  viewBox="0 0 32 32"
-                  aria-hidden="true"
-                >
-                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                </svg>
-                <blockquote className="text-xl md:text-2xl font-medium italic text-foreground mb-6">
-                  "Bryan is a great podcast producer. He has tremendous attention to detail and a fantastic ear. I worked on a highly successful podcast that had close to 200 million downloads and Bryan's production was a key part of that. He's got a unique combo of creativity and perfectionist technical expertise that makes him a producer that podcasters can rely on."
-                </blockquote>
-              </div>
-              <div className="flex items-center justify-center">
-                <div className="text-center">
-                  <h4 className="font-bold text-lg">Leital Molad</h4>
-                  <p className="text-muted-foreground">Senior Podcast Producer</p>
-                </div>
-              </div>
             </div>
           </div>
         </section>

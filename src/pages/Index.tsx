@@ -100,21 +100,18 @@ const Index = () => {
               centered={true}
             />
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
               <TestimonialCard
-                quote="Working with Bryan was a great experience. He clearly communicated his professional expertise in a way that made me feel comfortable and confident. The interview was a lot better than I had initially anticipated!"
-                name="Ashlie Swanson"
-                company="Former Global Marketing Officer, Shiseido"
+                quote="I love working with Neel on my podcast. When we first met before I had ever published an episode, it was clear to me that he was going to be a strategic partner."
+                name="Manya Chylinski"
+                company="Host of Notes on Resilience Podcast"
+                videoEmbedLink="https://www.youtube-nocookie.com/embed/Rs433fbAvbw"
               />
               <TestimonialCard
-                quote="I was ready to produce my own podcast by myself, but I needed a serious team of professionals who could make my message sound as good as it deserved to be heard. The team at PodLeaF Productions helped."
-                name="Ian Chaffee"
-                company="Founder, Communications Strategist, Impact-First.org"
-              />
-              <TestimonialCard
-                quote="PodLeaF understands the importance of branding and content. They have the ability to adapt to your needs and provide industry standard solutions."
-                name="Darien Waite"
-                company="Artist, Waite THE Brand"
+                quote="I am a huge raving fan of Neel, and this is no exaggeration. I rave about him to anybody who listens to me because he has been an integral part of my podcast team."
+                name="Kyla Cofer"
+                company="Host of Leadership School"
+                videoEmbedLink="https://www.youtube-nocookie.com/embed/QDgztwaZyi8"
               />
             </div>
 

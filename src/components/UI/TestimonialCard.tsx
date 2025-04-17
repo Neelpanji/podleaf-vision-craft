@@ -7,12 +7,33 @@ interface TestimonialCardProps {
   name: string;
   company?: string;
   imageUrl?: string;
+  videoEmbedLink?: string;
 }
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, name, company, imageUrl }) => {
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ 
+  quote, 
+  name, 
+  company, 
+  imageUrl, 
+  videoEmbedLink 
+}) => {
   return (
     <Card className="h-full flex flex-col">
-      {imageUrl && (
+      {videoEmbedLink && (
+        <div className="p-6 pb-3 w-full">
+          <div className="relative pb-[56.25%] h-0 rounded-md overflow-hidden">
+            <iframe 
+              src={videoEmbedLink} 
+              className="absolute top-0 left-0 w-full h-full border-0"
+              title={`${name}'s testimonial video`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      )}
+      
+      {imageUrl && !videoEmbedLink && (
         <div className="p-6 pb-0 flex justify-center">
           <img
             src={imageUrl}
@@ -21,7 +42,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, name, company,
           />
         </div>
       )}
-      <CardContent className={`pt-6 pb-2 ${imageUrl ? 'mt-2' : ''} flex-grow`}>
+      
+      <CardContent className={`pt-6 pb-2 ${imageUrl || videoEmbedLink ? 'mt-2' : ''} flex-grow`}>
         <div className="mb-4">
           <svg
             className="h-8 w-8 text-podleaf-400 mb-2"
@@ -34,8 +56,9 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, name, company,
           <p className="text-lg">{quote}</p>
         </div>
       </CardContent>
+      
       <CardFooter className="pt-0 pb-6 flex items-center space-x-3 mt-auto">
-        {imageUrl && !imageUrl.includes("podcast") && (
+        {imageUrl && !videoEmbedLink && !imageUrl.includes("podcast") && (
           <div className="flex-shrink-0">
             <img
               src={imageUrl}
