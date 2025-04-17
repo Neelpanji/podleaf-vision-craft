@@ -114,7 +114,7 @@ const Index = () => {
               <TestimonialCard
                 quote="PodLeaF understands the importance of branding and content. They have the ability to adapt to your needs and provide industry standard solutions."
                 name="Darien Waite"
-                company="Artist, Waite "THE" Brand"
+                company="Artist, Waite THE Brand"
               />
             </div>
 
