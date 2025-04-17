@@ -11,8 +11,17 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, name, company, imageUrl }) => {
   return (
-    <Card className="h-full">
-      <CardContent className="pt-6 pb-2">
+    <Card className="h-full flex flex-col">
+      {imageUrl && (
+        <div className="p-6 pb-0 flex justify-center">
+          <img
+            src={imageUrl}
+            alt={`${name}'s podcast`}
+            className="max-h-48 object-contain rounded"
+          />
+        </div>
+      )}
+      <CardContent className={`pt-6 pb-2 ${imageUrl ? 'mt-2' : ''} flex-grow`}>
         <div className="mb-4">
           <svg
             className="h-8 w-8 text-podleaf-400 mb-2"
@@ -25,8 +34,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, name, company,
           <p className="text-lg">{quote}</p>
         </div>
       </CardContent>
-      <CardFooter className="pt-0 pb-6 flex items-center space-x-3">
-        {imageUrl && (
+      <CardFooter className="pt-0 pb-6 flex items-center space-x-3 mt-auto">
+        {imageUrl && !imageUrl.includes("podcast") && (
           <div className="flex-shrink-0">
             <img
               src={imageUrl}

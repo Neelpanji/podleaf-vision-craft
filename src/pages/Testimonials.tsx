@@ -54,11 +54,16 @@ const Testimonials = () => {
                 company="Artist, Waite THE Brand"
               />
               
-              <TestimonialCard
-                quote="Bryan's been a fantastic representative for our product. The connection he has with his audience is undeniable. He knows how to connect brands with the market in a meaningful way."
-                name="Kenneth Lee"
-                company="Promo Manager, Epidemic Sound"
-              />
+              <div className="h-full">
+                <a href="https://podcasts.apple.com/us/podcast/notes-on-resilience/id1662964244" target="_blank" rel="noopener noreferrer" className="block">
+                  <TestimonialCard
+                    quote="Bryan's been a fantastic representative for our product. The connection he has with his audience is undeniable. He knows how to connect brands with the market in a meaningful way."
+                    name="Kenneth Lee"
+                    company="Promo Manager, Epidemic Sound"
+                    imageUrl="/lovable-uploads/957f6adc-26d4-4e39-b2ee-6cc815fd1da3.png"
+                  />
+                </a>
+              </div>
               
               <TestimonialCard
                 quote="I worked with Bryan on an interview for my podcast. The experience was seamless. His expertise was exactly what I needed to take my podcast to the next level."
