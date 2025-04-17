@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Layout/Header';
@@ -317,7 +316,7 @@ const Portfolio = () => {
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                   <Link to="/case-study" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
                     <img 
-                      src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                      src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" 
                       alt="Product Demo Series" 
                       className="w-full h-64 object-cover"
                     />
@@ -343,6 +342,13 @@ const Portfolio = () => {
                       className="w-full h-64 object-cover"
                     />
                   </Link>
+                  <a href="https://youtu.be/53vT7E0JhPA?feature=shared" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105">
+                    <img 
+                      src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
+                      alt="Talking Head Video" 
+                      className="w-full h-64 object-cover"
+                    />
+                  </a>
                 </div>
               </TabsContent>
             </Tabs>
