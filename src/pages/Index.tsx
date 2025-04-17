@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Headphones, Video, Mic, ArrowRightCircle, Radio, Megaphone, PlayCircle, FileVideo, Film, BookOpen } from 'lucide-react';
@@ -113,7 +112,7 @@ const Index = () => {
                 quote="I am a huge raving fan of Neel, and this is no exaggeration. I rave about him to anybody who listens to me because he has been an integral part of my podcast team."
                 name="Kyla Cofer"
                 company="Host of Leadership School"
-                imageUrl="/lovable-uploads/11f0658f-7854-4c6c-b4a5-7fb02742ec26.png"
+                imageUrl="/lovable-uploads/d790fe22-3fed-428a-9be1-fafecba1705f.png"
                 podcastUrl="https://podcasts.apple.com/us/podcast/leadership-school/id1554510934"
                 videoEmbedLink="https://www.youtube-nocookie.com/embed/QDgztwaZyi8"
               />

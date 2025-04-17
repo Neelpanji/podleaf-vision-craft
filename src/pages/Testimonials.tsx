@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -12,7 +11,6 @@ const Testimonials = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        {/* Hero Section */}
         <section className="bg-gradient-to-r from-teal to-secondary text-white py-12 md:py-16">
           <div className="container px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
@@ -26,7 +24,6 @@ const Testimonials = () => {
           </div>
         </section>
 
-        {/* Testimonials Section */}
         <section className="py-16 bg-background">
           <div className="container px-4 sm:px-6 lg:px-8">
             <SectionHeading
@@ -49,7 +46,7 @@ const Testimonials = () => {
                 quote="I am a huge raving fan of Neel, and this is no exaggeration. I rave about him to anybody who listens to me because he has been an integral part of my podcast team. I would not be anywhere I am without Neel. He helps me produce a top-quality audio recording for my podcast. Neel, thank you so much for all the work that you've done for my podcast and for being an incredible, irreplaceable part of my team we're really proud to know you and proud to work with you."
                 name="Kyla Cofer"
                 company="Host of Leadership School"
-                imageUrl="/lovable-uploads/11f0658f-7854-4c6c-b4a5-7fb02742ec26.png"
+                imageUrl="/lovable-uploads/d790fe22-3fed-428a-9be1-fafecba1705f.png"
                 podcastUrl="https://podcasts.apple.com/us/podcast/leadership-school/id1554510934"
                 videoEmbedLink="https://www.youtube-nocookie.com/embed/QDgztwaZyi8"
               />
@@ -100,7 +97,6 @@ const Testimonials = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
         <section className="py-16 bg-gradient-to-r from-teal to-secondary">
           <div className="container px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-6 text-black">Ready to Join Our Success Stories?</h2>
