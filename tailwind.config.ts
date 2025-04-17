@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -69,19 +68,6 @@ export default {
 					700: '#066a58',
 					800: '#065446',
 					900: '#06433a',
-				},
-				purple: {
-					DEFAULT: '#ae88d0',
-					50: '#f7f4fb',
-					100: '#ede7f5',
-					200: '#dcd2eb',
-					300: '#c4aede',
-					400: '#ae88d0',
-					500: '#9664be',
-					600: '#8149a4',
-					700: '#6b3987',
-					800: '#5b316f',
-					900: '#4c2a5c',
 				},
 				podleaf: {
 					50: '#f0f9ff',

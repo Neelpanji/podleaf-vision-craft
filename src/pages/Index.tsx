@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Headphones, Video, Mic, ArrowRightCircle, Radio, Megaphone, PlayCircle, FileVideo, Film, BookOpen } from 'lucide-react';
@@ -20,7 +19,7 @@ const Index = () => {
           titlePart1="Podcast Dreams? "
           titlePart1Color="#70dab8"
           titlePart2="We Make 'Em Happen!"
-          titlePart2Color="#ae88d0"
+          titlePart2Color="#70dab8"
           subtitle="Launch, grow, and cash in on your podcast with PodLeaF Productions. From killer content to getting heard, we've got you covered (and videos too!)."
           description="In today's digital landscape, podcasts are a powerful way to connect with your audience, build authority, and drive results. At PodLeaF Productions, we specialize in providing end-to-end podcast solutions, from crafting compelling content and professional production to strategic marketing and successful launches."
           buttonText="Get a Free Podcast Strategy Consultation"
@@ -32,7 +31,7 @@ const Index = () => {
         <section className="section-padding bg-background">
           <div className="container container-padding">
             <SectionHeading
-              title={<span style={{ color: '#ae88d0' }}>Podcast Powerhouse</span>}
+              title="Podcast Powerhouse"
               subtitle="Whether you're just starting out or looking to take your existing podcast to the next level, we have the expertise to help. Our comprehensive podcast services cover every stage of the journey."
               centered={true}
             />
