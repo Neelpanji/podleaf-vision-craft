@@ -105,7 +105,7 @@ const Index = () => {
                 quote="I love working with Neel on my podcast. When we first met before I had ever published an episode, it was clear to me that he was going to be a strategic partner."
                 name="Manya Chylinski"
                 company="Host of Notes on Resilience Podcast"
-                imageUrl="/lovable-uploads/b0446779-2488-4df3-a4ac-e40d10236851.png"
+                imageUrl="/lovable-uploads/11f0658f-7854-4c6c-b4a5-7fb02742ec26.png"
                 podcastUrl="https://podcasts.apple.com/us/podcast/notes-on-resilience/id1662964244"
                 videoEmbedLink="https://www.youtube-nocookie.com/embed/Rs433fbAvbw"
               />
@@ -113,7 +113,7 @@ const Index = () => {
                 quote="I am a huge raving fan of Neel, and this is no exaggeration. I rave about him to anybody who listens to me because he has been an integral part of my podcast team."
                 name="Kyla Cofer"
                 company="Host of Leadership School"
-                imageUrl="/lovable-uploads/85031035-1c7e-43be-9508-607ceead18b7.png"
+                imageUrl="/lovable-uploads/11f0658f-7854-4c6c-b4a5-7fb02742ec26.png"
                 podcastUrl="https://podcasts.apple.com/us/podcast/leadership-school/id1554510934"
                 videoEmbedLink="https://www.youtube-nocookie.com/embed/QDgztwaZyi8"
               />

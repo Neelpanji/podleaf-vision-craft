@@ -40,7 +40,7 @@ const Testimonials = () => {
                 quote="I love working with Neel on my podcast. When we first met before I had ever published an episode, it was clear to me that he was going to be a strategic partner. He asked me such detailed questions about why was I starting a podcast? And what did I want it to do? He really is a strategic partner who helps me think about analytics and social and marketing and making sure that my podcast does what I want it to do. I couldn't do it without him."
                 name="Manya Chylinski"
                 company="Host of Notes on Resilience Podcast"
-                imageUrl="/lovable-uploads/b0446779-2488-4df3-a4ac-e40d10236851.png"
+                imageUrl="/lovable-uploads/11f0658f-7854-4c6c-b4a5-7fb02742ec26.png"
                 podcastUrl="https://podcasts.apple.com/us/podcast/notes-on-resilience/id1662964244"
                 videoEmbedLink="https://www.youtube-nocookie.com/embed/Rs433fbAvbw"
               />
@@ -49,7 +49,7 @@ const Testimonials = () => {
                 quote="I am a huge raving fan of Neel, and this is no exaggeration. I rave about him to anybody who listens to me because he has been an integral part of my podcast team. I would not be anywhere I am without Neel. He helps me produce a top-quality audio recording for my podcast. Neel, thank you so much for all the work that you've done for my podcast and for being an incredible, irreplaceable part of my team we're really proud to know you and proud to work with you."
                 name="Kyla Cofer"
                 company="Host of Leadership School"
-                imageUrl="/lovable-uploads/85031035-1c7e-43be-9508-607ceead18b7.png"
+                imageUrl="/lovable-uploads/11f0658f-7854-4c6c-b4a5-7fb02742ec26.png"
                 podcastUrl="https://podcasts.apple.com/us/podcast/leadership-school/id1554510934"
                 videoEmbedLink="https://www.youtube-nocookie.com/embed/QDgztwaZyi8"
               />
@@ -67,7 +67,7 @@ const Testimonials = () => {
                 quote="I would highly recommend working with Neel because as a life coach and business consultant, I understand the value of having someone who already has the skills that are needed in your business because you cannot be, everything to everyone. Working with Neel has helped me to grow as a business owner and as a podcast host. So I would highly recommend hiring him to work with you, to build your own following and to have that product that is edited to your highest liking."
                 name="Vicki Baird"
                 company="Host of Intuition: Your First Sense"
-                imageUrl="/lovable-uploads/2d96271e-abf6-4fb7-b949-bfeafb8d7a5e.png"
+                imageUrl="/lovable-uploads/11f0658f-7854-4c6c-b4a5-7fb02742ec26.png"
                 podcastUrl="https://podcasts.apple.com/us/podcast/intuition-your-success-compass/id1458617878"
                 videoEmbedLink="https://www.youtube-nocookie.com/embed/Ifod2of5bmI"
               />
@@ -92,7 +92,7 @@ const Testimonials = () => {
                 quote="I've been hosting the PR Maven podcast for six years. Just recently, I connected with Neel, who has been a significant help in editing, disseminating, and producing videos for my podcast. I especially appreciate Neel's skill in finding those key soundbites that really capture the essential messages of each episode."
                 name="Nancy Marshall"
                 company="Host of The PR Maven Podcast"
-                imageUrl="/lovable-uploads/11f0658f-7854-4c6c-b4a5-7fb02742ec26.png"
+                imageUrl="/lovable-uploads/85031035-1c7e-43be-9508-607ceead18b7.png"
                 podcastUrl="https://podcasts.apple.com/us/podcast/the-pr-maven-podcast/id1436184833"
                 videoEmbedLink="https://www.youtube-nocookie.com/embed/sZcXCezzmRA"
               />
