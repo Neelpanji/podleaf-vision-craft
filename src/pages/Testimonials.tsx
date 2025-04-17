@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -62,6 +61,13 @@ const Testimonials = () => {
                 name="Vicki Baird"
                 company="Host of Intuition: Your First Sense"
                 videoEmbedLink="https://www.youtube-nocookie.com/embed/Ifod2of5bmI"
+              />
+              
+              <TestimonialCard
+                quote="As Amit, founder and CEO of Weekday, a recruitment platform, I initially hired Neel Services for a podcast experiment to engage B2B recruiters and build customer relationships. Neel's team was incredibly helpful, handling everything from content ideation and setup to social media promotion and short video creation. Their support was instrumental, even assisting us in establishing an in-person studio after our initial podcast success with them. I highly recommend Neel's services; we're very satisfied."
+                name="Amit Singh"
+                company="Host of The Weekday Show"
+                videoEmbedLink=""
               />
             </div>
           </div>
