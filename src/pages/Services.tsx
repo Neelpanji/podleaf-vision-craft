@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from '@/components/Layout/Header';
@@ -80,10 +79,10 @@ const Services = () => {
   const podcastPlans = [
     {
       title: "Audio Editing",
-      price: episodeToggle ? "$297" : "$497",
+      price: episodeToggle ? "$899" : "$499",
       description: "Perfect for beginners",
       features: [
-        "2 Episodes Per Month",
+        "Audio only editing",
         "Episodes Up to 60 mins",
         "2 Dynamic reels Per episode",
         "Adding Intro's, Outros, and Ads",
@@ -95,10 +94,10 @@ const Services = () => {
     },
     {
       title: "Video Editing",
-      price: episodeToggle ? "$697" : "$997",
+      price: episodeToggle ? "$1499" : "$799",
       description: "Most popular choice",
       features: [
-        "2 Episodes Per Month",
+        "Video only editing",
         "Episodes Up to 60 mins",
         "Adding Intro's, Outros, and Ads",
         "Noise Reduction and Cleaning",
@@ -136,7 +135,6 @@ const Services = () => {
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
       <main className="flex-grow">
-        {/* Podcast Services Section */}
         <section id="podcast-services" className="section-padding bg-background">
           <div className="container container-padding">
             <SectionHeading
@@ -145,7 +143,6 @@ const Services = () => {
               centered={true}
             />
 
-            {/* Episode Count Toggle */}
             <div className="flex items-center justify-center space-x-4 mb-8">
               <Label htmlFor="episode-toggle" className="text-lg">
                 2 Episodes
@@ -174,7 +171,6 @@ const Services = () => {
           </div>
         </section>
 
-        {/* Video Services Section */}
         <section id="video-services" className="section-padding bg-muted">
           <div className="container container-padding">
             <SectionHeading
