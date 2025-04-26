@@ -1,11 +1,10 @@
-
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
 import SectionHeading from '@/components/UI/SectionHeading';
 import ServiceCard from '@/components/UI/ServiceCard';
-import { Megaphone, Mic, Radio, PlayCircle, BookOpen, Film, Check } from 'lucide-react';
+import { PlayCircle, Video, Monitor, Film, BookOpen, Camera } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Switch } from '@/components/ui/switch';
@@ -79,102 +78,55 @@ const Services = () => {
 
   const podcastPlans = [
     {
-      title: "Basic",
+      title: "Audio Editing",
       price: episodeToggle ? "$297" : "$497",
       description: "Perfect for beginners",
-      features: episodeToggle 
-        ? [
-            "2 episodes per month",
-            "Basic audio editing",
-            "Cover art design",
-            "RSS feed setup",
-            "Distribution to platforms"
-          ]
-        : [
-            "4 episodes per month",
-            "Basic audio editing",
-            "Cover art design",
-            "RSS feed setup",
-            "Distribution to platforms",
-            "Additional monthly strategy session"
-          ]
+      features: [
+        "2 Episodes Per Month",
+        "Episodes Up to 60 mins",
+        "2 Dynamic reels Per episode",
+        "Adding Intro's, Outros, and Ads",
+        "Noise Reduction and Cleaning",
+        "Episode Uploading",
+        "72-Hour Turnaround",
+        "Unlimited Email"
+      ]
     },
     {
-      title: "Professional",
+      title: "Video Editing",
       price: episodeToggle ? "$697" : "$997",
       description: "Most popular choice",
-      features: episodeToggle
-        ? [
-            "4 episodes per month",
-            "Advanced audio editing",
-            "Custom intro/outro",
-            "Show notes creation",
-            "Social media clips"
-          ]
-        : [
-            "8 episodes per month",
-            "Advanced audio editing",
-            "Custom intro/outro",
-            "Show notes creation",
-            "Social media clips",
-            "Audiogram creation",
-            "Monthly performance review"
-          ],
-      popular: true
-    },
-    {
-      title: "Enterprise",
-      price: "Custom",
-      description: "For large organizations",
       features: [
-        "Unlimited episodes",
-        "Premium audio quality",
-        "Full production team",
-        "Content strategy",
-        "Analytics reporting",
-        "Custom solutions"
-      ]
-    }
-  ];
-
-  const videoPlans = [
-    {
-      title: "Starter",
-      price: "$997",
-      description: "Essential video package",
-      features: [
-        "2 videos per month",
-        "Basic video editing",
-        "Thumbnail creation",
-        "YouTube optimization",
-        "Basic effects"
-      ]
-    },
-    {
-      title: "Growth",
-      price: "$1,997",
-      description: "Comprehensive coverage",
-      features: [
-        "4 videos per month",
-        "Advanced editing",
-        "Custom transitions",
-        "Content strategy",
-        "Social media clips",
-        "Analytics reporting"
+        "2 Episodes Per Month",
+        "Episodes Up to 60 mins",
+        "Adding Intro's, Outros, and Ads",
+        "Noise Reduction and Cleaning",
+        "SEO friendly Show Notes",
+        "2 Video Reels per Episode",
+        "Episode Graphic",
+        "Episode Title",
+        "Episode Uploading",
+        "72-Hour Turnaround",
+        "Unlimited Email"
       ],
       popular: true
     },
     {
-      title: "Premium",
+      title: "Custom",
       price: "Custom",
-      description: "Full-service solution",
+      description: "For large organizations",
       features: [
-        "Unlimited videos",
-        "Premium production",
-        "Multiple formats",
-        "Strategy consulting",
-        "Full marketing support",
-        "Dedicated team"
+        "Start a New Podcast",
+        "Video Editing Requirements",
+        "More or Less Episodes a Month",
+        "15 Min or 60 Min Episodes?",
+        "More Reels per Episode",
+        "Social Media Post Content",
+        "Analytics Support",
+        "Multiple Podcasts",
+        "Blog Posts",
+        "Website Support",
+        "Shorter Turnaround Time"
       ]
     }
   ];
@@ -207,33 +159,7 @@ const Services = () => {
               </Label>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
-              <ServiceCard
-                title="Podcast Marketing"
-                description="Reach a wider audience and grow your listener base with our proven marketing strategies tailored for podcasters."
-                icon={<Megaphone className="h-6 w-6" />}
-                link="#podcast-services"
-              />
-              <ServiceCard
-                title="Podcast Production"
-                description="Create high-quality audio that captivates your listeners with our professional production services."
-                icon={<Mic className="h-6 w-6" />}
-                link="#podcast-services"
-              />
-              <ServiceCard
-                title="Podcast Launch"
-                description="Start strong with a strategic and impactful launch plan designed to make a splash in your niche."
-                icon={<Radio className="h-6 w-6" />}
-                link="#podcast-services"
-              />
-            </div>
-
-            <div className="mt-16">
-              <SectionHeading
-                title="Podcast Production Pricing"
-                subtitle="Choose the perfect plan for your podcast needs"
-                centered={true}
-              />
+            <div className="mt-8">
               <div className="grid md:grid-cols-3 gap-6 mt-8">
                 {podcastPlans.map((plan, index) => (
                   <PricingCard 
@@ -258,9 +184,33 @@ const Services = () => {
 
             <div className="grid md:grid-cols-3 gap-6">
               <ServiceCard
-                title="Vlog Videos"
-                description="Connect authentically with your audience through engaging vlogs that showcase your personality and expertise."
+                title="Short/Reels"
+                description="Create engaging short-form content optimized for social media platforms."
+                icon={<Video className="h-6 w-6" />}
+                link="#video-services"
+              />
+              <ServiceCard
+                title="Speaker/Sizzle Reel"
+                description="Highlight your speaking engagements and professional achievements with dynamic sizzle reels."
                 icon={<PlayCircle className="h-6 w-6" />}
+                link="#video-services"
+              />
+              <ServiceCard
+                title="Website Video"
+                description="Enhance your website with professional video content that captures visitor attention."
+                icon={<Monitor className="h-6 w-6" />}
+                link="#video-services"
+              />
+              <ServiceCard
+                title="Talking Head Video"
+                description="Professional talking head videos for presentations and corporate communications."
+                icon={<Camera className="h-6 w-6" />}
+                link="#video-services"
+              />
+              <ServiceCard
+                title="Brand Video"
+                description="Tell your brand story through compelling video narratives."
+                icon={<Film className="h-6 w-6" />}
                 link="#video-services"
               />
               <ServiceCard
@@ -269,29 +219,6 @@ const Services = () => {
                 icon={<BookOpen className="h-6 w-6" />}
                 link="#video-services"
               />
-              <ServiceCard
-                title="Commercial Website Videos"
-                description="Drive conversions and showcase your products/services effectively with compelling commercial videos."
-                icon={<Film className="h-6 w-6" />}
-                link="#video-services"
-              />
-            </div>
-
-            <div className="mt-16">
-              <SectionHeading
-                title="Video Production Pricing"
-                subtitle="Select the right video package for your business"
-                centered={true}
-              />
-              <div className="grid md:grid-cols-3 gap-6 mt-8">
-                {videoPlans.map((plan, index) => (
-                  <PricingCard 
-                    key={index} 
-                    {...plan} 
-                    episodeCount={2} // Adding the missing episodeCount prop for video plans
-                  />
-                ))}
-              </div>
             </div>
           </div>
         </section>
