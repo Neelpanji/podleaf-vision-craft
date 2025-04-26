@@ -59,6 +59,42 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Production Process Section */}
+        <section className="section-padding bg-muted">
+          <div className="container container-padding">
+            <SectionHeading
+              title="Our Production Process"
+              subtitle="Transform your ideas into professional, engaging podcasts with our streamlined process"
+              centered={true}
+            />
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                <h3 className="text-xl font-semibold mb-3 text-teal flex items-center gap-2">
+                  <Mic className="h-5 w-5" />
+                  Recording
+                </h3>
+                <p>Record your content with confidence using our professional setup guidance and technical support to ensure pristine audio quality from the start.</p>
+              </div>
+              
+              <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                <h3 className="text-xl font-semibold mb-3 text-teal flex items-center gap-2">
+                  <Headphones className="h-5 w-5" />
+                  Post-Production
+                </h3>
+                <p>Our expert team enhances your audio with professional editing, noise reduction, and sound mixing to create a polished, broadcast-ready podcast.</p>
+              </div>
+              
+              <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                <h3 className="text-xl font-semibold mb-3 text-teal flex items-center gap-2">
+                  <Radio className="h-5 w-5" />
+                  Distribution
+                </h3>
+                <p>Get your podcast in front of your target audience with optimized publishing across all major platforms and promotional strategy support.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Video Services Section */}
         <section className="section-padding bg-muted">
           <div className="container container-padding">
