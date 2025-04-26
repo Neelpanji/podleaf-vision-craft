@@ -1,10 +1,11 @@
+
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
 import SectionHeading from '@/components/UI/SectionHeading';
 import ServiceCard from '@/components/UI/ServiceCard';
-import { PlayCircle, Video, Monitor, Film, BookOpen, Camera } from 'lucide-react';
+import { PlayCircle, Video, Monitor, Film, BookOpen, Camera, Check } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Switch } from '@/components/ui/switch';
