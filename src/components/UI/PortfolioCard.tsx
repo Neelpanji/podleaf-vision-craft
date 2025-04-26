@@ -5,8 +5,8 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 interface PortfolioCardProps {
   title: string;
-  clientName: string;
-  description: string;
+  clientName?: string;
+  description?: string;
   imageUrl?: string;
   videoId?: string;
   tags?: string[];
@@ -15,8 +15,8 @@ interface PortfolioCardProps {
 
 const PortfolioCard: React.FC<PortfolioCardProps> = ({
   title,
-  clientName,
-  description,
+  clientName = '',
+  description = '',
   imageUrl,
   videoId,
   tags = [],
@@ -45,10 +45,10 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
       </div>
       <CardHeader className="pb-2">
         <CardTitle className="text-xl">{title}</CardTitle>
-        <p className="text-sm text-muted-foreground">Client: {clientName}</p>
+        {clientName && <p className="text-sm text-muted-foreground">Client: {clientName}</p>}
       </CardHeader>
       <CardContent>
-        <CardDescription className="text-base mb-4">{description}</CardDescription>
+        {description && <CardDescription className="text-base mb-4">{description}</CardDescription>}
         {tags.length > 0 && (
           <div className="flex flex-wrap gap-2">
             {tags.map((tag) => (

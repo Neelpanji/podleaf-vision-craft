@@ -172,8 +172,8 @@ const Portfolio = () => {
       id: 'v1',
       type: 'video',
       title: "Speaker Reel/Sizzle Reel",
-      clientName: "Video Production",
-      description: "Professional speaker and sizzle reel showcasing our video production capabilities.",
+      clientName: "",
+      description: "",
       videoId: "LoulqzM_J_s",
       tags: ["Video", "Production", "Speaker Reel"]
     },
@@ -181,8 +181,8 @@ const Portfolio = () => {
       id: 'v2',
       type: 'video',
       title: "Website Video",
-      clientName: "Video Production",
-      description: "Professional website video production showcasing our services.",
+      clientName: "",
+      description: "",
       videoId: "W5OMFNIOfJY",
       tags: ["Video", "Production", "Website"]
     },
@@ -190,8 +190,8 @@ const Portfolio = () => {
       id: 'v3',
       type: 'video',
       title: "Brand Video",
-      clientName: "Video Production",
-      description: "Professional brand video production highlighting brand stories.",
+      clientName: "",
+      description: "",
       videoId: "PEVKTjPvWrU",
       tags: ["Video", "Production", "Brand"]
     },
@@ -199,8 +199,8 @@ const Portfolio = () => {
       id: 'v4',
       type: 'video',
       title: "Podcasts",
-      clientName: "Video Production",
-      description: "Professional podcast video production services.",
+      clientName: "",
+      description: "",
       videoId: "uC6s6Y8EJNY",
       tags: ["Video", "Production", "Podcast"]
     },
@@ -208,8 +208,8 @@ const Portfolio = () => {
       id: 'v5',
       type: 'video',
       title: "Short Form Content",
-      clientName: "Video Production",
-      description: "Engaging short-form video content production.",
+      clientName: "",
+      description: "",
       videoId: "Rg3hf6m2QGg",
       tags: ["Video", "Production", "Short Form"]
     },
@@ -217,8 +217,8 @@ const Portfolio = () => {
       id: 'v6',
       type: 'video',
       title: "Vlog Video",
-      clientName: "Video Production",
-      description: "Professional vlog video production services.",
+      clientName: "",
+      description: "",
       videoId: "RyagAgMxvA4",
       tags: ["Video", "Production", "Vlog"]
     }
