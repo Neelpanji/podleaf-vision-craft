@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Layout/Header';
@@ -6,7 +5,6 @@ import Footer from '@/components/Layout/Footer';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import PortfolioCard from '@/components/UI/PortfolioCard';
 
-// Define the portfolio item structure
 interface PortfolioItem {
   id: number;
   href: string;
@@ -15,7 +13,6 @@ interface PortfolioItem {
 }
 
 const Portfolio = () => {
-  // Create an array of podcast items
   const podcastItems: PortfolioItem[] = [
     {
       id: 1,
@@ -133,10 +130,59 @@ const Portfolio = () => {
     }
   ];
 
-  // State for randomized items
+  const videoItems = [
+    {
+      id: 'v1',
+      title: "Speaker Reel/Sizzle Reel",
+      clientName: "Video Production",
+      description: "Professional speaker and sizzle reel showcasing our video production capabilities.",
+      videoId: "LoulqzM_J_s",
+      tags: ["Video", "Production", "Speaker Reel"]
+    },
+    {
+      id: 'v2',
+      title: "Website Video",
+      clientName: "Video Production",
+      description: "Professional website video production showcasing our services.",
+      videoId: "W5OMFNIOfJY",
+      tags: ["Video", "Production", "Website"]
+    },
+    {
+      id: 'v3',
+      title: "Brand Video",
+      clientName: "Video Production",
+      description: "Professional brand video production highlighting brand stories.",
+      videoId: "PEVKTjPvWrU",
+      tags: ["Video", "Production", "Brand"]
+    },
+    {
+      id: 'v4',
+      title: "Podcasts",
+      clientName: "Video Production",
+      description: "Professional podcast video production services.",
+      videoId: "uC6s6Y8EJNY",
+      tags: ["Video", "Production", "Podcast"]
+    },
+    {
+      id: 'v5',
+      title: "Short Form Content",
+      clientName: "Video Production",
+      description: "Engaging short-form video content production.",
+      videoId: "Rg3hf6m2QGg",
+      tags: ["Video", "Production", "Short Form"]
+    },
+    {
+      id: 'v6',
+      title: "Vlog Video",
+      clientName: "Video Production",
+      description: "Professional vlog video production services.",
+      videoId: "RyagAgMxvA4",
+      tags: ["Video", "Production", "Vlog"]
+    }
+  ];
+
   const [randomizedItems, setRandomizedItems] = useState<PortfolioItem[]>([]);
 
-  // Function to shuffle array (Fisher-Yates algorithm)
   const shuffleArray = (array: PortfolioItem[]) => {
     const newArray = [...array];
     for (let i = newArray.length - 1; i > 0; i--) {
@@ -146,16 +192,18 @@ const Portfolio = () => {
     return newArray;
   };
 
-  // Randomize items on component mount
   useEffect(() => {
-    setRandomizedItems(shuffleArray(podcastItems));
+    const allItems = [...podcastItems, ...videoItems.map(video => ({
+      type: 'video',
+      ...video
+    }))];
+    setRandomizedItems(shuffleArray(allItems));
   }, []);
 
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        {/* Hero Section */}
         <section className="bg-gradient-to-r from-podleaf-600 to-leaf-600 text-white py-12 md:py-16">
           <div className="container px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
@@ -166,7 +214,6 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* Portfolio Section */}
         <section className="py-16 bg-white">
           <div className="container px-4 sm:px-6 lg:px-8">
             <Tabs defaultValue="all" className="w-full">
@@ -180,39 +227,38 @@ const Portfolio = () => {
 
               <TabsContent value="all">
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                  {/* Render randomized podcast items */}
                   {randomizedItems.map((item) => (
-                    <a 
-                      key={item.id}
-                      href={item.href} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105"
-                    >
-                      <img 
-                        src={item.imageUrl} 
-                        alt={item.alt} 
-                        className="w-full h-64 object-cover"
-                      />
-                    </a>
+                    item.type === 'video' ? (
+                      <div key={item.id} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
+                        <PortfolioCard
+                          title={item.title}
+                          clientName={item.clientName}
+                          description={item.description}
+                          videoId={item.videoId}
+                          tags={item.tags}
+                        />
+                      </div>
+                    ) : (
+                      <a 
+                        key={item.id}
+                        href={item.href} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105"
+                      >
+                        <img 
+                          src={item.imageUrl} 
+                          alt={item.alt} 
+                          className="w-full h-64 object-cover"
+                        />
+                      </a>
+                    )
                   ))}
-                  
-                  {/* Video project with embedded player - taking up 2 grid columns */}
-                  <div className="sm:col-span-2 md:col-span-2 lg:col-span-2 block h-full">
-                    <PortfolioCard
-                      title="Talking Head Video"
-                      clientName="Video Production"
-                      description="Professional talking head video production showcasing our video services."
-                      videoId="53vT7E0JhPA"
-                      tags={["Video", "Production", "Corporate"]}
-                    />
-                  </div>
                 </div>
               </TabsContent>
 
               <TabsContent value="podcast">
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                  {/* Render podcast items in original order */}
                   {podcastItems.map((item) => (
                     <a 
                       key={item.id}
@@ -233,15 +279,17 @@ const Portfolio = () => {
 
               <TabsContent value="video">
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                  <div className="sm:col-span-2 md:col-span-2 lg:col-span-2 block h-full">
-                    <PortfolioCard
-                      title="Talking Head Video"
-                      clientName="Video Production"
-                      description="Professional talking head video production showcasing our video services."
-                      videoId="53vT7E0JhPA"
-                      tags={["Video", "Production", "Corporate"]}
-                    />
-                  </div>
+                  {videoItems.map((video) => (
+                    <div key={video.id} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
+                      <PortfolioCard
+                        title={video.title}
+                        clientName={video.clientName}
+                        description={video.description}
+                        videoId={video.videoId}
+                        tags={video.tags}
+                      />
+                    </div>
+                  ))}
                 </div>
               </TabsContent>
             </Tabs>
