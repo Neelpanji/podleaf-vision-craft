@@ -1,17 +1,115 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import SectionHeading from '@/components/UI/SectionHeading';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
+import SectionHeading from '@/components/UI/SectionHeading';
+import CaseStudyCard from '@/components/UI/CaseStudyCard';
 
 const CaseStudy = () => {
+  const caseStudies = [
+    {
+      title: "The Weekday Show - 46% Guest to Client Conversion!",
+      videoId: "fzclw3gcIFs",
+      challenge: "Weekday, an HR tech startup, aimed to generate B2B leads through a podcast.",
+      approach: [
+        "Developed a podcast strategy focused on balancing guest career narratives with business insights to attract potential partners.",
+        "Targeted a broader audience (students, employees) with valuable job-hunt related content.",
+        "Implemented a comprehensive production plan, covering branding, format, guest selection, and marketing."
+      ],
+      results: [
+        "Achieved a 46% conversion rate: 7 out of 15 podcast guests progressed to a demo call.",
+        "Enhanced brand awareness within the target market.",
+        "Expanded viewership and social media following across YouTube, Instagram, and LinkedIn."
+      ],
+      link: "https://www.youtube.com/@weekdayworks",
+      linkText: "View Podcast Channel"
+    },
+    {
+      title: "The Weekday Show - 4 Reels = 1.5M Views + 25k Likes! (Instagram Only)",
+      imageUrl: "/lovable-uploads/be8d03a2-c88b-4c94-b895-0a66c6c80668.png",
+      challenge: "The Weekday Show sought to leverage short-form video to increase visibility.",
+      approach: [
+        "Strategically produced viral-worthy reels from the interview-format podcast content.",
+        "Focused on content relevancy and skillful questioning to create engaging clips."
+      ],
+      results: [
+        "Four reels went viral on Instagram.",
+        "Achieved a combined total of over 1.5 million views.",
+        "Garnered more than 25,000 likes, demonstrating high audience engagement."
+      ],
+      link: "https://www.instagram.com/weekday.works",
+      linkText: "View on Instagram"
+    },
+    {
+      title: "Starting Over Stronger Podcast By Annie Chavez - 50,000 Downloads!",
+      imageUrl: "/lovable-uploads/6cfa92ca-a7b7-4a53-83a4-3cd46bcf243c.png",
+      challenge: "Annie Allen, a Divorce Coach, aimed to reach a broad audience with her podcast.",
+      approach: [
+        "Consistently produced 133 podcast episodes (\"Starting Over Stronger\") from June 2020 to January 2023."
+      ],
+      results: [
+        "The podcast garnered over 50,000 downloads between June 2020 and February 2025.",
+        "Over 27% of downloads (14,000+) occurred between January 2023 and February 2025, despite no social media marketing.",
+        "Demonstrated the enduring nature of podcast content through organic discovery (SEO, website visits)."
+      ],
+      link: "https://podcasts.apple.com/us/podcast/starting-over-stronger-podcast/id1526868526",
+      linkText: "Listen on Apple Podcasts"
+    },
+    {
+      title: "Manya Chylinski - 2 years, 104 guests, USD 3000 invested/year - One Deal & Earned more than that",
+      imageUrl: "/lovable-uploads/489e243f-ef66-4b74-80c7-a9d7d316a46f.png",
+      challenge: "Manya Chylinski needed to generate a return on her podcast investment.",
+      approach: [
+        "Produced \"Notes on Resilience\" podcast for two years (104 episodes), investing $3000/year.",
+        "Pivoted content strategy from life events to leadership/organizational resilience and trauma.",
+        "Focused on networking with professionals in Employee Assistance Programs (EAPs)."
+      ],
+      results: [
+        "Secured a deal that will cover nearly a year's investment, with potential for more.",
+        "Established credibility with organizations through consistent content.",
+        "Built valuable connections through strategic networking.",
+        "Refined business direction and podcast content through ongoing conversations."
+      ],
+      link: "https://podcasts.apple.com/us/podcast/notes-on-resilience/id1662964244",
+      linkText: "Listen on Apple Podcasts"
+    },
+    {
+      title: "Gunai Tarde Vlog - 33K+ Views & Counting & 1000 Subscribers added!",
+      videoId: "RyagAgMxvA4",
+      challenge: "Gunai Tarde aimed to grow their audience through vlogging.",
+      approach: [
+        "Focused on strategic content creation and presentation.",
+        "Emphasized smart editing, attractive thumbnails, and effective video timing."
+      ],
+      results: [
+        "Vlog achieved 33,000+ views.",
+        "Channel gained over 1,000 subscribers."
+      ],
+      link: "https://youtu.be/RyagAgMxvA4?feature=shared",
+      linkText: "Watch on YouTube"
+    },
+    {
+      title: "Clarita Monrose - Uplifting & Giving a Platform for people to share their stories and inspire others!",
+      imageUrl: "/lovable-uploads/2e5a3073-f328-407b-854e-c9a7acce07c6.png",
+      challenge: "Clarita Monrose sought to create a podcast with a unique mission.",
+      approach: [
+        "Centered \"Begin Build Blossom\" podcast on uplifting individuals.",
+        "Provided a platform for people to share previously unheard stories."
+      ],
+      results: [
+        "Established a podcast with a core value of uplifting marginalized voices.",
+        "Created a space for impactful storytelling.",
+        "Prioritized social impact and mission fulfillment over traditional metrics."
+      ],
+      link: "https://www.youtube.com/@BeginBuildBlossom",
+      linkText: "Visit YouTube Channel"
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        {/* Hero Section */}
         <section className="bg-gradient-to-r from-podleaf-600 to-leaf-600 text-white py-12 md:py-16">
           <div className="container px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
@@ -19,153 +117,19 @@ const CaseStudy = () => {
                 Our Case Studies
               </h1>
               <p className="text-xl opacity-90">
-                Discover how we've helped our clients achieve exceptional results with their content.
+                Real results from real clients - discover how we've helped businesses achieve their goals
               </p>
             </div>
           </div>
         </section>
 
-        {/* Featured Case Study Section */}
         <section className="py-16 bg-gray-50">
           <div className="container px-4 sm:px-6 lg:px-8">
-            <SectionHeading
-              title="Tech Talk Weekly Podcast Launch"
-              subtitle="How we transformed a tech company's brand through podcasting"
-              centered={true}
-            />
-
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 max-w-4xl mx-auto mt-12">
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <img
-                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
-                    alt="Tech Talk Weekly Podcast"
-                    className="rounded-lg mb-4"
-                  />
-                  <div className="space-y-3">
-                    <div className="flex justify-between">
-                      <span className="font-medium">Client:</span>
-                      <span>Innovation Labs</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">Services:</span>
-                      <span>Production, Launch, Marketing</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">Duration:</span>
-                      <span>3 months</span>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="text-xl font-semibold mb-3">The Challenge</h4>
-                  <p className="text-gray-600 mb-4">
-                    Innovation Labs wanted to establish authority in the tech industry through a podcast, but faced a crowded market and limited in-house production experience.
-                  </p>
-                  
-                  <h4 className="text-xl font-semibold mb-3">Our Approach</h4>
-                  <p className="text-gray-600 mb-4">
-                    We developed a comprehensive strategy including professional production, a coordinated launch with 5 initial episodes, and targeted marketing to reach technology professionals.
-                  </p>
-                  
-                  <h4 className="text-xl font-semibold mb-3">Results</h4>
-                  <ul className="list-disc pl-5 text-gray-600 space-y-2">
-                    <li>10,000+ downloads in the first month</li>
-                    <li>Featured in Apple Podcasts' "New & Noteworthy" section</li>
-                    <li>75% listener retention rate after 10 episodes</li>
-                    <li>Generated 15 qualified leads for the client's services</li>
-                  </ul>
-                </div>
-              </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              {caseStudies.map((study, index) => (
+                <CaseStudyCard key={index} {...study} />
+              ))}
             </div>
-          </div>
-        </section>
-
-        {/* Additional Case Studies */}
-        <section className="py-16 bg-white">
-          <div className="container px-4 sm:px-6 lg:px-8">
-            <SectionHeading
-              title="More Success Stories"
-              subtitle="See how we've helped other clients achieve their goals"
-              centered={true}
-            />
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-              {/* Case Study 1 */}
-              <div className="bg-gray-50 rounded-lg overflow-hidden shadow-sm border border-gray-200">
-                <img 
-                  src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" 
-                  alt="Health & Wellness Show" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Health & Wellness Show Launch</h3>
-                  <p className="text-gray-600 mb-4">
-                    How we helped Vitality Hub reach 50,000+ monthly listeners with their health podcast.
-                  </p>
-                  <Link to="/case-study">
-                    <Button variant="outline" size="sm">
-                      Read Case Study
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-
-              {/* Case Study 2 */}
-              <div className="bg-gray-50 rounded-lg overflow-hidden shadow-sm border border-gray-200">
-                <img 
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" 
-                  alt="Company Culture Vlog" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Startup Culture Vlog Series</h3>
-                  <p className="text-gray-600 mb-4">
-                    Creating authentic video content that helped NextGen Startup triple their job applications.
-                  </p>
-                  <Link to="/case-study">
-                    <Button variant="outline" size="sm">
-                      Read Case Study
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-
-              {/* Case Study 3 */}
-              <div className="bg-gray-50 rounded-lg overflow-hidden shadow-sm border border-gray-200">
-                <img 
-                  src="https://images.unsplash.com/photo-1483058712412-4245e9b90334" 
-                  alt="Digital Marketing Tutorials" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Educational Video Series</h3>
-                  <p className="text-gray-600 mb-4">
-                    How we helped Marketing Wizards Academy create professional tutorial videos that increased course sign-ups by 75%.
-                  </p>
-                  <Link to="/case-study">
-                    <Button variant="outline" size="sm">
-                      Read Case Study
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-16 bg-podleaf-50">
-          <div className="container px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Achieve Similar Results?</h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Let's discuss your project and create a strategy to help you reach your goals.
-            </p>
-            <Link to="/contact-us">
-              <Button size="lg" className="text-lg px-8">
-                Contact Us Today
-              </Button>
-            </Link>
           </div>
         </section>
       </main>
