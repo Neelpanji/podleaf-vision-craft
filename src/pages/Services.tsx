@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from '@/components/Layout/Header';
@@ -284,7 +285,11 @@ const Services = () => {
               />
               <div className="grid md:grid-cols-3 gap-6 mt-8">
                 {videoPlans.map((plan, index) => (
-                  <PricingCard key={index} {...plan} />
+                  <PricingCard 
+                    key={index} 
+                    {...plan} 
+                    episodeCount={2} // Adding the missing episodeCount prop for video plans
+                  />
                 ))}
               </div>
             </div>
