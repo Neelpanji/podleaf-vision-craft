@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -23,30 +22,21 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           <Link to="/" className="text-foreground hover:text-primary transition-colors">
             Home
           </Link>
           <div className="relative group">
-            <Link to="#" className="text-foreground hover:text-primary transition-colors flex items-center">
+            <Link to="/services" className="text-foreground hover:text-primary transition-colors flex items-center">
               Services
             </Link>
             <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
               <div className="py-2 divide-y divide-gray-100">
-                <div className="px-4 py-3 text-sm font-medium text-gray-700">Podcast Services</div>
-                <Link to="/podcast-marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  Podcast Marketing
+                <Link to="/services#podcast-services" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                  Podcast Services
                 </Link>
-                <Link to="/podcast-production" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  Podcast Production
-                </Link>
-                <Link to="/podcast-launch" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  Podcast Launch
-                </Link>
-                <div className="px-4 py-3 text-sm font-medium text-gray-700">Video Services</div>
-                <Link to="/video-services" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  All Video Services
+                <Link to="/services#video-services" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                  Video Services
                 </Link>
               </div>
             </div>
@@ -73,7 +63,6 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden flex items-center p-2 rounded-md text-foreground"
           onClick={toggleMenu}
@@ -83,7 +72,6 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-background border-t border-border">
           <div className="flex flex-col space-y-2 px-4 py-6">
@@ -95,39 +83,23 @@ const Header = () => {
               Home
             </Link>
             <div className="py-2">
-              <div className="font-medium text-foreground mb-2">Podcast Services</div>
+              <div className="font-medium text-foreground mb-2">Services</div>
               <div className="pl-4 space-y-2">
                 <Link
-                  to="/podcast-marketing"
+                  to="/services#podcast-services"
                   className="text-foreground hover:text-primary transition-colors block py-1"
                   onClick={toggleMenu}
                 >
-                  Podcast Marketing
+                  Podcast Services
                 </Link>
                 <Link
-                  to="/podcast-production"
+                  to="/services#video-services"
                   className="text-foreground hover:text-primary transition-colors block py-1"
                   onClick={toggleMenu}
                 >
-                  Podcast Production
-                </Link>
-                <Link
-                  to="/podcast-launch"
-                  className="text-foreground hover:text-primary transition-colors block py-1"
-                  onClick={toggleMenu}
-                >
-                  Podcast Launch
+                  Video Services
                 </Link>
               </div>
-            </div>
-            <div className="py-2">
-              <Link
-                to="/video-services"
-                className="text-foreground hover:text-primary transition-colors block"
-                onClick={toggleMenu}
-              >
-                Video Services
-              </Link>
             </div>
             <Link
               to="/portfolio"
