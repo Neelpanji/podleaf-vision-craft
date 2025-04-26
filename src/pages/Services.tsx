@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
@@ -7,6 +7,8 @@ import ServiceCard from '@/components/UI/ServiceCard';
 import { Megaphone, Mic, Radio, PlayCircle, BookOpen, Film, Check } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Switch } from '@/components/ui/switch';
+import { Label } from '@/components/ui/label';
 
 const PricingCard = ({ 
   title, 
@@ -14,7 +16,8 @@ const PricingCard = ({
   description, 
   features,
   buttonText = "Get Started",
-  popular = false 
+  popular = false,
+  episodeCount
 }: {
   title: string;
   price: string;
@@ -22,6 +25,7 @@ const PricingCard = ({
   features: string[];
   buttonText?: string;
   popular?: boolean;
+  episodeCount: number;
 }) => {
   return (
     <Card className={`relative flex flex-col ${popular ? 'border-primary' : ''}`}>
@@ -61,6 +65,7 @@ const PricingCard = ({
 
 const Services = () => {
   const location = useLocation();
+  const [episodeToggle, setEpisodeToggle] = useState(false);
 
   useEffect(() => {
     if (location.hash) {
@@ -74,28 +79,46 @@ const Services = () => {
   const podcastPlans = [
     {
       title: "Basic",
-      price: "$497",
+      price: episodeToggle ? "$297" : "$497",
       description: "Perfect for beginners",
-      features: [
-        "4 episodes per month",
-        "Basic audio editing",
-        "Cover art design",
-        "RSS feed setup",
-        "Distribution to platforms"
-      ]
+      features: episodeToggle 
+        ? [
+            "2 episodes per month",
+            "Basic audio editing",
+            "Cover art design",
+            "RSS feed setup",
+            "Distribution to platforms"
+          ]
+        : [
+            "4 episodes per month",
+            "Basic audio editing",
+            "Cover art design",
+            "RSS feed setup",
+            "Distribution to platforms",
+            "Additional monthly strategy session"
+          ]
     },
     {
       title: "Professional",
-      price: "$997",
+      price: episodeToggle ? "$697" : "$997",
       description: "Most popular choice",
-      features: [
-        "8 episodes per month",
-        "Advanced audio editing",
-        "Custom intro/outro",
-        "Show notes creation",
-        "Social media clips",
-        "Audiogram creation"
-      ],
+      features: episodeToggle
+        ? [
+            "4 episodes per month",
+            "Advanced audio editing",
+            "Custom intro/outro",
+            "Show notes creation",
+            "Social media clips"
+          ]
+        : [
+            "8 episodes per month",
+            "Advanced audio editing",
+            "Custom intro/outro",
+            "Show notes creation",
+            "Social media clips",
+            "Audiogram creation",
+            "Monthly performance review"
+          ],
       popular: true
     },
     {
@@ -168,6 +191,21 @@ const Services = () => {
               centered={true}
             />
 
+            {/* Episode Count Toggle */}
+            <div className="flex items-center justify-center space-x-4 mb-8">
+              <Label htmlFor="episode-toggle" className="text-lg">
+                2 Episodes
+              </Label>
+              <Switch
+                id="episode-toggle"
+                checked={episodeToggle}
+                onCheckedChange={setEpisodeToggle}
+              />
+              <Label htmlFor="episode-toggle" className="text-lg">
+                4 Episodes
+              </Label>
+            </div>
+
             <div className="grid md:grid-cols-3 gap-6">
               <ServiceCard
                 title="Podcast Marketing"
@@ -197,7 +235,11 @@ const Services = () => {
               />
               <div className="grid md:grid-cols-3 gap-6 mt-8">
                 {podcastPlans.map((plan, index) => (
-                  <PricingCard key={index} {...plan} />
+                  <PricingCard 
+                    key={index} 
+                    {...plan} 
+                    episodeCount={episodeToggle ? 2 : 4}
+                  />
                 ))}
               </div>
             </div>
