@@ -188,37 +188,37 @@ const Services = () => {
                 title="Short/Reels"
                 description="Create engaging short-form content optimized for social media platforms."
                 icon={<Video className="h-6 w-6" />}
-                link="#video-services"
+                link="/portfolio#video-services"
               />
               <ServiceCard
                 title="Speaker/Sizzle Reel"
                 description="Highlight your speaking engagements and professional achievements with dynamic sizzle reels."
                 icon={<PlayCircle className="h-6 w-6" />}
-                link="#video-services"
+                link="/portfolio#video-services"
               />
               <ServiceCard
                 title="Website Video"
                 description="Enhance your website with professional video content that captures visitor attention."
                 icon={<Monitor className="h-6 w-6" />}
-                link="#video-services"
+                link="/portfolio#video-services"
               />
               <ServiceCard
                 title="Talking Head Video"
                 description="Professional talking head videos for presentations and corporate communications."
                 icon={<Camera className="h-6 w-6" />}
-                link="#video-services"
+                link="/portfolio#video-services"
               />
               <ServiceCard
                 title="Brand Video"
                 description="Tell your brand story through compelling video narratives."
                 icon={<Film className="h-6 w-6" />}
-                link="#video-services"
+                link="/portfolio#video-services"
               />
               <ServiceCard
-                title="Educational Videos"
-                description="Share your knowledge and establish yourself as an industry leader with professionally produced educational content."
-                icon={<BookOpen className="h-6 w-6" />}
-                link="#video-services"
+                title="Vlog"
+                description="Create engaging vlog content to connect with your audience and share your story."
+                icon={<Video className="h-6 w-6" />}
+                link="/portfolio#video-services"
               />
             </div>
           </div>
