@@ -16,7 +16,7 @@ const Index = () => {
       <main className="flex-grow">
         {/* Hero Section */}
         <HeroSection
-          titlePart1="Podcast Dreams? "
+          titlePart1="Podcast & Video Dreams? "
           titlePart1Color="#70dab8"
           titlePart2="We Make 'Em Happen!"
           titlePart2Color="#70dab8"
@@ -27,33 +27,69 @@ const Index = () => {
           imageUrl="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
         />
 
+        {/* Our Results Section */}
+        <section className="section-padding bg-background">
+          <div className="container container-padding">
+            <SectionHeading
+              title="Our Results"
+              centered={true}
+            />
+
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                <h3 className="text-xl font-semibold mb-3 text-teal">The Weekday Show</h3>
+                <p className="text-lg font-semibold text-primary mb-4">46% Guest to Client Conversion!</p>
+              </div>
+              
+              <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                <h3 className="text-xl font-semibold mb-3 text-teal">Starting Over Stronger Podcast By Annie Chavez</h3>
+                <p className="text-lg font-semibold text-primary mb-4">50,000 Downloads!</p>
+              </div>
+              
+              <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                <h3 className="text-xl font-semibold mb-3 text-teal">Manya Chylinski</h3>
+                <p className="text-lg font-semibold text-primary mb-4">2 years, 104 guests, USD 3000 invested/year - One Deal & Earned more than that</p>
+              </div>
+            </div>
+
+            <div className="text-center mt-8">
+              <Link to="/case-study">
+                <Button variant="outline" className="group">
+                  Read more success stories here
+                  <ArrowRightCircle className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Podcast Services Section */}
         <section className="section-padding bg-background">
           <div className="container container-padding">
             <SectionHeading
-              title="Podcast Powerhouse"
+              title="Podcast & Video Powerhouse"
               subtitle="Whether you're just starting out or looking to take your existing podcast to the next level, we have the expertise to help. Our comprehensive podcast services cover every stage of the journey."
               centered={true}
             />
 
             <div className="grid md:grid-cols-3 gap-6">
               <ServiceCard
-                title="Podcast Marketing"
-                description="Reach a wider audience and grow your listener base with our proven marketing strategies tailored for podcasters."
-                icon={<Megaphone className="h-6 w-6" />}
-                link="/podcast-marketing"
+                title="Podcast Launch"
+                description="Start strong with a strategic and impactful launch plan designed to make a splash in your niche."
+                icon={<Radio className="h-6 w-6" />}
+                link="/podcast-launch"
               />
               <ServiceCard
-                title="Podcast Production"
+                title="Podcast Production & Management"
                 description="Create high-quality audio that captivates your listeners with our professional production services."
                 icon={<Mic className="h-6 w-6" />}
                 link="/podcast-production"
               />
               <ServiceCard
-                title="Podcast Launch"
-                description="Start strong with a strategic and impactful launch plan designed to make a splash in your niche."
-                icon={<Radio className="h-6 w-6" />}
-                link="/podcast-launch"
+                title="Video Production"
+                description="Create engaging video content that complements your podcast and expands your reach."
+                icon={<Video className="h-6 w-6" />}
+                link="/video-services"
               />
             </div>
           </div>
