@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Radio, Mic, Video } from 'lucide-react';
 import SectionHeading from '@/components/UI/SectionHeading';
@@ -9,8 +8,7 @@ const PodcastServicesSection = () => {
     <section className="section-padding bg-background">
       <div className="container container-padding">
         <SectionHeading
-          title="Podcast & Video Powerhouse"
-          subtitle="Whether you're just starting out or looking to take your existing podcast to the next level, we have the expertise to help. Our comprehensive podcast services cover every stage of the journey."
+          title="What We Help You With..."
           centered={true}
         />
 

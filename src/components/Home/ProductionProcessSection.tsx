@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRightCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -9,17 +8,11 @@ const ProductionProcessSection = () => {
     <section className="section-padding bg-muted">
       <div className="container container-padding">
         <SectionHeading
-          title="Our Podcast Production Process"
-          subtitle="Transform your ideas into professional, engaging podcasts with our streamlined process"
+          title="How We Do It"
+          subtitle="Our Podcast Production Process"
           centered={true}
         />
-        <div className="grid md:grid-cols-3 gap-8 relative">
-          {/* Arrow connections */}
-          <div className="absolute top-1/2 left-1/3 w-1/3 h-0.5 bg-primary hidden md:block"></div>
-          <div className="absolute top-1/2 right-1/3 w-1/3 h-0.5 bg-primary hidden md:block"></div>
-          <div className="absolute top-1/2 left-1/3 -ml-2 w-4 h-4 border-t-2 border-r-2 border-primary transform rotate-45 hidden md:block"></div>
-          <div className="absolute top-1/2 right-1/3 -mr-2 w-4 h-4 border-t-2 border-r-2 border-primary transform rotate-45 hidden md:block"></div>
-
+        <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
             <h3 className="text-xl font-semibold mb-3 text-teal">Getting You Ready</h3>
             <p className="text-sm text-muted-foreground mb-2">(My Job)</p>
