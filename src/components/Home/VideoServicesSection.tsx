@@ -39,7 +39,11 @@ const VideoServicesSection = () => {
 
         <div className="text-center mt-8">
           <Link to="/portfolio#video-projects">
-            <Button variant="outline" size="lg" className="group font-bold text-lg px-12 py-6">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="group font-bold text-lg px-12 py-6 bg-white hover:bg-black hover:text-white"
+            >
               Explore All Video Styles
               <ArrowRightCircle className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
