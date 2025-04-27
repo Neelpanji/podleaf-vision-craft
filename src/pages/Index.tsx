@@ -69,27 +69,39 @@ const Index = () => {
             />
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
-                <h3 className="text-xl font-semibold mb-3 text-teal flex items-center gap-2">
-                  <Mic className="h-5 w-5" />
-                  Recording
-                </h3>
-                <p>Record your content with confidence using our professional setup guidance and technical support to ensure pristine audio quality from the start.</p>
+                <h3 className="text-xl font-semibold mb-3 text-teal">Getting you ready</h3>
+                <p className="text-sm text-muted-foreground mb-2">(My Job)</p>
+                <ul className="list-disc list-inside space-y-2 text-sm">
+                  <li>Pre-Show</li>
+                  <li>Setting Up The Meet</li>
+                  <li>Deciding What To Ask/Talk</li>
+                  <li>Mic & Camera Set up</li>
+                  <li>Branding</li>
+                  <li>Strategy</li>
+                  <li>Directory Submissions</li>
+                  <li>Narration Development</li>
+                </ul>
               </div>
               
               <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
-                <h3 className="text-xl font-semibold mb-3 text-teal flex items-center gap-2">
-                  <Headphones className="h-5 w-5" />
-                  Post-Production
-                </h3>
-                <p>Our expert team enhances your audio with professional editing, noise reduction, and sound mixing to create a polished, broadcast-ready podcast.</p>
+                <h3 className="text-xl font-semibold mb-3 text-teal">Once You Are Ready</h3>
+                <p className="text-sm text-muted-foreground mb-2">(Your Job)</p>
+                <ul className="list-disc list-inside space-y-2 text-sm">
+                  <li>Hit Record & Have the conversation</li>
+                </ul>
               </div>
               
               <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
-                <h3 className="text-xl font-semibold mb-3 text-teal flex items-center gap-2">
-                  <Radio className="h-5 w-5" />
-                  Distribution
-                </h3>
-                <p>Get your podcast in front of your target audience with optimized publishing across all major platforms and promotional strategy support.</p>
+                <h3 className="text-xl font-semibold mb-3 text-teal">Making You Ready For The Audience</h3>
+                <p className="text-sm text-muted-foreground mb-2">(My Job)</p>
+                <ul className="list-disc list-inside space-y-2 text-sm">
+                  <li>Audio Production</li>
+                  <li>Show Notes</li>
+                  <li>Video Editing</li>
+                  <li>Shorts / Reels</li>
+                  <li>Thumbnails</li>
+                  <li>Scheduling</li>
+                </ul>
               </div>
             </div>
           </div>
