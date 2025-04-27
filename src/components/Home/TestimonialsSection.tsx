@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRightCircle } from 'lucide-react';
@@ -8,7 +7,7 @@ import TestimonialCard from '@/components/UI/TestimonialCard';
 
 const TestimonialsSection = () => {
   return (
-    <section className="section-padding bg-background">
+    <section id="testimonials-section" className="section-padding bg-background">
       <div className="container container-padding">
         <SectionHeading
           title="What Our Clients Say"
