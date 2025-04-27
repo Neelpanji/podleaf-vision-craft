@@ -11,7 +11,7 @@ const VideoServicesSection = () => {
     <section className="section-padding bg-muted">
       <div className="container container-padding">
         <SectionHeading
-          title="Beyond Audio: Engaging Video Content"
+          title="Videos? We Do That As Well!"
           subtitle="In addition to our podcast expertise, we offer professional video production services to enhance your brand's reach and engagement."
           centered={true}
         />
@@ -39,9 +39,9 @@ const VideoServicesSection = () => {
 
         <div className="text-center mt-8">
           <Link to="/portfolio#video-projects">
-            <Button variant="outline" className="group">
+            <Button variant="outline" size="lg" className="group font-bold text-lg px-12 py-6">
               Explore All Video Styles
-              <ArrowRightCircle className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRightCircle className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
           </Link>
         </div>
