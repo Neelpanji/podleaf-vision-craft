@@ -9,6 +9,7 @@ import VideoServicesSection from '@/components/Home/VideoServicesSection';
 import ResultsSection from '@/components/Home/ResultsSection';
 import TestimonialsSection from '@/components/Home/TestimonialsSection';
 import CTASection from '@/components/Home/CTASection';
+import TrustedBySection from '@/components/Home/TrustedBySection';
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
         <PodcastServicesSection />
         <ProductionProcessSection />
         <VideoServicesSection />
+        <TrustedBySection />
         <ResultsSection />
         <TestimonialsSection />
         <CTASection />
