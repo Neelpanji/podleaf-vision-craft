@@ -1,26 +1,13 @@
 import React, { useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
-  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const scrollToTestimonials = () => {
-    if (location.pathname !== '/') {
-      navigate('/', { state: { scrollToTestimonials: true } });
-    } else {
-      document.getElementById('testimonials-section')?.scrollIntoView({ behavior: 'smooth' });
-    }
-    if (isMenuOpen) {
-      setIsMenuOpen(false);
-    }
   };
 
   return (
@@ -57,12 +44,12 @@ const Header = () => {
           <Link to="/portfolio" className="text-foreground hover:text-primary transition-colors">
             Portfolio
           </Link>
-          <button
-            onClick={scrollToTestimonials}
-            className="text-foreground hover:text-primary transition-colors"
-          >
+          <Link to="/case-study" className="text-foreground hover:text-primary transition-colors">
+            Case Studies
+          </Link>
+          <Link to="/testimonials" className="text-foreground hover:text-primary transition-colors">
             Testimonials
-          </button>
+          </Link>
           <Link to="/about-us" className="text-foreground hover:text-primary transition-colors">
             About Us
           </Link>
@@ -128,12 +115,13 @@ const Header = () => {
             >
               Case Studies
             </Link>
-            <button
-              onClick={scrollToTestimonials}
-              className="text-foreground hover:text-primary transition-colors py-2 text-left"
+            <Link
+              to="/testimonials"
+              className="text-foreground hover:text-primary transition-colors py-2"
+              onClick={toggleMenu}
             >
               Testimonials
-            </button>
+            </Link>
             <Link
               to="/about-us"
               className="text-foreground hover:text-primary transition-colors py-2"
