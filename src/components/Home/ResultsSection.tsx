@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRightCircle } from 'lucide-react';
@@ -10,7 +11,8 @@ const ResultsSection = () => {
     <section className="section-padding bg-background">
       <div className="container container-padding">
         <SectionHeading
-          title="We Say That Based On Real Results..."
+          title="Why We Do It"
+          subtitle="Our Results"
           centered={true}
         />
 
