@@ -42,10 +42,10 @@ const VideoServicesSection = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="group font-bold text-lg px-16 py-8 text-2xl"
+              className="group font-bold"
             >
               Explore All Video Styles
-              <ArrowRightCircle className="ml-4 h-7 w-7 transition-transform group-hover:translate-x-1" />
+              <ArrowRightCircle className="ml-2 h-6 w-6 transition-transform group-hover:translate-x-1" />
             </Button>
           </Link>
         </div>
