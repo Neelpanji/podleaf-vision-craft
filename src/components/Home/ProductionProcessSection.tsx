@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRightCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -52,9 +53,9 @@ const ProductionProcessSection = () => {
 
         <div className="text-center mt-8">
           <a href="https://calendar.app.google/bge2qAqmQfVFzZmg8" target="_blank" rel="noopener noreferrer">
-            <Button variant="outline" className="group">
+            <Button variant="outline" size="lg" className="group font-bold">
               Schedule a Free Call
-              <ArrowRightCircle className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRightCircle className="ml-2 h-6 w-6 transition-transform group-hover:translate-x-1" />
             </Button>
           </a>
         </div>

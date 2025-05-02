@@ -60,9 +60,9 @@ const TestimonialsSection = () => {
 
         <div className="text-center mt-10">
           <Link to="/testimonials">
-            <Button variant="outline" className="group">
+            <Button variant="outline" size="lg" className="group font-bold">
               View All Testimonials
-              <ArrowRightCircle className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRightCircle className="ml-2 h-6 w-6 transition-transform group-hover:translate-x-1" />
             </Button>
           </Link>
         </div>

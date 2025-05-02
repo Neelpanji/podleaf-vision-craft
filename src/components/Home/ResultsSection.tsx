@@ -68,9 +68,9 @@ const ResultsSection = () => {
 
         <div className="text-center mt-8">
           <Link to="/case-study">
-            <Button variant="outline" className="group">
+            <Button variant="outline" size="lg" className="group font-bold">
               Read more success stories here
-              <ArrowRightCircle className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRightCircle className="ml-2 h-6 w-6 transition-transform group-hover:translate-x-1" />
             </Button>
           </Link>
         </div>

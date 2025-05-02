@@ -5,6 +5,7 @@ import SectionHeading from '@/components/UI/SectionHeading';
 import TestimonialCard from '@/components/UI/TestimonialCard';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
+import ArrowRightCircle from '@/components/UI/ArrowRightCircle';
 
 const Testimonials = () => {
   return (
@@ -104,8 +105,9 @@ const Testimonials = () => {
               Let's create exceptional podcast and video content that drives results for your business.
             </p>
             <Link to="/contact-us">
-              <Button size="lg" className="text-lg px-8 bg-black text-white hover:bg-black/80">
+              <Button size="lg" className="group text-lg px-8 bg-black text-white hover:bg-black/80">
                 Contact Us Today
+                <ArrowRightCircle className="ml-2 h-6 w-6 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>
           </div>
