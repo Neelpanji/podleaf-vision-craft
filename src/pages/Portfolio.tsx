@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Layout/Header';
@@ -257,46 +256,13 @@ const Portfolio = () => {
 
         <section className="py-16 bg-white">
           <div className="container px-4 sm:px-6 lg:px-8">
-            <Tabs defaultValue="all" className="w-full">
+            <Tabs defaultValue="podcast" className="w-full">
               <div className="flex justify-center mb-12">
                 <TabsList>
-                  <TabsTrigger value="all">All Projects</TabsTrigger>
-                  <TabsTrigger value="podcast">Podcast Projects</TabsTrigger>
-                  <TabsTrigger value="video">Video Projects</TabsTrigger>
+                  <TabsTrigger value="podcast" className="text-lg font-medium px-6 py-3">Podcast Projects</TabsTrigger>
+                  <TabsTrigger value="video" className="text-lg font-medium px-6 py-3">Video Projects</TabsTrigger>
                 </TabsList>
               </div>
-
-              <TabsContent value="all">
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                  {randomizedItems.map((item) => (
-                    item.type === 'video' ? (
-                      <div key={item.id} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
-                        <PortfolioCard
-                          title={item.title}
-                          clientName={item.clientName}
-                          description={item.description}
-                          videoId={item.videoId}
-                          tags={item.tags}
-                        />
-                      </div>
-                    ) : (
-                      <a 
-                        key={item.id}
-                        href={item.href} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="block overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-105"
-                      >
-                        <img 
-                          src={item.imageUrl} 
-                          alt={item.alt} 
-                          className="w-full h-64 object-cover"
-                        />
-                      </a>
-                    )
-                  ))}
-                </div>
-              </TabsContent>
 
               <TabsContent value="podcast">
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
