@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -5,7 +6,7 @@ import SectionHeading from '@/components/UI/SectionHeading';
 import TestimonialCard from '@/components/UI/TestimonialCard';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
-import ArrowRightCircle from '@/components/UI/ArrowRightCircle';
+import { ArrowRightCircle } from 'lucide-react';
 
 const Testimonials = () => {
   return (
