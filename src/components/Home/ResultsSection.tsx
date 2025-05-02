@@ -11,8 +11,8 @@ const ResultsSection = () => {
     <section className="section-padding bg-background">
       <div className="container container-padding">
         <SectionHeading
-          title="Areas Where We Have These Results..."
-          subtitle="Our services"
+          title="We Say That Based On Real Results..."
+          subtitle="Our Results"
           centered={true}
         />
 
