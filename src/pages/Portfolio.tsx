@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Layout/Header';
@@ -264,7 +265,7 @@ const Portfolio = () => {
                 </TabsList>
               </div>
 
-              <TabsContent value="podcast">
+              <TabsContent value="podcast" className="p-6">
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                   {podcastItems.map((item) => (
                     <a 
@@ -284,7 +285,7 @@ const Portfolio = () => {
                 </div>
               </TabsContent>
 
-              <TabsContent value="video">
+              <TabsContent value="video" className="p-6">
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                   {videoItems.map((video) => (
                     <div key={video.id} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
