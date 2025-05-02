@@ -242,7 +242,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-black text-white">
       <Header />
       <main className="flex-grow">
         <section className="bg-gradient-to-r from-podleaf-600 to-leaf-600 text-white py-12 md:py-16">
@@ -255,17 +255,17 @@ const Portfolio = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-black">
           <div className="container px-4 sm:px-6 lg:px-8">
             <Tabs defaultValue="podcast" className="w-full">
               <div className="flex justify-center mb-12">
-                <TabsList>
-                  <TabsTrigger value="podcast" className="text-lg font-medium px-6 py-3">Podcast Projects</TabsTrigger>
-                  <TabsTrigger value="video" className="text-lg font-medium px-6 py-3">Video Projects</TabsTrigger>
+                <TabsList className="bg-gray-900">
+                  <TabsTrigger value="podcast" className="text-lg font-medium px-6 py-3 data-[state=active]:bg-podleaf-600 data-[state=active]:text-black">Podcast Projects</TabsTrigger>
+                  <TabsTrigger value="video" className="text-lg font-medium px-6 py-3 data-[state=active]:bg-podleaf-600 data-[state=active]:text-black">Video Projects</TabsTrigger>
                 </TabsList>
               </div>
 
-              <TabsContent value="podcast" className="p-6">
+              <TabsContent value="podcast" className="p-6 bg-black">
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                   {podcastItems.map((item) => (
                     <a 
@@ -285,7 +285,7 @@ const Portfolio = () => {
                 </div>
               </TabsContent>
 
-              <TabsContent value="video" className="p-6">
+              <TabsContent value="video" className="p-6 bg-black">
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                   {videoItems.map((video) => (
                     <div key={video.id} className="sm:col-span-2 md:col-span-2 lg:col-span-2">

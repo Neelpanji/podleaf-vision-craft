@@ -107,7 +107,7 @@ const CaseStudy = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-black text-white">
       <Header />
       <main className="flex-grow">
         <section className="bg-gradient-to-r from-podleaf-600 to-leaf-600 text-white py-12 md:py-16">
@@ -123,7 +123,7 @@ const CaseStudy = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-black">
           <div className="container px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-8">
               {caseStudies.map((study, index) => (
