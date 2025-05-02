@@ -9,7 +9,8 @@ const PodcastServicesSection = () => {
     <section className="section-padding bg-background">
       <div className="container container-padding">
         <SectionHeading
-          title="We Say That Based On Real Results..."
+          title="Areas Where We Have These Results..."
+          subtitle="Our services"
           centered={true}
         />
 
