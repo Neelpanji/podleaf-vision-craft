@@ -1,12 +1,38 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import PortfolioPodcasts from '@/components/Portfolio/PortfolioPodcasts';
 import PortfolioVideos from '@/components/Portfolio/PortfolioVideos';
 
+const PORTFOLIO_HASH_TO_TAB: Record<string, string> = {
+  '#video': 'video',
+  '#podcast': 'podcast',
+};
+
 const Portfolio = () => {
+  const [tab, setTab] = useState('podcast');
+
+  // Check hash on mount and when it changes
+  useEffect(() => {
+    const selectTabFromHash = () => {
+      const hash = window.location.hash;
+      if (PORTFOLIO_HASH_TO_TAB[hash]) {
+        setTab(PORTFOLIO_HASH_TO_TAB[hash]);
+      } else {
+        setTab('podcast');
+      }
+    };
+
+    selectTabFromHash();
+    window.addEventListener('hashchange', selectTabFromHash);
+
+    return () => {
+      window.removeEventListener('hashchange', selectTabFromHash);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col bg-black text-white">
       <Header />
@@ -23,7 +49,7 @@ const Portfolio = () => {
 
         <section className="py-16 bg-black">
           <div className="container px-4 sm:px-6 lg:px-8">
-            <Tabs defaultValue="podcast" className="w-full">
+            <Tabs value={tab} onValueChange={setTab} className="w-full">
               <div className="flex justify-center mb-12">
                 <TabsList className="bg-gray-900">
                   <TabsTrigger value="podcast" className="text-lg font-medium px-6 py-3 data-[state=active]:bg-podleaf-600 data-[state=active]:text-black">
@@ -52,3 +78,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
