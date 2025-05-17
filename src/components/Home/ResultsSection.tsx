@@ -42,8 +42,8 @@ const ResultsSection = () => {
               "Implemented marketing tactics"
             ]}
             results={["50,000 Downloads!"]}
-            link="https://youtube.com/shorts/yo91m_r6LAM?feature=share"
-            linkText="Watch Highlight"
+            link="https://podcasts.apple.com/us/podcast/intuition-your-success-compass/id1458617878"
+            linkText="Listen Now"
           />
           
           <CaseStudyCard
