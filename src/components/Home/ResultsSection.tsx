@@ -34,7 +34,7 @@ const ResultsSection = () => {
           
           <CaseStudyCard
             title="Starting Over Stronger Podcast"
-            imageUrl="/lovable-uploads/147a8569-edd6-402a-9665-1f0fec71c83d.png"
+            imageUrl="/lovable-uploads/0585e87e-7926-4ec5-98b7-793e08c04fee.png"
             challenge="Build an engaged audience from scratch in a competitive niche"
             approach={[
               "Developed unique content strategy",
@@ -42,7 +42,7 @@ const ResultsSection = () => {
               "Implemented marketing tactics"
             ]}
             results={["50,000 Downloads!"]}
-            link="https://podcasts.apple.com/us/podcast/intuition-your-success-compass/id1458617878"
+            link="https://podcasts.apple.com/us/podcast/starting-over-stronger-podcast/id1526868526"
             linkText="Listen Now"
             videoId="yo91m_r6LAM"
           />
