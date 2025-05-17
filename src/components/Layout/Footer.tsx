@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Mail, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,14 +21,14 @@ const Footer = () => {
               Your partner for comprehensive podcast marketing, production, launch, and engaging video content.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-podleaf-400 transition-colors">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-podleaf-400 transition-colors">
+              <a
+                href="https://www.linkedin.com/in/neelpanji/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-podleaf-400 transition-colors"
+                aria-label="LinkedIn"
+              >
                 <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-podleaf-400 transition-colors">
-                <Youtube size={20} />
               </a>
             </div>
           </div>
@@ -102,20 +101,13 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Contact Us</h3>
             <ul className="space-y-3">
-              <li className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 mt-0.5 text-podleaf-400 flex-shrink-0" />
-                <span className="text-slate-300">Motikhavdi, Gujarat, India</span>
-              </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-podleaf-400 flex-shrink-0" />
-                <a href="mailto:contact@podleafproductions.com" className="text-slate-300 hover:text-white transition-colors">
-                  contact@podleafproductions.com
-                </a>
-              </li>
-              <li className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-podleaf-400 flex-shrink-0" />
-                <a href="tel:+911234567890" className="text-slate-300 hover:text-white transition-colors">
-                  +91 12345 67890
+                <a
+                  href="mailto:neel@podleafproductions.com"
+                  className="text-slate-300 hover:text-white transition-colors"
+                >
+                  neel@podleafproductions.com
                 </a>
               </li>
             </ul>
