@@ -10,6 +10,7 @@ interface PricingCardProps {
   description: string;
   features: string[];
   buttonText?: string;
+  buttonLink?: string;
   popular?: boolean;
   episodeCount: number;
 }
@@ -20,6 +21,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
   description,
   features,
   buttonText = "Get Started",
+  buttonLink,
   popular = false,
   episodeCount,
 }) => {
@@ -51,9 +53,22 @@ const PricingCard: React.FC<PricingCardProps> = ({
         </ul>
       </CardContent>
       <CardFooter>
-        <Button className="w-full" variant={popular ? "default" : "outline"}>
-          {buttonText}
-        </Button>
+        {buttonLink ? (
+          <a
+            href={buttonLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full"
+          >
+            <Button className="w-full" variant={popular ? "default" : "outline"}>
+              {buttonText}
+            </Button>
+          </a>
+        ) : (
+          <Button className="w-full" variant={popular ? "default" : "outline"}>
+            {buttonText}
+          </Button>
+        )}
       </CardFooter>
     </Card>
   );

@@ -13,7 +13,8 @@ const podcastPlans = [
       "Episode Uploading",
       "72-Hour Turnaround",
       "Unlimited Email"
-    ]
+    ],
+    buttonLink: "https://calendar.app.google/nnbyeyt87GkLirm18"
   },
   {
     title: "Video Editing",
@@ -32,7 +33,8 @@ const podcastPlans = [
       "72-Hour Turnaround",
       "Unlimited Email"
     ],
-    popular: true
+    popular: true,
+    buttonLink: "https://calendar.app.google/nnbyeyt87GkLirm18"
   },
   {
     title: "Custom",
@@ -51,6 +53,7 @@ const podcastPlans = [
       "Website Support",
       "Shorter Turnaround Time"
     ]
+    // No buttonLink for Custom
   }
 ];
 
