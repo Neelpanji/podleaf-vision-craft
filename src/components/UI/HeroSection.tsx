@@ -4,11 +4,13 @@ import React from 'react';
 interface HeroSectionProps {
   title?: string;
   centered?: boolean;
+  cta?: React.ReactNode;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
   title,
   centered = false,
+  cta,
 }) => {
   return (
     <div className="hero-pattern">
@@ -19,6 +21,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               {title}
             </h1>
           )}
+          {cta && (
+            <div className="mt-10 flex justify-center">
+              {cta}
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -26,3 +33,4 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 };
 
 export default HeroSection;
+
