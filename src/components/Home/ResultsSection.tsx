@@ -34,7 +34,7 @@ const ResultsSection = () => {
           
           <CaseStudyCard
             title="Starting Over Stronger Podcast"
-            imageUrl="/lovable-uploads/211142d2-28d8-4899-8ff7-2275f362f973.png"
+            imageUrl="/lovable-uploads/147a8569-edd6-402a-9665-1f0fec71c83d.png"
             challenge="Build an engaged audience from scratch in a competitive niche"
             approach={[
               "Developed unique content strategy",
@@ -81,4 +81,3 @@ const ResultsSection = () => {
 };
 
 export default ResultsSection;
-
