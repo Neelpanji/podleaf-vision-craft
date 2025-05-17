@@ -21,19 +21,19 @@ const VideoServicesSection = () => {
             title="Vlog Videos"
             description="Connect authentically with your audience through engaging vlogs that showcase your personality and expertise."
             icon={<PlayCircle className="h-6 w-6" />}
-            link="/video-services"
+            link="/portfolio#video"
           />
           <ServiceCard
             title="Educational Videos"
             description="Share your knowledge and establish yourself as an industry leader with professionally produced educational content."
             icon={<BookOpen className="h-6 w-6" />}
-            link="/video-services"
+            link="/portfolio#video"
           />
           <ServiceCard
             title="Commercial Website Videos"
             description="Drive conversions and showcase your products/services effectively with compelling commercial videos."
             icon={<Film className="h-6 w-6" />}
-            link="/video-services"
+            link="/portfolio#video"
           />
         </div>
 
