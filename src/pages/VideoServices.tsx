@@ -332,6 +332,21 @@ const VideoServices = () => {
             </Link>
           </div>
         </section>
+
+        {/* Pricing Contact Button Section */}
+        <section className="py-8 bg-white">
+          <div className="container px-4 sm:px-6 lg:px-8 text-center">
+            <a
+              href="https://calendar.app.google/nnbyeyt87GkLirm18"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" variant="outline" className="text-lg px-8 font-bold">
+                Contact for pricing
+              </Button>
+            </a>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
@@ -339,3 +354,4 @@ const VideoServices = () => {
 };
 
 export default VideoServices;
+
