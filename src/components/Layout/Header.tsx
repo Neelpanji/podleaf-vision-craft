@@ -15,10 +15,14 @@ const Header = () => {
       <div className="container px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
         <div className="flex items-center">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="font-bold text-2xl bg-gradient-to-r from-podleaf-600 to-leaf-600 bg-clip-text text-transparent">
-              PodLeaF
+            <img
+              src="/lovable-uploads/e0ab5006-8a77-4d49-a004-942331db1b07.png"
+              alt="PodLeaF Productions Logo"
+              className="h-10 w-auto"
+            />
+            <span className="font-medium text-foreground hidden sm:block">
+              Productions
             </span>
-            <span className="font-medium text-foreground">Productions</span>
           </Link>
         </div>
 

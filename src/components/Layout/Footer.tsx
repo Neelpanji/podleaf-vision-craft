@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Linkedin } from 'lucide-react';
@@ -12,9 +13,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <Link to="/" className="flex items-center space-x-2 mb-4">
-              <span className="font-bold text-2xl text-white">
-                PodLeaF
-              </span>
+              <img
+                src="/lovable-uploads/e0ab5006-8a77-4d49-a004-942331db1b07.png"
+                alt="PodLeaF Productions Logo"
+                className="h-10 w-auto"
+              />
               <span className="font-medium text-slate-300">Productions</span>
             </Link>
             <p className="text-slate-300 mb-4">
