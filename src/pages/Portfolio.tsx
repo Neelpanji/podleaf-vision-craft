@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Layout/Header';
@@ -286,6 +285,8 @@ const Portfolio = () => {
               </TabsContent>
 
               <TabsContent value="video" className="p-6 bg-black">
+                {/* Anchor for 'portfolio#video' */}
+                <div id="video"></div>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                   {videoItems.map((video) => (
                     <div key={video.id} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
