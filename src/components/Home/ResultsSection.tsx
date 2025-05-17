@@ -42,7 +42,7 @@ const ResultsSection = () => {
               "Implemented marketing tactics"
             ]}
             results={["50,000 Downloads!"]}
-            link="https://podcasts.apple.com/us/podcast/intuition-your-success-compass/id1458617878"
+            link="https://podcasts.apple.com/us/podcast/starting-over-stronger-podcast/id1526868526"
             linkText="Listen Now"
             videoId="yo91m_r6LAM"
           />
