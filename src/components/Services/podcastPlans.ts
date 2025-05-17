@@ -37,7 +37,7 @@ const podcastPlans = [
     buttonLink: "https://calendar.app.google/nnbyeyt87GkLirm18"
   },
   {
-    title: "Custom",
+    title: "You Say We Deliver",
     price: "Custom",
     description: "For large organizations",
     features: [
@@ -52,9 +52,10 @@ const podcastPlans = [
       "Blog Posts",
       "Website Support",
       "Shorter Turnaround Time"
-    ]
-    // No buttonLink for Custom
+    ],
+    buttonLink: "https://calendar.app.google/nnbyeyt87GkLirm18"
   }
 ];
 
 export default podcastPlans;
+
