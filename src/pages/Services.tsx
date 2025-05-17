@@ -217,6 +217,17 @@ const Services = () => {
                 link="/portfolio#video-services"
               />
             </div>
+            <div className="text-center mt-8">
+              <a
+                href="https://calendar.app.google/nnbyeyt87GkLirm18"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="lg" variant="outline" className="text-lg px-8 font-bold">
+                  Contact for quote
+                </Button>
+              </a>
+            </div>
           </div>
         </section>
       </main>
