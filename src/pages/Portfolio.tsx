@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
@@ -20,8 +19,10 @@ const Portfolio = () => {
       const hash = window.location.hash;
       if (PORTFOLIO_HASH_TO_TAB[hash]) {
         setTab(PORTFOLIO_HASH_TO_TAB[hash]);
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
       } else {
         setTab('podcast');
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
       }
     };
 
@@ -78,4 +79,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
