@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Linkedin } from 'lucide-react';
@@ -12,13 +11,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <Link to="/" className="flex items-center space-x-3 mb-4">
-              <img
-                src="/lovable-uploads/3ee36577-a56e-4b44-bfc9-dabaa89dad7c.png"
-                alt="PodLeaF Productions Logo"
-                className="h-20 w-auto"
-              />
-              <span className="font-medium text-slate-300 text-lg">Productions</span>
+            <Link to="/" className="block mb-4">
+              <span className="font-medium text-slate-300 text-lg">PodLeaF Productions</span>
             </Link>
             <p className="text-slate-300 mb-4">
               Your partner for comprehensive podcast marketing, production, launch, and engaging video content.
