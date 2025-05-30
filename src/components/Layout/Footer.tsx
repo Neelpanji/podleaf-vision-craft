@@ -28,20 +28,6 @@ const Footer = () => {
             <Link to="/" className="block mb-4">
               <span className="font-medium text-slate-300 text-lg">PodLeaF Productions</span>
             </Link>
-            <p className="text-slate-300 mb-4">
-              Your partner for comprehensive podcast marketing, production, launch, and engaging video content.
-            </p>
-            <div className="flex space-x-4">
-              <a
-                href="https://www.linkedin.com/in/neelpanji/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-podleaf-400 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={20} />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -121,6 +107,17 @@ const Footer = () => {
                   neel@podleafproductions.com
                 </a>
               </li>
+              <li className="flex items-center space-x-3">
+                <Linkedin className="w-5 h-5 text-podleaf-400 flex-shrink-0" />
+                <a
+                  href="https://www.linkedin.com/in/neelpanji/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-300 hover:text-white transition-colors"
+                >
+                  LinkedIn
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -130,7 +127,7 @@ const Footer = () => {
             <p className="text-slate-300 mb-4 text-sm">
               Subscribe for newsletter & get your free podcast structure report
             </p>
-            <form onSubmit={handleSubscribe} className="space-y-3">
+            <form onSubmribe={handleSubscribe} className="space-y-3">
               <Input
                 type="text"
                 placeholder="Your Name"
