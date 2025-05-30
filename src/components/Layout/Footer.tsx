@@ -1,14 +1,28 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Linkedin } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle newsletter subscription here
+    console.log('Newsletter subscription:', { name, email });
+    // Reset form
+    setName('');
+    setEmail('');
+  };
   
   return (
     <footer className="bg-slate-900 text-white pt-16 pb-6">
       <div className="container px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
           <div>
             <Link to="/" className="block mb-4">
@@ -108,6 +122,40 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
+          </div>
+
+          {/* Newsletter Signup */}
+          <div>
+            <h3 className="text-lg font-bold mb-4">Newsletter & Free Report</h3>
+            <p className="text-slate-300 mb-4 text-sm">
+              Subscribe for newsletter & get your free podcast structure report
+            </p>
+            <form onSubmit={handleSubscribe} className="space-y-3">
+              <Input
+                type="text"
+                placeholder="Your Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="bg-slate-800 border-slate-700 text-white placeholder:text-slate-400"
+                required
+              />
+              <Input
+                type="email"
+                placeholder="Your Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="bg-slate-800 border-slate-700 text-white placeholder:text-slate-400"
+                required
+              />
+              <Button
+                type="submit"
+                variant="default"
+                size="sm"
+                className="w-full bg-podleaf-400 hover:bg-podleaf-500 text-black font-medium"
+              >
+                Subscribe
+              </Button>
+            </form>
           </div>
         </div>
 
