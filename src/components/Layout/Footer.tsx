@@ -127,7 +127,7 @@ const Footer = () => {
             <p className="text-slate-300 mb-4 text-sm">
               Subscribe for newsletter & get your free podcast structure report
             </p>
-            <form onSubmribe={handleSubscribe} className="space-y-3">
+            <form onSubmit={handleSubscribe} className="space-y-3">
               <Input
                 type="text"
                 placeholder="Your Name"
