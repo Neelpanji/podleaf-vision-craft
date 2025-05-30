@@ -22,14 +22,7 @@ const Footer = () => {
   return (
     <footer className="bg-slate-900 text-white pt-16 pb-6">
       <div className="container px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-          {/* Company Info */}
-          <div>
-            <Link to="/" className="block mb-4">
-              <span className="font-medium text-slate-300 text-lg">PodLeaF Productions</span>
-            </Link>
-          </div>
-
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
