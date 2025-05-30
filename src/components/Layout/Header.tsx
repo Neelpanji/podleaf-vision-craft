@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -18,7 +19,7 @@ const Header = () => {
             <img
               src="/lovable-uploads/3ee36577-a56e-4b44-bfc9-dabaa89dad7c.png"
               alt="PodLeaF Productions Logo"
-              className="h-10 w-auto"
+              className="h-20 w-auto"
             />
             <span className="font-medium text-foreground hidden sm:block">
               Productions
