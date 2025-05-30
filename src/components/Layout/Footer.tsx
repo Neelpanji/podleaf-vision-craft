@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <img
-                src="/lovable-uploads/00c07b56-0159-4e58-a75a-4275420b333c.png"
+                src="/lovable-uploads/3ee36577-a56e-4b44-bfc9-dabaa89dad7c.png"
                 alt="PodLeaF Productions Logo"
                 className="h-10 w-auto"
               />
