@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Linkedin } from 'lucide-react';
@@ -14,7 +13,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <img
-                src="/lovable-uploads/e0ab5006-8a77-4d49-a004-942331db1b07.png"
+                src="/lovable-uploads/161df3b7-2779-45a3-8790-0f18d5ca5506.png"
                 alt="PodLeaF Productions Logo"
                 className="h-10 w-auto"
               />
