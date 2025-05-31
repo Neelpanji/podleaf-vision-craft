@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SectionHeading from '@/components/UI/SectionHeading';
-import ContactForm from '@/components/UI/ContactForm';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
 
@@ -27,7 +26,7 @@ const ContactUs = () => {
           </div>
         </section>
 
-        {/* Contact Form Section */}
+        {/* Contact Section */}
         <section className="py-16 bg-black">
           <div className="container px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-5 gap-12">
@@ -72,8 +71,18 @@ const ContactUs = () => {
               
               <div className="md:col-span-3">
                 <div className="bg-gray-900 p-8 rounded-lg shadow-sm border border-gray-800">
-                  <h2 className="text-2xl font-bold mb-6 text-white">Send Us a Message</h2>
-                  <ContactForm />
+                  <h2 className="text-2xl font-bold mb-6 text-white">Schedule a Meeting</h2>
+                  <div className="w-full h-96">
+                    <iframe
+                      src="https://calendar.app.google/sPiJV7Sa8tBDrSLA8"
+                      width="100%"
+                      height="100%"
+                      frameBorder="0"
+                      scrolling="no"
+                      className="rounded-lg"
+                      title="Schedule a meeting with PodLeaF Productions"
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </div>
@@ -140,7 +149,7 @@ const ContactUs = () => {
           <div className="container px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-6 text-white">Ready to Get Started?</h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-300">
-              Fill out the contact form above or reach out directly. We're excited to learn about your project!
+              Schedule a meeting above or reach out directly. We're excited to learn about your project!
             </p>
             <div className="flex justify-center">
               <a href="mailto:neel@podleafproductions.com">
