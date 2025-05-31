@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail } from 'lucide-react';
@@ -52,23 +53,23 @@ const ContactUs = () => {
               <div className="md:col-span-3">
                 <div className="bg-gray-900 p-8 rounded-lg shadow-sm border border-gray-800">
                   <h2 className="text-2xl font-bold mb-6 text-white">Schedule a Meeting</h2>
-                  <div className="w-full h-96">
+                  <div className="w-full h-96 mb-4">
                     <iframe
-                      src="https://calendar.google.com/calendar/embed?src=neel%40podleafproductions.com&ctz=Asia%2FKolkata"
+                      src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2FER0NELzJxZEZDQVNLWN1cWo5YXVVVW9iZWFCZ1BKbW9YenZZZEZDQVNMQWN1cUo5YXVVVzAw?gv=true"
                       width="100%"
                       height="100%"
                       frameBorder="0"
                       scrolling="no"
-                      className="rounded-lg"
+                      className="rounded-lg bg-white"
                       title="Schedule a meeting with PodLeaF Productions"
                     ></iframe>
                   </div>
-                  <div className="mt-4 text-center">
+                  <div className="text-center">
                     <a 
                       href="https://calendar.app.google/sPiJV7Sa8tBDrSLA8"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-podleaf-600 hover:text-podleaf-700 transition-colors underline text-3xl font-bold"
+                      className="text-podleaf-600 hover:text-podleaf-700 transition-colors underline text-5xl font-bold"
                     >
                       Click here to schedule a meeting directly
                     </a>
@@ -157,3 +158,4 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
+
