@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail } from 'lucide-react';
@@ -67,7 +68,7 @@ const ContactUs = () => {
                       href="https://calendar.app.google/sPiJV7Sa8tBDrSLA8"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-podleaf-600 hover:text-podleaf-700 transition-colors underline"
+                      className="text-podleaf-600 hover:text-podleaf-700 transition-colors underline text-3xl font-bold"
                     >
                       Click here to schedule a meeting directly
                     </a>
