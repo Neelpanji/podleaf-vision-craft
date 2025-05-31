@@ -165,7 +165,7 @@ neel@podleafproductions.com`,
                     href="https://www.linkedin.com/in/neelpanji/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-slate-300 hover:text-white transition-colors leading-5"
+                    className="text-slate-300 hover:text-white transition-colors leading-5 mt-1"
                   >
                     LinkedIn
                   </a>
