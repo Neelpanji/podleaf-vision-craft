@@ -69,7 +69,7 @@ const clientLogos = [
 
 const TrustedBySection = () => {
   return (
-    <section className="section-padding bg-muted">
+    <section className="section-padding bg-black">
       <div className="container container-padding">
         <SectionHeading
           title="Who Trust Us?"
@@ -89,7 +89,7 @@ const TrustedBySection = () => {
               {clientLogos.map((client, index) => (
                 <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <a href={client.href} target="_blank" rel="noopener noreferrer" className="block">
-                    <div className="relative aspect-square overflow-hidden rounded-lg bg-background p-4 hover:bg-accent/5 transition-colors">
+                    <div className="relative aspect-square overflow-hidden rounded-lg bg-gray-900 p-4 hover:bg-gray-800 transition-colors border border-gray-700">
                       <img
                         src={client.image}
                         alt={`Client ${index + 1}`}
@@ -105,11 +105,10 @@ const TrustedBySection = () => {
           </Carousel>
         </div>
 
-        <p className="text-center text-lg text-muted-foreground mt-8">And Maybe You...</p>
+        <p className="text-center text-lg text-gray-300 mt-8">And Maybe You...</p>
       </div>
     </section>
   );
 };
 
 export default TrustedBySection;
-
