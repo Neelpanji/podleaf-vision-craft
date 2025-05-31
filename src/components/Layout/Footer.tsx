@@ -159,7 +159,7 @@ neel@podleafproductions.com`,
                   <Mail className="w-5 h-5 text-podleaf-400 flex-shrink-0" />
                   <a
                     href="mailto:neel@podleafproductions.com"
-                    className="text-slate-300 hover:text-white transition-colors"
+                    className="text-slate-300 hover:text-white transition-colors break-all"
                   >
                     neel@podleafproductions.com
                   </a>
