@@ -50,8 +50,8 @@ const ContactUs = () => {
               </div>
               
               <div className="md:col-span-3">
-                <div className="bg-gray-900 p-8 rounded-lg shadow-sm border border-gray-800">
-                  <h2 className="text-2xl font-bold mb-6 text-white">Schedule a Meeting</h2>
+                <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-300">
+                  <h2 className="text-2xl font-bold mb-6 text-black">Schedule a Meeting</h2>
                   <div className="w-full h-96">
                     {/* Google Calendar Appointment Scheduling begin */}
                     <iframe 
