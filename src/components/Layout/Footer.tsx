@@ -131,22 +131,12 @@ neel@podleafproductions.com`,
             <h3 className="text-lg font-bold mb-4">Our Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/podcast-marketing" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
-                  Podcast Marketing
+                <Link to="/services#podcast-services" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
+                  Podcast Services
                 </Link>
               </li>
               <li>
-                <Link to="/podcast-production" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
-                  Podcast Production
-                </Link>
-              </li>
-              <li>
-                <Link to="/podcast-launch" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
-                  Podcast Launch
-                </Link>
-              </li>
-              <li>
-                <Link to="/video-services" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
+                <Link to="/services#video-services" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
                   Video Services
                 </Link>
               </li>
