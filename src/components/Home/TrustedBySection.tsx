@@ -69,7 +69,7 @@ const clientLogos = [
 
 const TrustedBySection = () => {
   return (
-    <section className="section-padding bg-gray-900">
+    <section className="section-padding bg-black">
       <div className="container container-padding">
         <SectionHeading
           title="Who Trust Us?"
