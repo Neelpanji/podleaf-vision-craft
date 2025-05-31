@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Linkedin } from 'lucide-react';
@@ -149,8 +150,8 @@ neel@podleafproductions.com`,
             <div>
               <h3 className="text-lg font-bold mb-4">Contact Us</h3>
               <ul className="space-y-3">
-                <li className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-podleaf-400 flex-shrink-0" />
+                <li className="flex items-center">
+                  <Mail className="w-5 h-5 text-podleaf-400 mr-3 flex-shrink-0" />
                   <a
                     href="mailto:neel@podleafproductions.com"
                     className="text-slate-300 hover:text-white transition-colors break-all"
@@ -158,8 +159,8 @@ neel@podleafproductions.com`,
                     neel@podleafproductions.com
                   </a>
                 </li>
-                <li className="flex items-center space-x-3">
-                  <Linkedin className="w-5 h-5 text-podleaf-400 flex-shrink-0" />
+                <li className="flex items-center">
+                  <Linkedin className="w-5 h-5 text-podleaf-400 mr-3 flex-shrink-0" />
                   <a
                     href="https://www.linkedin.com/in/neelpanji/"
                     target="_blank"
