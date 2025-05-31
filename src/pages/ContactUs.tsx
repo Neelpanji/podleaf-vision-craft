@@ -53,15 +53,17 @@ const ContactUs = () => {
                 <div className="bg-gray-900 p-8 rounded-lg shadow-sm border border-gray-800">
                   <h2 className="text-2xl font-bold mb-6 text-white">Schedule a Meeting</h2>
                   <div className="w-full h-96">
-                    <iframe
-                      src="https://calendar.google.com/calendar/embed?src=neel%40podleafproductions.com&ctz=Asia%2FKolkata"
-                      width="100%"
-                      height="100%"
+                    {/* Google Calendar Appointment Scheduling begin */}
+                    <iframe 
+                      src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1jIQMp7j1d9ja2Ts7_NYolo1nMp77B54no8P7AfGlDch7GRu4fWZ07dLrTKszBR342CxkhVita?gv=true" 
+                      style={{ border: 0 }} 
+                      width="100%" 
+                      height="600" 
                       frameBorder="0"
-                      scrolling="no"
                       className="rounded-lg"
                       title="Schedule a meeting with PodLeaF Productions"
-                    ></iframe>
+                    />
+                    {/* end Google Calendar Appointment Scheduling */}
                   </div>
                   <div className="mt-4 text-center">
                     <a 
