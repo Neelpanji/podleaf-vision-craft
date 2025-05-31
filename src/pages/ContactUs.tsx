@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail } from 'lucide-react';
@@ -47,26 +46,6 @@ const ContactUs = () => {
                     </div>
                   </div>
                 </div>
-
-                <div className="mt-12">
-                  <h3 className="text-lg font-semibold mb-3 text-white">Our Business Hours</h3>
-                  <table className="w-full text-left">
-                    <tbody>
-                      <tr className="border-b border-gray-700">
-                        <td className="py-2 font-medium text-white">Monday - Friday</td>
-                        <td className="py-2 text-gray-300">9:00 AM - 6:00 PM IST</td>
-                      </tr>
-                      <tr className="border-b border-gray-700">
-                        <td className="py-2 font-medium text-white">Saturday</td>
-                        <td className="py-2 text-gray-300">10:00 AM - 2:00 PM IST</td>
-                      </tr>
-                      <tr>
-                        <td className="py-2 font-medium text-white">Sunday</td>
-                        <td className="py-2 text-gray-300">Closed</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
               </div>
               
               <div className="md:col-span-3">
@@ -74,7 +53,7 @@ const ContactUs = () => {
                   <h2 className="text-2xl font-bold mb-6 text-white">Schedule a Meeting</h2>
                   <div className="w-full h-96">
                     <iframe
-                      src="https://calendar.app.google/sPiJV7Sa8tBDrSLA8"
+                      src="https://calendar.google.com/calendar/embed?src=neel%40podleafproductions.com&ctz=Asia%2FKolkata"
                       width="100%"
                       height="100%"
                       frameBorder="0"
@@ -82,6 +61,16 @@ const ContactUs = () => {
                       className="rounded-lg"
                       title="Schedule a meeting with PodLeaF Productions"
                     ></iframe>
+                  </div>
+                  <div className="mt-4 text-center">
+                    <a 
+                      href="https://calendar.app.google/sPiJV7Sa8tBDrSLA8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-podleaf-600 hover:text-podleaf-700 transition-colors underline"
+                    >
+                      Click here to schedule a meeting directly
+                    </a>
                   </div>
                 </div>
               </div>
