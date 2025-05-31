@@ -77,7 +77,7 @@ const Testimonials = () => {
                 company="Host of The Weekday Show"
                 imageUrl="/lovable-uploads/ff72ddf0-4a22-48d2-a69d-8e5d361750f1.png"
                 podcastUrl="https://www.youtube.com/@weekdayworks"
-                videoEmbedLink="https://youtube.com/shorts/688ugVnl47k?feature=share"
+                videoEmbedLink="https://www.youtube-nocookie.com/embed/688ugVnl47k"
               />
 
               <TestimonialCard
