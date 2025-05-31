@@ -52,7 +52,7 @@ const ContactUs = () => {
               <div className="md:col-span-3">
                 <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-300">
                   <h2 className="text-2xl font-bold mb-6 text-black">Schedule a Meeting</h2>
-                  <div className="w-full h-96">
+                  <div className="w-full overflow-hidden rounded-lg border border-gray-200">
                     {/* Google Calendar Appointment Scheduling begin */}
                     <iframe 
                       src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1jIQMp7j1d9ja2Ts7_NYolo1nMp77B54no8P7AfGlDch7GRu4fWZ07dLrTKszBR342CxkhVita?gv=true" 
@@ -60,7 +60,7 @@ const ContactUs = () => {
                       width="100%" 
                       height="600" 
                       frameBorder="0"
-                      className="rounded-lg"
+                      className="block"
                       title="Schedule a meeting with PodLeaF Productions"
                     />
                     {/* end Google Calendar Appointment Scheduling */}
