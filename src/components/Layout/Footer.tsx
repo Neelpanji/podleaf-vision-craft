@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Linkedin } from 'lucide-react';
@@ -13,6 +12,10 @@ const Footer = () => {
   const [name, setName] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+
+  const handleLinkClick = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  };
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -91,32 +94,32 @@ neel@podleafproductions.com`,
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-slate-300 hover:text-white transition-colors">
+                <Link to="/" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about-us" className="text-slate-300 hover:text-white transition-colors">
+                <Link to="/about-us" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/portfolio" className="text-slate-300 hover:text-white transition-colors">
+                <Link to="/portfolio" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link to="/case-study" className="text-slate-300 hover:text-white transition-colors">
+                <Link to="/case-study" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
                   Case Studies
                 </Link>
               </li>
               <li>
-                <Link to="/testimonials" className="text-slate-300 hover:text-white transition-colors">
+                <Link to="/testimonials" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link to="/contact-us" className="text-slate-300 hover:text-white transition-colors">
+                <Link to="/contact-us" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
                   Contact Us
                 </Link>
               </li>
@@ -128,22 +131,22 @@ neel@podleafproductions.com`,
             <h3 className="text-lg font-bold mb-4">Our Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/podcast-marketing" className="text-slate-300 hover:text-white transition-colors">
+                <Link to="/podcast-marketing" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
                   Podcast Marketing
                 </Link>
               </li>
               <li>
-                <Link to="/podcast-production" className="text-slate-300 hover:text-white transition-colors">
+                <Link to="/podcast-production" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
                   Podcast Production
                 </Link>
               </li>
               <li>
-                <Link to="/podcast-launch" className="text-slate-300 hover:text-white transition-colors">
+                <Link to="/podcast-launch" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
                   Podcast Launch
                 </Link>
               </li>
               <li>
-                <Link to="/video-services" className="text-slate-300 hover:text-white transition-colors">
+                <Link to="/video-services" onClick={handleLinkClick} className="text-slate-300 hover:text-white transition-colors">
                   Video Services
                 </Link>
               </li>
@@ -223,10 +226,10 @@ neel@podleafproductions.com`,
             &copy; {currentYear} PodLeaF Productions. All rights reserved.
           </p>
           <div className="mt-2 space-x-4">
-            <Link to="/privacy-policy" className="text-slate-400 text-sm hover:text-white transition-colors">
+            <Link to="/privacy-policy" onClick={handleLinkClick} className="text-slate-400 text-sm hover:text-white transition-colors">
               Privacy Policy
             </Link>
-            <Link to="/terms-of-service" className="text-slate-400 text-sm hover:text-white transition-colors">
+            <Link to="/terms-of-service" onClick={handleLinkClick} className="text-slate-400 text-sm hover:text-white transition-colors">
               Terms of Service
             </Link>
           </div>
