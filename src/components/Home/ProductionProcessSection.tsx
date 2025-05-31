@@ -6,7 +6,7 @@ import SectionHeading from '@/components/UI/SectionHeading';
 
 const ProductionProcessSection = () => {
   return (
-    <section className="section-padding bg-black">
+    <section className="section-padding bg-gray-900">
       <div className="container container-padding">
         <SectionHeading
           title="How We Do It"
