@@ -14,7 +14,7 @@ const ProductionProcessSection = () => {
           centered={true}
         />
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-sm border border-gray-700">
+          <div className="bg-black p-6 rounded-lg shadow-sm border border-gray-700">
             <h3 className="text-xl font-semibold mb-3 text-teal">Getting You Ready</h3>
             <p className="text-sm text-gray-400 mb-2">(My Job)</p>
             <ul className="list-disc list-inside space-y-2 text-sm text-gray-300">
@@ -29,7 +29,7 @@ const ProductionProcessSection = () => {
             </ul>
           </div>
           
-          <div className="bg-gray-900 p-6 rounded-lg shadow-sm border border-gray-700">
+          <div className="bg-black p-6 rounded-lg shadow-sm border border-gray-700">
             <h3 className="text-xl font-semibold mb-3 text-teal">Once You Are Ready</h3>
             <p className="text-sm text-gray-400 mb-2">(Your Job)</p>
             <ul className="list-disc list-inside space-y-2 text-sm text-gray-300">
@@ -37,7 +37,7 @@ const ProductionProcessSection = () => {
             </ul>
           </div>
           
-          <div className="bg-gray-900 p-6 rounded-lg shadow-sm border border-gray-700">
+          <div className="bg-black p-6 rounded-lg shadow-sm border border-gray-700">
             <h3 className="text-xl font-semibold mb-3 text-teal">Making It Audience Ready</h3>
             <p className="text-sm text-gray-400 mb-2">(My Job)</p>
             <ul className="list-disc list-inside space-y-2 text-sm text-gray-300">
