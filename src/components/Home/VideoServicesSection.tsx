@@ -8,7 +8,7 @@ import ServiceCard from '@/components/UI/ServiceCard';
 
 const VideoServicesSection = () => {
   return (
-    <section className="section-padding bg-muted">
+    <section className="section-padding bg-black">
       <div className="container container-padding">
         <SectionHeading
           title="Videos? We Do That As Well!"

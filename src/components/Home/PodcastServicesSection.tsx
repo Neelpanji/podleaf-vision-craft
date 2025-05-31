@@ -6,7 +6,7 @@ import ServiceCard from '@/components/UI/ServiceCard';
 
 const PodcastServicesSection = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-black">
       <div className="container container-padding">
         <SectionHeading
           title="Areas Where We Have These Results..."

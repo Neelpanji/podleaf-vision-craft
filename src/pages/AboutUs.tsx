@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen flex flex-col bg-black text-white">
       <Header />
-      <main className="flex-grow flex items-center justify-center px-4 py-12">
+      <main className="flex-grow flex items-center justify-center px-4 py-12 bg-black">
         <div className="max-w-3xl mx-auto w-full bg-gray-900 rounded-xl shadow-lg flex flex-col md:flex-row items-center gap-8 p-6 md:p-10">
           <div className="flex-shrink-0 w-full md:w-1/2 flex justify-center">
             <img
@@ -36,4 +36,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
-

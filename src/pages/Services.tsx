@@ -43,10 +43,10 @@ const Services = () => {
     });
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-black">
       <Header />
       <main className="flex-grow">
-        <section id="podcast-services" className="section-padding bg-background">
+        <section id="podcast-services" className="section-padding bg-black">
           <div className="container container-padding">
             <SectionHeading
               title="Podcast Services"
@@ -55,7 +55,7 @@ const Services = () => {
             />
 
             <div className="flex items-center justify-center space-x-4 mb-8">
-              <Label htmlFor="episode-toggle" className="text-lg">
+              <Label htmlFor="episode-toggle" className="text-lg text-white">
                 2 Episodes
               </Label>
               <Switch
@@ -63,7 +63,7 @@ const Services = () => {
                 checked={episodeToggle}
                 onCheckedChange={setEpisodeToggle}
               />
-              <Label htmlFor="episode-toggle" className="text-lg">
+              <Label htmlFor="episode-toggle" className="text-lg text-white">
                 4 Episodes
               </Label>
             </div>
@@ -78,7 +78,7 @@ const Services = () => {
           </div>
         </section>
 
-        <section id="video-services" className="section-padding bg-muted">
+        <section id="video-services" className="section-padding bg-black">
           <div className="container container-padding">
             <SectionHeading
               title="Video Services"

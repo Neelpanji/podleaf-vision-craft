@@ -8,7 +8,7 @@ import TestimonialCard from '@/components/UI/TestimonialCard';
 
 const TestimonialsSection = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-black">
       <div className="container container-padding">
         <SectionHeading
           title="What Our Clients Say"
