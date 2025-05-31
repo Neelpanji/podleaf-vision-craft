@@ -19,8 +19,10 @@ const CTASection = () => {
     try {
       const SERVICE_ID = 'service_hllzzpo';
       const TEMPLATE_ID = 'template_rwenu6d';
+      const AUTO_REPLY_TEMPLATE_ID = 'template_autoreply'; // You'll need to create this template
       const PUBLIC_KEY = 'user_nlsEMvuE69qao2t7h0SCS';
 
+      // Send notification email to you
       const templateParams = {
         from_name: name,
         from_email: email,
@@ -30,9 +32,37 @@ const CTASection = () => {
 
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
 
+      // Send auto-reply to subscriber
+      const autoReplyParams = {
+        to_name: name,
+        to_email: email,
+        from_name: 'PodLeaF Productions',
+        from_email: 'neel@podleafproductions.com',
+        subject: 'Thank you for your interest - Free Podcast Structure Document',
+        message: `Hi ${name},
+
+Thank you for your interest in our podcast services! 
+
+As promised, here are some valuable resources for you:
+
+🎧 Free Podcast Structure Document: [Download Here - You'll need to add your actual link]
+📧 Our Portfolio: https://podleafproductions.com/portfolio
+💼 Our Services: https://podleafproductions.com/services
+📞 Book a Free Consultation: [Add your booking link]
+
+We'll be in touch soon with your free podcast structure document.
+
+Best regards,
+Neel
+PodLeaF Productions
+neel@podleafproductions.com`,
+      };
+
+      await emailjs.send(SERVICE_ID, AUTO_REPLY_TEMPLATE_ID, autoReplyParams, PUBLIC_KEY);
+
       toast({
         title: "Success!",
-        description: "Your request has been sent. We'll send you the podcast structure document soon!",
+        description: "Your request has been sent. Check your email for the podcast structure document!",
       });
 
       // Reset form

@@ -20,8 +20,10 @@ const Footer = () => {
     try {
       const SERVICE_ID = 'service_hllzzpo';
       const TEMPLATE_ID = 'template_rwenu6d';
+      const AUTO_REPLY_TEMPLATE_ID = 'template_newsletter_autoreply'; // You'll need to create this template
       const PUBLIC_KEY = 'user_nlsEMvuE69qao2t7h0SCS';
 
+      // Send notification email to you
       const templateParams = {
         from_name: name,
         from_email: email,
@@ -30,6 +32,34 @@ const Footer = () => {
       };
 
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
+
+      // Send auto-reply to subscriber
+      const autoReplyParams = {
+        to_name: name,
+        to_email: email,
+        from_name: 'PodLeaF Productions',
+        from_email: 'neel@podleafproductions.com',
+        subject: 'Welcome to PodLeaF Productions Newsletter + Free Report',
+        message: `Hi ${name},
+
+Welcome to the PodLeaF Productions newsletter! 
+
+Here's your free podcast structure report: [Add your download link]
+
+📧 Explore our work: https://podleafproductions.com/portfolio
+🎯 Our services: https://podleafproductions.com/services
+📚 Case studies: https://podleafproductions.com/case-study
+💬 Testimonials: https://podleafproductions.com/testimonials
+
+Stay tuned for valuable podcast insights, tips, and industry updates!
+
+Best regards,
+Neel
+PodLeaF Productions
+neel@podleafproductions.com`,
+      };
+
+      await emailjs.send(SERVICE_ID, AUTO_REPLY_TEMPLATE_ID, autoReplyParams, PUBLIC_KEY);
 
       toast({
         title: "Subscribed!",
