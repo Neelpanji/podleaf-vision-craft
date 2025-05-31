@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Linkedin } from 'lucide-react';
@@ -19,15 +18,14 @@ const Footer = () => {
     setIsSubmitting(true);
 
     try {
-      // Replace these with your actual EmailJS credentials
-      const SERVICE_ID = 'your_service_id';
-      const TEMPLATE_ID = 'your_template_id';
-      const PUBLIC_KEY = 'your_public_key';
+      const SERVICE_ID = 'service_hllzzpo';
+      const TEMPLATE_ID = 'template_rwenu6d';
+      const PUBLIC_KEY = 'user_nlsEMvuE69qao2t7h0SCS';
 
       const templateParams = {
         from_name: name,
         from_email: email,
-        to_email: 'your-email@gmail.com', // Replace with your Gmail
+        to_email: 'neelpanji@gmail.com',
         message: `New newsletter subscription:\nName: ${name}\nEmail: ${email}`,
       };
 
