@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
@@ -38,16 +37,16 @@ const ContactUs = () => {
                 />
 
                 <div className="space-y-6 mt-8">
-                  <div className="flex items-center">
-                    <MapPin className="h-6 w-6 text-podleaf-600 mr-4 flex-shrink-0" />
+                  <div className="flex items-start">
+                    <MapPin className="h-6 w-6 text-podleaf-600 mr-4 flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-medium mb-1">Our Location</h3>
                       <p className="text-gray-600">Motikhavdi, Gujarat, India</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-center">
-                    <Mail className="h-6 w-6 text-podleaf-600 mr-4 flex-shrink-0" />
+                  <div className="flex items-start">
+                    <Mail className="h-6 w-6 text-podleaf-600 mr-4 flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-medium mb-1">Email</h3>
                       <a href="mailto:contact@podleafproductions.com" className="text-podleaf-600 hover:text-podleaf-700 transition-colors">
@@ -56,8 +55,8 @@ const ContactUs = () => {
                     </div>
                   </div>
                   
-                  <div className="flex items-center">
-                    <Phone className="h-6 w-6 text-podleaf-600 mr-4 flex-shrink-0" />
+                  <div className="flex items-start">
+                    <Phone className="h-6 w-6 text-podleaf-600 mr-4 flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-medium mb-1">Phone</h3>
                       <a href="tel:+911234567890" className="text-podleaf-600 hover:text-podleaf-700 transition-colors">
