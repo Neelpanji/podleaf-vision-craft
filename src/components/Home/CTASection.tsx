@@ -19,7 +19,7 @@ const CTASection = () => {
     try {
       const SERVICE_ID = 'service_hllzzpo';
       const TEMPLATE_ID = 'template_rwenu6d';
-      const AUTO_REPLY_TEMPLATE_ID = 'template_autoreply'; // You'll need to create this template
+      const AUTO_REPLY_TEMPLATE_ID = 'template_autoreply';
       const PUBLIC_KEY = 'user_nlsEMvuE69qao2t7h0SCS';
 
       // Send notification email to you
@@ -81,20 +81,22 @@ neel@podleafproductions.com`,
   };
 
   return (
-    <section className="py-16 bg-gradient-to-r from-teal to-secondary text-black">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-teal to-secondary text-black">
       <div className="container container-padding text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Not Yet Ready?</h2>
-        <p className="text-xl mb-8 max-w-3xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
+          Not Yet Ready?
+        </h2>
+        <p className="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 lg:mb-10 max-w-4xl mx-auto leading-relaxed px-4">
           Get free podcast structure document of real clients to help you think clearly and in the right direction
         </p>
         
-        <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
+        <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4 sm:space-y-6 px-4">
           <Input
             type="text"
             placeholder="Your Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="bg-white border-gray-300 text-black placeholder:text-gray-500"
+            className="bg-white border-gray-300 text-black placeholder:text-gray-500 h-12 sm:h-14 text-base sm:text-lg px-4 sm:px-6"
             required
             disabled={isSubmitting}
           />
@@ -103,7 +105,7 @@ neel@podleafproductions.com`,
             placeholder="Your Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="bg-white border-gray-300 text-black placeholder:text-gray-500"
+            className="bg-white border-gray-300 text-black placeholder:text-gray-500 h-12 sm:h-14 text-base sm:text-lg px-4 sm:px-6"
             required
             disabled={isSubmitting}
           />
@@ -111,11 +113,11 @@ neel@podleafproductions.com`,
             type="submit" 
             variant="secondary" 
             size="lg" 
-            className="group text-lg px-8 bg-black text-white hover:bg-black/80"
+            className="group text-base sm:text-lg lg:text-xl px-6 sm:px-8 lg:px-10 py-3 sm:py-4 bg-black text-white hover:bg-black/80 w-full sm:w-auto min-h-[48px] sm:min-h-[56px]"
             disabled={isSubmitting}
           >
             {isSubmitting ? 'Sending...' : 'Submit'}
-            <ArrowRightCircle className="ml-2 h-6 w-6 transition-transform group-hover:translate-x-1" />
+            <ArrowRightCircle className="ml-2 h-5 w-5 sm:h-6 sm:w-6 transition-transform group-hover:translate-x-1" />
           </Button>
         </form>
       </div>

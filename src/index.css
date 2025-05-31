@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,6 +46,10 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -52,23 +57,48 @@
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl;
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl;
+    @apply text-2xl sm:text-3xl md:text-4xl;
   }
 
   h3 {
-    @apply text-2xl sm:text-3xl;
+    @apply text-xl sm:text-2xl md:text-3xl;
   }
 
   h4 {
-    @apply text-xl sm:text-2xl;
+    @apply text-lg sm:text-xl md:text-2xl;
   }
 
   p {
-    @apply leading-7;
+    @apply leading-7 text-sm sm:text-base;
+  }
+
+  /* Improve touch targets on mobile */
+  button, a, input, select, textarea {
+    @apply min-h-[44px] sm:min-h-[48px];
+  }
+
+  /* Better scrolling on mobile */
+  html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Prevent horizontal scroll on mobile */
+  body, html {
+    overflow-x: hidden;
+  }
+
+  /* Better focus styles for accessibility */
+  button:focus-visible, 
+  a:focus-visible, 
+  input:focus-visible, 
+  select:focus-visible, 
+  textarea:focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
   }
 }
 
@@ -84,10 +114,28 @@
   }
   
   .section-padding {
-    @apply py-8 md:py-12;
+    @apply py-8 sm:py-12 md:py-16 lg:py-20;
   }
   
   .container-padding {
     @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Mobile-optimized card spacing */
+  .mobile-card-grid {
+    @apply grid gap-4 sm:gap-6 lg:gap-8;
+    @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  /* Better mobile typography */
+  .mobile-text {
+    @apply text-sm sm:text-base lg:text-lg;
+    @apply leading-relaxed sm:leading-relaxed lg:leading-relaxed;
+  }
+
+  /* Responsive button sizing */
+  .mobile-button {
+    @apply px-4 py-3 sm:px-6 sm:py-4 text-sm sm:text-base;
+    @apply min-h-[44px] sm:min-h-[48px];
   }
 }
