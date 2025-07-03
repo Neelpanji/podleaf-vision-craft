@@ -1,18 +1,14 @@
 
 declare global {
   interface Window {
-    gtag?: (
-      command: 'config' | 'event' | 'set' | 'consent',
-      targetId: string,
+    gtag: (
+      command: 'config' | 'event' | 'js' | 'set',
+      targetId: string | Date,
       config?: {
-        event_category?: string;
-        event_label?: string;
-        value?: number;
-        description?: string;
-        fatal?: boolean;
         [key: string]: any;
       }
     ) => void;
+    dataLayer: any[];
   }
 }
 
