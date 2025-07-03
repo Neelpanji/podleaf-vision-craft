@@ -6,17 +6,25 @@ export const trackEvent = (eventName: string, parameters: {
   value?: number;
   [key: string]: any;
 } = {}) => {
-  console.log('Tracking event:', eventName, parameters);
+  console.log('🔍 Attempting to track event:', eventName, parameters);
   
-  if (typeof window !== 'undefined' && window.gtag) {
-    try {
-      window.gtag('event', eventName, parameters);
-      console.log('Event tracked successfully');
-    } catch (error) {
-      console.error('Error tracking event:', error);
-    }
-  } else {
-    console.warn('Google Analytics not available');
+  // Check if gtag is available
+  if (typeof window === 'undefined') {
+    console.warn('❌ Window object not available (SSR)');
+    return;
+  }
+  
+  if (!window.gtag) {
+    console.warn('❌ Google Analytics (gtag) not loaded - likely blocked by ad blocker');
+    return;
+  }
+  
+  try {
+    console.log('✅ Sending event to Google Analytics...');
+    window.gtag('event', eventName, parameters);
+    console.log('✅ Event tracked successfully:', eventName);
+  } catch (error) {
+    console.error('❌ Error tracking event:', error);
   }
 };
 
@@ -45,4 +53,28 @@ export const trackConversion = (conversionName: string, additionalParams = {}) =
     value: 1,
     ...additionalParams
   });
+};
+
+// Debug function to check GA status
+export const checkGoogleAnalyticsStatus = () => {
+  console.log('🔍 Checking Google Analytics status...');
+  
+  if (typeof window === 'undefined') {
+    console.log('❌ Running on server side');
+    return false;
+  }
+  
+  if (!window.gtag) {
+    console.log('❌ gtag function not found - Google Analytics likely blocked');
+    return false;
+  }
+  
+  if (!window.dataLayer) {
+    console.log('❌ dataLayer not found');
+    return false;
+  }
+  
+  console.log('✅ Google Analytics appears to be loaded');
+  console.log('📊 dataLayer contents:', window.dataLayer);
+  return true;
 };
