@@ -1,28 +1,19 @@
 
 import React from 'react';
 import { Mail, Linkedin } from 'lucide-react';
+import { trackButtonClick } from '@/utils/analytics';
 
 const FooterContact = () => {
   const handleEmailClick = () => {
-    // Track email click
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'click', {
-        event_category: 'Contact',
-        event_label: 'Footer Email Click',
-        value: 1
-      });
-    }
+    trackButtonClick('Footer Email Click', {
+      event_category: 'Contact'
+    });
   };
 
   const handleLinkedInClick = () => {
-    // Track LinkedIn click
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'click', {
-        event_category: 'Social',
-        event_label: 'LinkedIn Click',
-        value: 1
-      });
-    }
+    trackButtonClick('LinkedIn Click', {
+      event_category: 'Social'
+    });
   };
 
   return (

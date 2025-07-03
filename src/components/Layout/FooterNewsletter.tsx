@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
+import { trackFormSubmit, trackConversion } from '@/utils/analytics';
 import emailjs from '@emailjs/browser';
 
 const FooterNewsletter = () => {
@@ -15,14 +16,9 @@ const FooterNewsletter = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Track newsletter subscription attempt
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'form_submit', {
-        event_category: 'Newsletter',
-        event_label: 'Footer Newsletter Signup',
-        value: 1
-      });
-    }
+    trackFormSubmit('Footer Newsletter Signup', {
+      event_category: 'Newsletter'
+    });
 
     try {
       const SERVICE_ID = 'service_hllzzpo';
@@ -68,14 +64,9 @@ neel@podleafproductions.com`,
 
       await emailjs.send(SERVICE_ID, AUTO_REPLY_TEMPLATE_ID, autoReplyParams, PUBLIC_KEY);
 
-      // Track successful newsletter subscription
-      if (typeof window !== 'undefined' && window.gtag) {
-        window.gtag('event', 'conversion', {
-          event_category: 'Newsletter',
-          event_label: 'Newsletter Signup Success',
-          value: 1
-        });
-      }
+      trackConversion('Newsletter Signup Success', {
+        event_category: 'Newsletter'
+      });
 
       toast({
         title: "Subscribed!",
@@ -87,14 +78,6 @@ neel@podleafproductions.com`,
       setEmail('');
     } catch (error) {
       console.error('EmailJS error:', error);
-      
-      // Track newsletter subscription error
-      if (typeof window !== 'undefined' && window.gtag) {
-        window.gtag('event', 'exception', {
-          description: 'Newsletter subscription failed',
-          fatal: false
-        });
-      }
       
       toast({
         title: "Error",

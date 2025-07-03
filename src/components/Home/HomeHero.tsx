@@ -3,17 +3,13 @@ import React from 'react';
 import HeroSection from '@/components/UI/HeroSection';
 import { Button } from '@/components/ui/button';
 import { ArrowRightCircle, ArrowDown } from 'lucide-react';
+import { trackButtonClick } from '@/utils/analytics';
 
 const HomeHero = () => {
   const scrollToBottom = () => {
-    // Track scroll to bottom click
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'click', {
-        event_category: 'Navigation',
-        event_label: 'Scroll to Bottom CTA',
-        value: 1
-      });
-    }
+    trackButtonClick('Scroll to Bottom CTA', {
+      event_category: 'Navigation'
+    });
     
     window.scrollTo({
       top: document.documentElement.scrollHeight,
@@ -22,14 +18,9 @@ const HomeHero = () => {
   };
 
   const handleGetStartedClick = () => {
-    // Track get started button click
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'click', {
-        event_category: 'CTA',
-        event_label: 'Hero Get Started',
-        value: 1
-      });
-    }
+    trackButtonClick('Hero Get Started', {
+      event_category: 'CTA'
+    });
   };
 
   return (
