@@ -7,6 +7,28 @@ import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
 
 const ContactUs = () => {
+  const handleDirectEmailClick = () => {
+    // Track direct email click from contact page
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'click', {
+        event_category: 'Contact',
+        event_label: 'Direct Email Button',
+        value: 1
+      });
+    }
+  };
+
+  const handleScheduleMeetingClick = () => {
+    // Track meeting schedule clicks
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'click', {
+        event_category: 'Contact',
+        event_label: 'Schedule Meeting',
+        value: 1
+      });
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-black text-white">
       <Header />
@@ -40,7 +62,7 @@ const ContactUs = () => {
                     <Mail className="h-6 w-6 text-podleaf-600 mr-4 flex-shrink-0 mt-0.5" />
                     <div className="-mt-2.5">
                       <h3 className="font-medium mb-1 text-white">Email</h3>
-                      <a href="mailto:neel@podleafproductions.com" className="text-podleaf-600 hover:text-podleaf-700 transition-colors">
+                      <a href="mailto:neel@podleafproductions.com" className="text-podleaf-600 hover:text-podleaf-700 transition-colors" onClick={handleDirectEmailClick}>
                         neel@podleafproductions.com
                       </a>
                     </div>
@@ -61,6 +83,7 @@ const ContactUs = () => {
                       frameBorder="0"
                       className="block"
                       title="Schedule a meeting with PodLeaF Productions"
+                      onLoad={handleScheduleMeetingClick}
                     />
                     {/* end Google Calendar Appointment Scheduling */}
                   </div>
@@ -133,7 +156,7 @@ const ContactUs = () => {
               Schedule a meeting above or reach out directly. We're excited to learn about your project!
             </p>
             <div className="flex justify-center">
-              <a href="mailto:neel@podleafproductions.com">
+              <a href="mailto:neel@podleafproductions.com" onClick={handleDirectEmailClick}>
                 <Button size="lg" variant="outline" className="w-full sm:w-auto">
                   Email Us Directly
                 </Button>

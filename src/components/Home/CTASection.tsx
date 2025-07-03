@@ -16,6 +16,15 @@ const CTASection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Track CTA form submission
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'form_submit', {
+        event_category: 'Lead Generation',
+        event_label: 'CTA Form - Free Document',
+        value: 1
+      });
+    }
+
     try {
       const SERVICE_ID = 'service_hllzzpo';
       const TEMPLATE_ID = 'template_rwenu6d';
@@ -60,6 +69,15 @@ neel@podleafproductions.com`,
 
       await emailjs.send(SERVICE_ID, AUTO_REPLY_TEMPLATE_ID, autoReplyParams, PUBLIC_KEY);
 
+      // Track successful form submission
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'conversion', {
+          event_category: 'Lead Generation',
+          event_label: 'CTA Form Success',
+          value: 1
+        });
+      }
+
       toast({
         title: "Success!",
         description: "Your request has been sent. Check your email for the podcast structure document!",
@@ -70,6 +88,15 @@ neel@podleafproductions.com`,
       setEmail('');
     } catch (error) {
       console.error('EmailJS error:', error);
+      
+      // Track form submission error
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'exception', {
+          description: 'CTA form submission failed',
+          fatal: false
+        });
+      }
+      
       toast({
         title: "Error",
         description: "Failed to send your request. Please try again.",

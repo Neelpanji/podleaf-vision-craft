@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -18,6 +17,15 @@ const ContactForm = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    
+    // Track contact form submission
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'form_submit', {
+        event_category: 'Contact',
+        event_label: 'Contact Form',
+        value: 1
+      });
+    }
     
     // In a real app, you would submit the form data to a server.
     // This is just a placeholder for demonstration.
@@ -40,6 +48,17 @@ const ContactForm = () => {
     setEmail('');
     setSubject('');
     setMessage('');
+  };
+  
+  const handleEmailClick = () => {
+    // Track email client open
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'click', {
+        event_category: 'Contact',
+        event_label: 'Email Client Open',
+        value: 1
+      });
+    }
   };
   
   const getMailtoLink = () => {
@@ -125,7 +144,7 @@ const ContactForm = () => {
               Your message has been submitted. To ensure delivery, you can also send it directly via your email client.
             </p>
             <div className="flex justify-center">
-              <a href={getMailtoLink()} onClick={handleCloseDialog}>
+              <a href={getMailtoLink()} onClick={() => { handleCloseDialog(); handleEmailClick(); }}>
                 <Button>Open Email Client</Button>
               </a>
             </div>

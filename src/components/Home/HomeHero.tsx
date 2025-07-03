@@ -6,10 +6,30 @@ import { ArrowRightCircle, ArrowDown } from 'lucide-react';
 
 const HomeHero = () => {
   const scrollToBottom = () => {
+    // Track scroll to bottom click
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'click', {
+        event_category: 'Navigation',
+        event_label: 'Scroll to Bottom CTA',
+        value: 1
+      });
+    }
+    
     window.scrollTo({
       top: document.documentElement.scrollHeight,
       behavior: 'smooth'
     });
+  };
+
+  const handleGetStartedClick = () => {
+    // Track get started button click
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'click', {
+        event_category: 'CTA',
+        event_label: 'Hero Get Started',
+        value: 1
+      });
+    }
   };
 
   return (
@@ -23,6 +43,7 @@ const HomeHero = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto"
+            onClick={handleGetStartedClick}
           >
             <Button
               variant="secondary"

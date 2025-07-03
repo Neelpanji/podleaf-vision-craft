@@ -18,9 +18,40 @@ const Footer = () => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
 
+  const handleEmailClick = () => {
+    // Track email click
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'click', {
+        event_category: 'Contact',
+        event_label: 'Footer Email Click',
+        value: 1
+      });
+    }
+  };
+
+  const handleLinkedInClick = () => {
+    // Track LinkedIn click
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'click', {
+        event_category: 'Social',
+        event_label: 'LinkedIn Click',
+        value: 1
+      });
+    }
+  };
+
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    // Track newsletter subscription attempt
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'form_submit', {
+        event_category: 'Newsletter',
+        event_label: 'Footer Newsletter Signup',
+        value: 1
+      });
+    }
 
     try {
       const SERVICE_ID = 'service_hllzzpo';
@@ -66,6 +97,15 @@ neel@podleafproductions.com`,
 
       await emailjs.send(SERVICE_ID, AUTO_REPLY_TEMPLATE_ID, autoReplyParams, PUBLIC_KEY);
 
+      // Track successful newsletter subscription
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'conversion', {
+          event_category: 'Newsletter',
+          event_label: 'Newsletter Signup Success',
+          value: 1
+        });
+      }
+
       toast({
         title: "Subscribed!",
         description: "You've been subscribed to our newsletter. Check your email for the free report!",
@@ -76,6 +116,15 @@ neel@podleafproductions.com`,
       setEmail('');
     } catch (error) {
       console.error('EmailJS error:', error);
+      
+      // Track newsletter subscription error
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'exception', {
+          description: 'Newsletter subscription failed',
+          fatal: false
+        });
+      }
+      
       toast({
         title: "Error",
         description: "Failed to subscribe. Please try again.",
@@ -155,6 +204,7 @@ neel@podleafproductions.com`,
                   <a
                     href="mailto:neel@podleafproductions.com"
                     className="text-slate-300 hover:text-white transition-colors break-all leading-5"
+                    onClick={handleEmailClick}
                   >
                     neel@podleafproductions.com
                   </a>
@@ -166,6 +216,7 @@ neel@podleafproductions.com`,
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-slate-300 hover:text-white transition-colors leading-5 mt-1"
+                    onClick={handleLinkedInClick}
                   >
                     LinkedIn
                   </a>
