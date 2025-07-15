@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { ExternalLink, Calendar } from 'lucide-react';
-import { LinkedInPost, formatPostDate } from './linkedInPostsData';
+import { ExternalLink } from 'lucide-react';
+import { LinkedInPost } from './linkedInPostsData';
 
 interface LinkedInPostCardProps {
   post: LinkedInPost;
@@ -23,8 +23,7 @@ const LinkedInPostCard: React.FC<LinkedInPostCardProps> = ({ post }) => {
       
       <CardHeader className="pb-3">
         <div className="flex items-center text-sm text-muted-foreground mb-2">
-          <Calendar className="w-4 h-4 mr-1" />
-          {formatPostDate(post.publishedDate)}
+          {post.relativeDate}
         </div>
         <CardTitle className="text-lg line-clamp-2 group-hover:text-primary transition-colors">
           {post.title}
