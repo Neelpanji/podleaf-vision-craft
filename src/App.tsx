@@ -17,6 +17,7 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
 import Services from "./pages/Services";
+import LinkedInPosts from "./pages/LinkedInPosts";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/linkedin-posts" element={<LinkedInPosts />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

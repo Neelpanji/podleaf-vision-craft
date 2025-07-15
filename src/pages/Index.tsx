@@ -10,6 +10,7 @@ import ResultsSection from '@/components/Home/ResultsSection';
 import TestimonialsSection from '@/components/Home/TestimonialsSection';
 import CTASection from '@/components/Home/CTASection';
 import TrustedBySection from '@/components/Home/TrustedBySection';
+import LinkedInPostsSection from '@/components/LinkedIn/LinkedInPostsSection';
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
         <ProductionProcessSection />
         <VideoServicesSection />
         <TrustedBySection />
+        <LinkedInPostsSection maxPosts={3} />
         <TestimonialsSection />
         <CTASection />
       </main>
