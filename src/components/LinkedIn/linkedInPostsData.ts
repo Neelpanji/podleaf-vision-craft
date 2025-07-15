@@ -17,7 +17,7 @@ export const linkedInPosts: LinkedInPost[] = [
     excerpt: "Behind every successful podcast episode, there's an entire ecosystem of tools, processes, and people working together. Here's a peek behind the curtain...",
     url: "https://www.linkedin.com/posts/neelpanji_ever-wonder-what-all-silently-supports-my-activity-7350872654490329089-_-8z?",
     publishedDate: "2024-01-20",
-    relativeDate: "Today",
+    relativeDate: "January 20, 2024",
     tags: ["Podcast Production", "Behind the Scenes", "Tools"]
   },
   {
@@ -26,7 +26,7 @@ export const linkedInPosts: LinkedInPost[] = [
     excerpt: "The difference between good and great work isn't always obvious, but it's always impactful. Here's what I've learned about elevating quality in creative projects...",
     url: "https://www.linkedin.com/posts/neelpanji_what-differentiates-good-vs-great-work-activity-7350508120055382016-1qkc?",
     publishedDate: "2024-01-18",
-    relativeDate: "Yesterday",
+    relativeDate: "January 18, 2024",
     tags: ["Quality", "Excellence", "Professional Growth"]
   },
   {
@@ -35,7 +35,7 @@ export const linkedInPosts: LinkedInPost[] = [
     excerpt: "Some client relationships transcend the typical professional boundary and become genuine partnerships. Here's why that matters and how it transforms the work we do together...",
     url: "https://www.linkedin.com/posts/neelpanji_pov-when-clients-are-more-than-just-clients-activity-7349418460508057601-NDGC?",
     publishedDate: "2024-01-15",
-    relativeDate: "Day before yesterday",
+    relativeDate: "January 15, 2024",
     tags: ["Client Relationships", "Partnership", "Business"]
   },
   {
@@ -44,7 +44,7 @@ export const linkedInPosts: LinkedInPost[] = [
     excerpt: "Just wrapped up an amazing podcast production where the host shared their most vulnerable story yet. Here's why authenticity always wins...",
     url: "https://www.linkedin.com/posts/neelpanji_podcasting-storytelling-authenticity-activity-7150123456789012345-AbCd",
     publishedDate: "2024-01-15",
-    relativeDate: "3 days ago",
+    relativeDate: "January 15, 2024",
     tags: ["Podcasting", "Storytelling", "Authenticity"]
   },
   {
@@ -53,7 +53,7 @@ export const linkedInPosts: LinkedInPost[] = [
     excerpt: "After producing hundreds of videos, these 5 simple techniques consistently deliver the biggest impact on engagement and viewer retention...",
     url: "https://www.linkedin.com/posts/neelpanji_videoproduction-contentcreation-marketing-activity-7149987654321098765-EfGh",
     publishedDate: "2024-01-10",
-    relativeDate: "4 days ago",
+    relativeDate: "January 10, 2024",
     tags: ["Video Production", "Content Creation", "Marketing"]
   },
   {
@@ -62,7 +62,7 @@ export const linkedInPosts: LinkedInPost[] = [
     excerpt: "The podcast industry is exploding, but most businesses are missing the boat. Here's how to get started with a strategy that actually works...",
     url: "https://www.linkedin.com/posts/neelpanji_business-podcast-strategy-activity-7148765432109876543-IjKl",
     publishedDate: "2024-01-05",
-    relativeDate: "5 days ago",
+    relativeDate: "January 5, 2024",
     tags: ["Business", "Podcast", "Strategy"]
   }
 ];
