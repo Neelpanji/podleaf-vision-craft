@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { ExternalLink, Heart, MessageCircle, Calendar } from 'lucide-react';
+import { ExternalLink, Calendar } from 'lucide-react';
 import { LinkedInPost, formatPostDate } from './linkedInPostsData';
 
 interface LinkedInPostCardProps {
@@ -49,22 +49,7 @@ const LinkedInPostCard: React.FC<LinkedInPostCardProps> = ({ post }) => {
           </div>
         )}
         
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            {post.likes && (
-              <div className="flex items-center gap-1">
-                <Heart className="w-4 h-4" />
-                <span>{post.likes}</span>
-              </div>
-            )}
-            {post.comments && (
-              <div className="flex items-center gap-1">
-                <MessageCircle className="w-4 h-4" />
-                <span>{post.comments}</span>
-              </div>
-            )}
-          </div>
-          
+        <div className="flex justify-end">
           <a
             href={post.url}
             target="_blank"
