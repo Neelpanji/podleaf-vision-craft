@@ -13,6 +13,36 @@ export interface LinkedInPost {
 
 export const linkedInPosts: LinkedInPost[] = [
   {
+    id: "4",
+    title: "Ever Wonder What All Silently Supports My Podcast Production?",
+    excerpt: "Behind every successful podcast episode, there's an entire ecosystem of tools, processes, and people working together. Here's a peek behind the curtain...",
+    url: "https://www.linkedin.com/posts/neelpanji_ever-wonder-what-all-silently-supports-my-activity-7350872654490329089-_-8z?",
+    publishedDate: "2024-01-20",
+    tags: ["Podcast Production", "Behind the Scenes", "Tools"],
+    likes: 95,
+    comments: 18
+  },
+  {
+    id: "5",
+    title: "What Differentiates Good vs Great Work",
+    excerpt: "The difference between good and great work isn't always obvious, but it's always impactful. Here's what I've learned about elevating quality in creative projects...",
+    url: "https://www.linkedin.com/posts/neelpanji_what-differentiates-good-vs-great-work-activity-7350508120055382016-1qkc?",
+    publishedDate: "2024-01-18",
+    tags: ["Quality", "Excellence", "Professional Growth"],
+    likes: 142,
+    comments: 27
+  },
+  {
+    id: "6",
+    title: "POV: When Clients Are More Than Just Clients",
+    excerpt: "Some client relationships transcend the typical professional boundary and become genuine partnerships. Here's why that matters and how it transforms the work we do together...",
+    url: "https://www.linkedin.com/posts/neelpanji_pov-when-clients-are-more-than-just-clients-activity-7349418460508057601-NDGC?",
+    publishedDate: "2024-01-15",
+    tags: ["Client Relationships", "Partnership", "Business"],
+    likes: 78,
+    comments: 12
+  },
+  {
     id: "1",
     title: "The Power of Authentic Storytelling in Podcasting",
     excerpt: "Just wrapped up an amazing podcast production where the host shared their most vulnerable story yet. Here's why authenticity always wins...",
