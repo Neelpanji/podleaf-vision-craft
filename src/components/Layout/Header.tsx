@@ -58,6 +58,9 @@ const Header = () => {
           <Link to="/about-us" className="text-foreground hover:text-primary transition-colors text-sm lg:text-base py-2 px-1">
             About Us
           </Link>
+          <Link to="/blog" className="text-foreground hover:text-primary transition-colors text-sm lg:text-base py-2 px-1">
+            Blog
+          </Link>
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
@@ -133,6 +136,13 @@ const Header = () => {
               onClick={toggleMenu}
             >
               About Us
+            </Link>
+            <Link
+              to="/blog"
+              className="text-foreground hover:text-primary transition-colors py-4 px-2 text-base font-medium border-b border-border/50"
+              onClick={toggleMenu}
+            >
+              Blog
             </Link>
             <Link
               to="/contact-us"

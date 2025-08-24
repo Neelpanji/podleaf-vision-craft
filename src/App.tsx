@@ -18,6 +18,8 @@ import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
 import Services from "./pages/Services";
 import LinkedInPosts from "./pages/LinkedInPosts";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +39,8 @@ const App = () => (
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/linkedin-posts" element={<LinkedInPosts />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
