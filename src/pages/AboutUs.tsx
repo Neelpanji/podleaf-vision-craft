@@ -24,9 +24,25 @@ const AboutUs = () => {
             <p className="text-gray-200 text-base md:text-lg mb-2">
               Being a podcaster can be tough in many ways. From scheduling guests for an interview, finding new guests, promoting the value you provide to the audience in various forms, getting creative to keep your audience engaged, and finally spending hours to ensure the quality of the audio is top-notch. Hence culminating over 5 years of my experience working with different podcasters in this production company.
             </p>
-            <p className="text-gray-200 text-base md:text-lg mb-2">
+            <p className="text-gray-200 text-base md:text-lg mb-6">
               I started out as a mechanical engineer but soon my passion for podcasts pulled me out of my job to start PodLeaF Productions. We are a team of enthusiasts who with our diverse experience bring the best for your podcast.
             </p>
+            
+            <div className="mt-8">
+              <h2 className="text-xl md:text-2xl font-semibold text-podleaf-300 mb-4">
+                Watch my interview with <a href="https://www.cmeaccountingllc.com/" target="_blank" rel="noopener noreferrer" className="text-podleaf-400 hover:text-podleaf-300 underline">Clarita Emmanuel</a>, a client and a dear friend.
+              </h2>
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full rounded-lg"
+                  src="https://www.youtube.com/embed/yLM0f_JdcB8"
+                  title="Interview with Clarita Emmanuel"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </main>
