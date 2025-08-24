@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
     id: "1",
     title: "5 Common Podcast Audio Mistakes (And How to Avoid Them)",
     slug: "5-common-podcast-audio-mistakes",
-    publishedDate: "2024-01-15",
+    publishedDate: "2025-08-17",
     content: `One thing I see trip up new podcasters time and again? Not paying enough attention to the quality of their audio. Honestly, listeners will forgive a lot of small hiccups—but poor sound quality is where most will hit "unsubscribe" faster than you can say "check, 1-2."
 
 Podcasting is built on audio, so you've got to give your listeners crisp, clear sound. In a world packed with amazing shows, yours can't get by with muddy, uneven audio. The good news? Fixing most mistakes is easier than you'd think.
@@ -37,7 +37,7 @@ Before publishing, make it your rule: never release an episode unless you're hon
     id: "2",
     title: "The Ultimate Guide to Choosing Your First Podcast Microphone",
     slug: "guide-choosing-first-podcast-microphone",
-    publishedDate: "2024-01-22",
+    publishedDate: "2025-08-24",
     content: `There's one piece of advice I always give people looking to launch their own podcast: start with a solid mic. This isn't about spending a fortune. It's about finding something that captures your voice cleanly and reliably, episode after episode.
 
 USB microphones are a fantastic starter option—easy to use and plug right into your computer. If you want to level up later, there are XLR mics for more advanced setups.
