@@ -72,11 +72,26 @@ const BlogPost = () => {
 
           <div className="prose prose-lg max-w-none">
             <div className="text-muted-foreground text-lg leading-relaxed space-y-6">
-              {post.content.split('\n\n').map((paragraph, index) => (
-                <p key={index} className="mb-6">
-                  {paragraph}
-                </p>
-              ))}
+              {post.content.split('\n\n').map((paragraph, index) => {
+                // Handle **text** formatting for larger bold text
+                const formattedParagraph = paragraph.split(/(\*\*[^*]+\*\*)/).map((part, partIndex) => {
+                  if (part.startsWith('**') && part.endsWith('**')) {
+                    const text = part.slice(2, -2);
+                    return (
+                      <span key={partIndex} className="text-2xl font-bold text-foreground">
+                        {text}
+                      </span>
+                    );
+                  }
+                  return part;
+                });
+                
+                return (
+                  <p key={index} className="mb-6">
+                    {formattedParagraph}
+                  </p>
+                );
+              })}
             </div>
           </div>
 
