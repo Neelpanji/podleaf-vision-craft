@@ -26,7 +26,9 @@ const Blog = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="grid gap-8">
-              {blogPosts.map((post) => (
+              {blogPosts
+                .sort((a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime())
+                .map((post) => (
                 <Card key={post.id} className="bg-card border-border hover:shadow-lg transition-shadow">
                   <CardHeader>
                     <div className="flex justify-between items-start mb-4">
