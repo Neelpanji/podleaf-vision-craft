@@ -74,19 +74,19 @@ Here are industry favorites, sound quality highlights, and where to experience s
    - Audio Samples & Reviews: Podcast Host ATR2100x Review
    - Average Price: $50–$99
 
-3. Rode PodMic (Dynamic, XLR) - **PodLeaF Recommended**
+3. Rode PodMic (Dynamic, XLR) - *PodLeaF Recommended*
    - Rugged build, modern podcast sound
    - Needs audio interface (XLR only), but grows with your setup
    - Sample & Setup Guides: Beginner Podcast Mics with Audio
    - Average Price: $99
 
-4. Blue Yeti (Condenser, USB) - **PodLeaF Recommended**
+4. Blue Yeti (Condenser, USB) - *PodLeaF Recommended*
    - Most popular USB mic—easy setup, multi-pattern (solo/duo/group recording)
    - Best in quiet spaces
    - Hear it Here: MusicRadar Blue Yeti Review with Audio Demos
    - Average Price: $130
 
-5. Shure MV7+ (Dynamic, USB/XLR) - **PodLeaF Recommended**
+5. Shure MV7+ (Dynamic, USB/XLR) - *PodLeaF Recommended*
    - Versatile—used by amateurs and professionals alike
    - USB-C & XLR for both plug-and-play and pro setups
    - Integrated software for real-time denoise and EQ
