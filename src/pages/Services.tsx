@@ -27,16 +27,16 @@ const Services = () => {
   // Update prices based on episodeToggle
   const getPlansWithToggledPrice = () =>
     podcastPlans.map((plan) => {
-      if (plan.price === "$349" || plan.price === "$749") {
+      if (plan.price === "$349" || plan.price === "$599") {
         return {
           ...plan,
-          price: episodeToggle ? "$749" : "$349",
+          price: episodeToggle ? "$599" : "$349",
         };
       }
-      if (plan.price === "$649" || plan.price === "$1349") {
+      if (plan.price === "$649" || plan.price === "$1199") {
         return {
           ...plan,
-          price: episodeToggle ? "$1349" : "$649",
+          price: episodeToggle ? "$1199" : "$649",
         };
       }
       return plan;
