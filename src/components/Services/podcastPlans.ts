@@ -2,7 +2,7 @@
 const podcastPlans = [
   {
     title: "Audio Editing",
-    price: "$499",
+    price: "$349",
     description: "Perfect for beginners",
     features: [
       "Audio only editing",
@@ -18,7 +18,7 @@ const podcastPlans = [
   },
   {
     title: "Video Editing",
-    price: "$799",
+    price: "$649",
     description: "Most popular choice",
     features: [
       "Video only editing",
