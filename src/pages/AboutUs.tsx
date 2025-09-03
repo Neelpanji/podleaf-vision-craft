@@ -30,6 +30,9 @@ const AboutUs = () => {
             
             <div className="mt-8">
               <h2 className="text-xl md:text-2xl font-semibold text-podleaf-300 mb-4">
+                <a href="https://www.darshalisoni.com/article/interviews/behind-the-mic-gen-z-founder-neel-s-journey-from-corporate-to-creative" target="_blank" rel="noopener noreferrer" className="text-podleaf-400 hover:text-podleaf-300 underline">Read my interview with Darshali Soni</a>
+              </h2>
+              <h2 className="text-xl md:text-2xl font-semibold text-podleaf-300 mb-4 mt-6">
                 Watch my interview with <a href="https://www.cmeaccountingllc.com/" target="_blank" rel="noopener noreferrer" className="text-podleaf-400 hover:text-podleaf-300 underline">Clarita Emmanuel</a>, a client and a dear friend.
               </h2>
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
