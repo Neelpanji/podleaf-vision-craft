@@ -73,6 +73,13 @@ const BlogPost = () => {
           <div className="prose prose-lg max-w-none">
             <div className="text-muted-foreground text-lg leading-relaxed space-y-6">
               {post.content.split('\n\n').map((paragraph, index) => {
+                // Handle HTML tables
+                if (paragraph.trim().startsWith('<table') && paragraph.trim().includes('</table>')) {
+                  return (
+                    <div key={index} className="my-8" dangerouslySetInnerHTML={{ __html: paragraph }} />
+                  );
+                }
+                
                 // Handle **text** formatting for larger bold text and *text* for regular bold
                 const formattedParagraph = paragraph.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/).map((part, partIndex) => {
                   if (part.startsWith('**') && part.endsWith('**')) {

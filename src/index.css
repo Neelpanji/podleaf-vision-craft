@@ -138,4 +138,25 @@
     @apply px-4 py-3 sm:px-6 sm:py-4 text-sm sm:text-base;
     @apply min-h-[44px] sm:min-h-[48px];
   }
+
+  /* Blog table styles */
+  .blog-table {
+    @apply w-full border-collapse border border-border mb-6 rounded-lg overflow-hidden;
+  }
+  
+  .blog-table th {
+    @apply bg-muted/50 border border-border px-4 py-3 text-left font-semibold text-foreground;
+  }
+  
+  .blog-table td {
+    @apply border border-border px-4 py-3 text-muted-foreground;
+  }
+  
+  .blog-table tr:nth-child(even) {
+    @apply bg-muted/20;
+  }
+  
+  .blog-table tr:hover {
+    @apply bg-muted/30;
+  }
 }
