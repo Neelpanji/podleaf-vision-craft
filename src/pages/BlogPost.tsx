@@ -80,6 +80,13 @@ const BlogPost = () => {
                   );
                 }
                 
+                // Handle paragraphs that contain HTML links
+                if (paragraph.includes('<a ') && paragraph.includes('</a>')) {
+                  return (
+                    <div key={index} className="mb-6" dangerouslySetInnerHTML={{ __html: paragraph }} />
+                  );
+                }
+                
                 // Handle **text** formatting for larger bold text and *text* for regular bold
                 const formattedParagraph = paragraph.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/).map((part, partIndex) => {
                   if (part.startsWith('**') && part.endsWith('**')) {
